@@ -2,15 +2,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/style.css"
 import React from 'react';
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./pages/Home/Home"
 
-
-import NavBar from "./components/NavBar"
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <NavBar />
-    </div>
+      <Route exact path='/' component={Home} />
+    </Router>
   );
 }
 

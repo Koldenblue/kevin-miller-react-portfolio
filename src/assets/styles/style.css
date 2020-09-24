@@ -15,12 +15,7 @@ body {
   height: 100vh;
 } */
 
-#index-body {
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  background-image: url('../images/beach.jpg');
-}
+
 #portfolio-body {
   background-size: cover;
   background-image: url('../images/koi.jpg');
