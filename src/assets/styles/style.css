@@ -86,11 +86,7 @@ body {
   margin-top: 100px;
 }
 
-.jumbotron {
-  background-color: rgba(224, 239, 245, 0.4);
-  font-family: 'Audiowide', cursive;
 
-}
 
 /* Added for container classes to keep from running into the bottom of the pages */
 .bottom-space {

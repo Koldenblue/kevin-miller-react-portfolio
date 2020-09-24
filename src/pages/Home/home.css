@@ -8,3 +8,13 @@ body {
   background-position: center;
   background-image: url('../../assets/images/beach.jpg');
 }
+
+.jumbotron {
+  background-color: rgba(224, 239, 245, 0.4);
+  font-family: 'Audiowide', cursive;
+
+}
+
+pre {
+  font-family: 'Audiowide', cursive;
+}
