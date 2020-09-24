@@ -1,3 +1,199 @@
-.myBtn {
-  background-color: green;
+body {
+  height: 100%;
+  margin:0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+
+/* code for adding a video cover */
+/* video {
+  position: fixed;
+  object-fit: cover;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+} */
+
+#index-body {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/beach.jpg');
+}
+#portfolio-body {
+  background-size: cover;
+  background-image: url('../images/koi.jpg');
+}
+
+#resume-body {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/beach-hut.jpg');
+}
+
+#contact-body {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/tidepool.jpg');
+}
+
+#about-me-body {
+  background-size: cover;
+  background-position: center;
+}
+
+#pictures-body {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/shore.jpg');
+}
+
+#about-me-body, #chemistry-body {
+  background-image: url('../images/beach2.jpg');
+}
+
+.container, .container-lg {
+  /* background-image: linear-gradient(to top, rgba(255, 138, 0, 0.5) rgba(255, 231, 92, 0.5), rgba(129, 238, 214,0.5), rgba(129, 238, 214, 0.5)); */
+  background: rgb(255,138,0);
+  background: linear-gradient(0deg, rgba(255,138,0,0.8) 20%, rgba(255,231,92,0.8) 35%, rgba(129,238,214,0.8) 75%, rgba(129,238,214,0.8) 80%);
+  padding:25px;
+  margin-top: auto;
+  border-radius: 20px;
+  opacity: 0.95;
+}
+
+.index-container {
+  /* background-image: linear-gradient(to top, rgba(255, 138, 0, 0.5) rgba(255, 231, 92, 0.5), rgba(129, 238, 214,0.5), rgba(129, 238, 214, 0.5)); */
+  background: rgb(255,138,0);
+  background: linear-gradient(0deg, rgba(255,138,0,0.5) 20%, rgba(255,231,92,0.5) 35%, rgba(129,238,214,0.5) 75%, rgba(129,238,214,0.5) 80%);
+  padding:25px;
+  /* margin-top: auto; */
+  border-radius: 20px;
+  opacity: 0.95;
+}
+
+#nav {
+  position: fixed;
+  background-color: #81EED6;
+  width: 100vw;
+  z-index: 10;
+  top: 0;
+}
+
+.card {
+  margin: 2em;
+  background-color: rgba(217, 191, 238, .7);
+}
+
+/* top margin added to keep from overlap with navbar */
+.nav-avoid {
+  margin-top: 100px;
+}
+
+.jumbotron {
+  background-color: rgba(224, 239, 245, 0.4);
+  font-family: 'Audiowide', cursive;
+
+}
+
+/* Added for container classes to keep from running into the bottom of the pages */
+.bottom-space {
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background-color: #16A283;
+  border-color: #327D9A;
+}
+
+.btn-primary:hover {
+  background-color: #356fc5;
+}
+
+/* Cards on home page. */
+/* flex display keeps the cards from overlapping 
+when the screen is reduced in width */
+/* flex-wrap allows the boxes to stack as the window is resized. Center removes any space between them. */
+/* justify-content:center keeps the cards centered as the screen is resized and the content wraps */
+/* background-attachment:fixed makes for no top or bottom box edges on a small screen */
+.box3, .box2, .box1 {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-color: #F8C9F8;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #F8C9F8, #81EED6 );
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.box3 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#portfolio {
+  color : rgb(0, 0, 130)
+}
+
+.psychic-link {
+  color: #975BD7;
+}
+
+.psychic-link:hover {
+  color: #975BD7;
+  background: -webkit-linear-gradient(#b63db6, #0b00a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.psychic-link:visited {
+  color: #117E66;
+}
+
+.carousel-inner {
+  box-shadow: 2px 10px 18px;
+}
+
+#resume-pdf {
+  height: 100%;
+  width: 100%;
+}
+
+#resume-container {
+  height: 100vh;
+  width: auto;
+}
+
+/* Enable this code to change how box size is caluclated: */
+/* html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+} */
+
+
+/* Code that will make pictures in the carousel smaller: */
+/* #bass {
+  scale: 50%;
+  height: 25%;
+}
+#saskia {
+  scale: 50%;
+  height: 25%;
+}
+#self {
+  scale: 50%;
+  height: 25%;
+} */
+
+
