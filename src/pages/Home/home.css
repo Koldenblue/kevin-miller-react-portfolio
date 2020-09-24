@@ -15,6 +15,10 @@ body {
 
 }
 
+.lead {
+  font-size: 2em;
+}
 pre {
   font-family: 'Audiowide', cursive;
+  font-size: 1em;
 }

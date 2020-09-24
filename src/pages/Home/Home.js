@@ -13,7 +13,7 @@ function Home() {
     }
   }
   return (
-    <main className='container nav-avoid index-container'>
+    <main className='container bottom-space nav-avoid index-container'>
       <section className="jumbotron">
       <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
         <h1 className="display-4">Kevin Miller, PhD</h1>
@@ -24,13 +24,13 @@ function Home() {
         <hr className="my-4" />
           <p>
             <Animated animationIn="fadeInLeft" animationInDelay='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
-              <pre> Chemist, </pre>
+              <pre>Chemist, </pre>
             </Animated>
             <Animated animationIn="fadeInDown" animationInDelay='2200' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
-              <pre> Small Business Manager,</pre>
+              <pre>Small Business Manager, </pre>
             </Animated>
             <Animated animationIn="fadeInRight" animationInDelay='2400' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
-              <pre> Bassist, </pre>
+              <pre>Bassist, </pre>
             </Animated>
             <Animated animationIn="fadeInUp" animationInDelay='2600' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Gym Fitness Teacher</pre>
