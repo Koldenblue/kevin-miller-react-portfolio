@@ -2,12 +2,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/style.css"
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+
+
+import NavBar from "./components/NavBar"
 
 function App() {
   return (
     <div className="App">
-      <Button className='myBtn' variant="primary">Primary</Button>{' '}
+      <NavBar />
     </div>
   );
 }
