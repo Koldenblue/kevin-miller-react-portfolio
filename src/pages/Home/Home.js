@@ -13,6 +13,7 @@ function Home() {
     }
   }
   return (
+    <div id='home-body'>
     <main className='container bottom-space nav-avoid index-container'>
       <section className="jumbotron">
       <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
@@ -97,6 +98,7 @@ function Home() {
 
         </section>
   </main>
+  </div>
   )
 }
 

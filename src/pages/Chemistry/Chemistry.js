@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./chemistry.css";
 
 function Chemistry() {
   return (

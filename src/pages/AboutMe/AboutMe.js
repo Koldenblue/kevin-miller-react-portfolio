@@ -1,5 +1,4 @@
 import React from "react";
-// import "./home.css";
 import {Animated} from "react-animated-css";
 
 class AboutMe extends React.Component {

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./portfolio.css";
 class Portfolio extends React.Component {
   state = {
 
@@ -20,7 +20,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box1 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/express-bartender.png" class="card-img-top" alt="Express Bartender app" />
+            <img src="../../assets/express-bartender.png" class="card-img-top" alt="Express Bartender app" />
             <div class="card-body">
               <h5 class="card-title">Express Bartender</h5>
               <h6 class="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
