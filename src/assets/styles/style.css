@@ -20,28 +20,6 @@ pre {
   font-size: 1.2em;
 }
 
-#resume-body {
-  background-size: cover;
-  background-position: center;
-  background-image: url('../images/beach-hut.jpg');
-}
-
-#contact-body {
-  background-size: cover;
-  background-position: center;
-  background-image: url('../images/tidepool.jpg');
-}
-
-
-
-#pictures-body {
-  background-size: cover;
-  background-position: center;
-  background-image: url('../images/shore.jpg');
-}
-
- #chemistry-body {
-}
 
 .container, .container-lg {
   /* background-image: linear-gradient(to top, rgba(255, 138, 0, 0.5) rgba(255, 231, 92, 0.5), rgba(129, 238, 214,0.5), rgba(129, 238, 214, 0.5)); */
@@ -97,9 +75,12 @@ when the screen is reduced in width */
 /* flex-wrap allows the boxes to stack as the window is resized. Center removes any space between them. */
 /* justify-content:center keeps the cards centered as the screen is resized and the content wraps */
 /* background-attachment:fixed makes for no top or bottom box edges on a small screen */
+
+
+/* portfolio section */
 .box3, .box2, .box1 {
   height: 100%;
-  margin: 0;
+  margin: 1em;
   background-repeat: no-repeat;
   background-color: #F8C9F8;
   background-attachment: fixed;
@@ -108,6 +89,28 @@ when the screen is reduced in width */
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.box-all {
+  border-radius: 15px;
+  height: 100%;
+  margin: 0.5em;
+  background-repeat: no-repeat;
+  background-color: #F8C9F8;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #F8C9F8, #81EED6 );
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-gutters {
+  margin-top: 1em;
+}
+
+.bottom-card-gutter {
+  margin-bottom: 1em;
 }
 
 .box1 {
@@ -123,6 +126,19 @@ when the screen is reduced in width */
 #portfolio {
   color : rgb(0, 0, 130)
 }
+
+.card-img-top:hover {
+  box-shadow: 5px 5px 5px black;
+  /* transform: translateX(-5px); */
+  /* transform: translateY(-5px); */
+  transform: translate3d(-3px, -5px, 1px);
+}
+
+
+
+
+
+
 
 .psychic-link {
   color: #975BD7;

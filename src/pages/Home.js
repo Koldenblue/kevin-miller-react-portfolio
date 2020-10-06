@@ -24,7 +24,7 @@ function Home() {
         <h1 className="display-4">Kevin Miller, PhD</h1>
       </Animated>
       <Animated animationIn="fadeInLeft" animationInDelay='1000' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
-        <p className="lead">Web Developer</p>
+        <p className="lead">Full-Stack Web Developer</p>
       </Animated>
         <hr className="my-4" />
           <p>
