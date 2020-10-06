@@ -235,7 +235,7 @@ class Portfolio extends React.Component {
             <div className="card-body">
               <h5 className="card-title">Connect 4 in JavaScript</h5>
               <h6 className="card-subtitle mb-2 text-muted">Simple Browser Games</h6>
-              <p className="card-text">The classNameic game of Connect 4 in a browser. This one is a work in progress, but I'm enjoying working on making some browser games.
+              <p className="card-text">The classic game of Connect 4 in a browser. This one is a work in progress, but I'm enjoying working on making some browser games.
                 I'd actually like to program more complicated games as well, such as adventure games or strategy games.</p>
               <a href="https://koldenblue.github.io/games-websites/" className="card-link">Play Connect 4!</a>
               <br />
