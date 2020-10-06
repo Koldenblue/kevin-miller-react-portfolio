@@ -1,8 +1,10 @@
 import React from "react";
-import "./chemistry.css";
+import Background from "../components/Background";
 
 function Chemistry() {
   return (
+    <>
+    <Background image='../assets/images/beach2.jpg' />
     <div class='container nav-avoid bottom-space'>
       <div class='row'>
         <div class='col-md-8'>
@@ -48,7 +50,7 @@ function Chemistry() {
         </div>
 
         <figure class='col-md-4'>
-          <img src='assets/astronaut.jpg' alt='Graduation Picture' id='astronaut' class="img-fluid" />
+          <img src={require('../assets/images/astronaut.jpg')} alt='Graduation' id='astronaut' class="img-fluid" />
           <figcaption>Me at graduation, with astronaut Anna Lee Fisher and colleague Dr. Selma Duhović</figcaption>
         </figure>
       </div>
@@ -100,6 +102,7 @@ function Chemistry() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

@@ -9,7 +9,7 @@ import FormControl from 'react-bootstrap/FormControl'
 function NavBar() {
   return (
     <Navbar expand="lg" id='nav'>
-      <Navbar.Brand href="/"> Kevin Miller, PhD - <span id="portfolio">Portfolio Home</span><span class="sr-only">(current)</span></Navbar.Brand>
+      <Navbar.Brand href="/"> Kevin Miller, PhD - <span id="portfolio">Portfolio Home</span><span className="sr-only">(current)</span></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

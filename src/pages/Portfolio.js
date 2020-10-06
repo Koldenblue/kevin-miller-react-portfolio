@@ -1,5 +1,5 @@
 import React from "react";
-import "./portfolio.css";
+import Background from "../components/Background";
 class Portfolio extends React.Component {
   state = {
 
@@ -12,6 +12,8 @@ class Portfolio extends React.Component {
   }
   render() {
     return (
+      <>
+      <Background image='../assets/images/koi.jpg' />
 
       <main class='container nav-avoid bottom-space'>
 
@@ -20,7 +22,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box1 box'>
           <div class="card" style={this.styles.card}>
-            <img src="../../assets/express-bartender.png" class="card-img-top" alt="Express Bartender app" />
+            <img src={require("../assets/images/express-bartender.png")} class="card-img-top" alt="Express Bartender app" />
             <div class="card-body">
               <h5 class="card-title">Express Bartender</h5>
               <h6 class="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
@@ -39,7 +41,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box2 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/trek.png" class="card-img-top" alt="TREK app" />
+            <img src={require("../assets/images/trek.png")} class="card-img-top" alt="TREK app" />
             <div class="card-body">
               <h5 class="card-title">TREK</h5>
               <h6 class="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
@@ -57,7 +59,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box3 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/chess.PNG" class="card-img-top" alt="Chess in a Python Terminal" />
+            <img src={require("../assets/images/chess.PNG")} class="card-img-top" alt="Chess in a Python Terminal" />
             <div class="card-body">
               <h5 class="card-title">Chess</h5>
               <h6 class="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
@@ -78,7 +80,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box1 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/hamburger.PNG" class="card-img-top" alt="Hamburger Website" />
+            <img src={require("../assets/images/hamburger.PNG")} class="card-img-top" alt="Hamburger Website" />
             <div class="card-body">
               <h5 class="card-title">Hamburger Handling</h5>
               <h6 class="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
@@ -113,7 +115,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box3 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/readme-gen.jpeg" class="card-img-top" alt="A sample readme" />
+            <img src={require("../assets/images/readme-gen.jpeg")} class="card-img-top" alt="A sample readme" />
             <div class="card-body">
               <h5 class="card-title">Quick Readme Generator</h5>
               <h6 class="card-subtitle mb-2 text-muted">Practical development tool</h6>
@@ -137,7 +139,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box1 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/quiz.png" class="card-img-top" alt="Quiz Picture" />
+            <img src={require("../assets/images/quiz.png")} class="card-img-top" alt="Quiz" />
             <div class="card-body">
               <h5 class="card-title">Quiz Template</h5>
               <h6 class="card-subtitle mb-2 text-muted">A JavaScript and HTML Quiz Template Package</h6>
@@ -155,7 +157,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box2 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/weather-forecaster.png" class="card-img-top" alt="Weather forecast app" />
+            <img src={require("../assets/images/weather-forecaster.png")} class="card-img-top" alt="Weather forecast app" />
             <div class="card-body">
               <h5 class="card-title">Weather Forecasting app</h5>
               <h6 class="card-subtitle mb-2 text-muted">Find the weather in your city</h6>
@@ -173,7 +175,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box3 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/template-engine.png" class="card-img-top" alt="Templated Object Engine in Browser" />
+            <img src={require("../assets/images/template-engine.png")} class="card-img-top" alt="Templated Object Engine in Browser" />
             <div class="card-body">
               <h5 class="card-title">Templated Object Engine</h5>
               <h6 class="card-subtitle mb-2 text-muted">Object-oriented programming used to generate HTML templates</h6>
@@ -196,7 +198,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box1 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/work-day-scheduler.png" class="card-img-top" alt="WorkDay Scheduler" />
+            <img src={require("../assets/images/work-day-scheduler.png")} class="card-img-top" alt="WorkDay Scheduler" />
             <div class="card-body">
               <h5 class="card-title">Workday Scheduler</h5>
               <h6 class="card-subtitle mb-2 text-muted">Stores notes on a local machine in the browser</h6>
@@ -214,7 +216,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box1 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/bal_sheet.jpg" class="card-img-top" alt="Balance Sheet" />
+            <img src={require("../assets/images/bal_sheet.jpg")} class="card-img-top" alt="Balance Sheet" />
             <div class="card-body">
               <h5 class="card-title">Balance Sheet reader</h5>
               <h6 class="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
@@ -228,7 +230,7 @@ class Portfolio extends React.Component {
       <div class='col-md-4'>
         <div class='box2 box'>
           <div class="card" style={this.styles.card}>
-            <img src="assets/connect-4.PNG" class="card-img-top" alt="Connect 4" />
+            <img src={require("../assets/images/connect-4.PNG")} class="card-img-top" alt="Connect 4" />
             <div class="card-body">
               <h5 class="card-title">Connect 4 in JavaScript</h5>
               <h6 class="card-subtitle mb-2 text-muted">Simple Browser Games</h6>
@@ -244,6 +246,7 @@ class Portfolio extends React.Component {
     </section>
 
   </main>
+  </>
     )
   }
 }

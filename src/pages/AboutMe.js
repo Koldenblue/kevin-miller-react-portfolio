@@ -1,5 +1,6 @@
 import React from "react";
 import {Animated} from "react-animated-css";
+import Background from "../components/Background";
 
 class AboutMe extends React.Component {
   state = {
@@ -8,7 +9,8 @@ class AboutMe extends React.Component {
 
   render() {
     return(
-
+      <>
+      <Background image='../assets/images/beach2.jpg' />
       <div className='container nav-avoid bottom-space'>
 
       <div className='row'>
@@ -19,14 +21,14 @@ class AboutMe extends React.Component {
           </p>
         </section>
         <figure className='col-md-5'>
-          <img src='assets/dance.jpg' id='dance' alt='Leading a dance class' className="img-fluid" />
+          <img src={require('../assets/images/dance.jpg')} id='dance' alt='Leading a dance class' className="img-fluid" />
           <figcaption>Leading an OULA fitness dance class</figcaption>
         </figure>
       </div>
   
       <div className='row'>
         <figure className='col-md-5'>
-          <img src='assets/psychic.jpg' id='psychic' alt='The Psychic Ferns Band' className="img-fluid" />
+          <img src={require('../assets/images/psychic.jpg')} id='psychic' alt='The Psychic Ferns Band' className="img-fluid" />
           <figcaption>The Psychic Ferns - Nathaniel Adkins, Kevin Miller, Kine Fall, and Rob Thompson</figcaption>
         </figure>
         <section className='col-md-7'>
@@ -42,7 +44,7 @@ class AboutMe extends React.Component {
       </div>
   
     </div>
-  
+      </>
     )
   }
 }

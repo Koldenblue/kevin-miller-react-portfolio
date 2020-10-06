@@ -1,20 +1,23 @@
 import React from "react";
+import Background from "../components/Background";
 
 class Pictures extends React.Component {
   render() {
     return(
+      <>
+      <Background image='../assets/images/shore.jpg' />
       <main id="carousel-box" class='bottom-space'>
       <div class="nav-avoid container-lg">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="assets/guitar3.jpg" class="d-block w-100" alt="Playing the Bass" id='bass' />
+              <img src={require("../assets/images/guitar3.jpg")} class="d-block w-100" alt="Playing the Bass" id='bass' />
             </div>
             <div class="carousel-item">
-              <img src="assets/saskia2.JPG" class="d-block w-100" alt="Me and my dog, Saskia" id='saskia' />
+              <img src={require("../assets/images/saskia2.JPG")} class="d-block w-100" alt="Me and my dog, Saskia" id='saskia' />
             </div>
             <div class="carousel-item">
-              <img src="assets/self2.jpg" class="d-block w-100" alt="A picture of me" id='self' />
+              <img src={require("../assets/images/self2.jpg")} class="d-block w-100" alt="me" id='self' />
             </div>
 
           </div>
@@ -29,6 +32,7 @@ class Pictures extends React.Component {
         </div>
       </div>
     </main>
+    </>
     )
   }
 }

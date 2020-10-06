@@ -5,45 +5,19 @@
   z-index: 10;
   top: 0;
 }
-#portfolio-body {
-  background-size: cover;
-  background-image: url('../../assets/images/koi.jpg');
-}
-#home-body {
-  height: 100%;
-  margin:0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  background-image: url('../../assets/images/beach.jpg');
+
+.jumbotron {
+  background-color: rgba(224, 239, 245, 0.4);
+  font-family: 'Audiowide', cursive;
+
 }
 
-#chemistry-body {
-  background-image: url('../../assets/images/beach2.jpg');
+.lead {
+  font-size: 2em;
 }
-
-body {
-  height: 100%;
-  margin:0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-
-/* code for adding a video cover */
-/* video {
-  position: fixed;
-  object-fit: cover;
-  top:0;
-  width: 100vw;
-  height: 100vh;
-} */
-
-
-#portfolio-body {
-
+pre {
+  font-family: 'Audiowide', cursive;
+  font-size: 1.2em;
 }
 
 #resume-body {

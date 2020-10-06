@@ -1,6 +1,7 @@
 import React from 'react';
-import "./home.css";
 import {Animated} from "react-animated-css";
+import Background from '../components/Background';
+
 
 function Home() {
 
@@ -12,7 +13,10 @@ function Home() {
       'display': 'inline-block'
     }
   }
+
   return (
+    <>
+    <Background image='../assets/images/beach.jpg'/>
     <div id='home-body'>
     <main className='container bottom-space nav-avoid index-container'>
       <section className="jumbotron">
@@ -99,6 +103,7 @@ function Home() {
         </section>
   </main>
   </div>
+  </>
   )
 }
 

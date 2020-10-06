@@ -1,4 +1,5 @@
 import React from "react";
+import Background from "../components/Background";
 
 class Contact extends React.Component {
   state = {
@@ -7,6 +8,8 @@ class Contact extends React.Component {
 
   render() {
     return (
+      <>
+      <Background image='../assets/images/tidepool.jpg' />
       <div class='container nav-avoid bottom-space'>
         <div class='row'>
           <div class='col-md-12'>
@@ -35,7 +38,7 @@ class Contact extends React.Component {
         <button type="button" class="btn btn-primary">Submit</button>
 
       </div>
-
+      </>
     )
   }
 }
