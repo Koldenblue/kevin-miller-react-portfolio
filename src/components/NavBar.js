@@ -1,10 +1,7 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl'
+import HubLink from './HubLink';
 
 function NavBar() {
   return (
@@ -20,6 +17,7 @@ function NavBar() {
           <Nav.Link href="contact">Contact</Nav.Link>
           <Nav.Link href="aboutme">About Me</Nav.Link>
         </Nav>
+      <HubLink />
       </Navbar.Collapse>
     </Navbar>
   )
