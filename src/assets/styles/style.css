@@ -12,6 +12,28 @@
 
 }
 
+.homepage-photo {
+  float: right;
+  top: -30px;
+  border-radius: 20px;
+  height: 300px;
+  margin-left: 5px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage-photo {
+   right: 20%
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .homepage-photo {
+   right: 0;
+   top: 15px;
+  }
+}
+
 .lead {
   font-size: 2em;
 }

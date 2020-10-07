@@ -1,5 +1,5 @@
 import React from 'react';
-import {Animated} from "react-animated-css";
+import { Animated } from "react-animated-css";
 import Background from '../components/Background';
 
 
@@ -7,7 +7,7 @@ function Home() {
 
   let styles = {
     card: {
-      'width':'18rem'
+      'width': '18rem'
     },
     inlineAnimated: {
       'display': 'inline-block'
@@ -16,17 +16,18 @@ function Home() {
 
   return (
     <>
-    <Background image='../assets/images/beach.jpg'/>
-    <div id='home-body'>
-    <main className='container bottom-space nav-avoid index-container'>
-      <section className="jumbotron">
-      <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
-        <h1 className="display-4">Kevin Miller, PhD</h1>
-      </Animated>
-      <Animated animationIn="fadeInLeft" animationInDelay='1000' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
-        <p className="lead">Full-Stack Web Developer</p>
-      </Animated>
-        <hr className="my-4" />
+      <Background image='../assets/images/beach.jpg' />
+      <main className='container bottom-space nav-avoid index-container'>
+
+        <section className="jumbotron">
+          <img src={require('../assets/images/prof-photo.png')} className='homepage-photo' />
+          <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
+            <h1 className="display-4">Kevin Miller, PhD</h1>
+          </Animated>
+          <Animated animationIn="fadeInLeft" animationInDelay='1000' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
+            <p className="lead">Full-Stack Web Developer</p>
+          </Animated>
+          <hr className="my-4" />
           <p>
             <Animated animationIn="fadeInLeft" animationInDelay='2500' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Chemist, </pre>
@@ -41,7 +42,7 @@ function Home() {
               <pre>Gym Fitness Teacher</pre>
             </Animated>
           </p>
-    </section>
+        </section>
 
 
         {/* <!-- row with cards: -->
@@ -101,9 +102,8 @@ function Home() {
           </div>
 
         </section>
-  </main>
-  </div>
-  </>
+      </main>
+    </>
   )
 }
 
