@@ -14,7 +14,6 @@ function NavBar() {
           <Nav.Link href="resume">Resume</Nav.Link>
           <Nav.Link href="chemistry">Chemistry</Nav.Link>
           <Nav.Link href="pictures">Pictures</Nav.Link>
-          <Nav.Link href="contact">Contact</Nav.Link>
           <Nav.Link href="aboutme">About Me</Nav.Link>
         </Nav>
       <HubLink />

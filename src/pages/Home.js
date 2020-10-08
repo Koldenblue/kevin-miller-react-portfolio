@@ -5,6 +5,13 @@ import SummaryTabs from '../components/SummaryTabs';
 
 
 function Home() {
+  
+  let contact = {
+    areaCode: '(310) ',
+    phone: '562-4572',
+    email: 'klmille',
+    domain: '@gmail.com'
+  }
 
   let styles = {
     card: {
@@ -29,6 +36,9 @@ function Home() {
           <Animated animationIn="fadeInLeft" animationInDelay='1000' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
             <p className="lead">Full-Stack Web Developer</p>
           </Animated>
+          <Animated animationIn="fadeInLeft" animationInDelay='1200' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
+            <p className="lead">{contact.email + contact.domain}</p>
+          </Animated>
           <hr className="my-4" />
           <p>
             <Animated animationIn="fadeInLeft" animationInDelay='2500' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
@@ -46,7 +56,7 @@ function Home() {
           </p>
         </section>
 
-          <SummaryTabs />
+          <SummaryTabs contact={contact}/>
 
 
       </main>

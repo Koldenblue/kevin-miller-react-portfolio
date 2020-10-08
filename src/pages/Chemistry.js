@@ -4,7 +4,7 @@ import Background from "../components/Background";
 function Chemistry() {
   return (
     <>
-    <Background image='../assets/images/beach2.jpg' />
+    <Background image='../assets/images/tidepool.jpg' />
     <div class='container nav-avoid bottom-space'>
       <div class='row'>
         <div class='col-md-8'>
