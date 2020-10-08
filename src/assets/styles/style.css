@@ -137,7 +137,7 @@ when the screen is reduced in width */
 /* background-attachment:fixed makes for no top or bottom box edges on a small screen */
 
 
-/* portfolio section */
+/* =============== portfolio section  =============== */
 .box3, .box2, .box1 {
   height: 100%;
   margin: 1em;
