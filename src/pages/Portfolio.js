@@ -5,7 +5,28 @@ const util = require("util");
 
 function Portfolio() {
   const [bartender, setBartender] = useState('none');
-  const [opacity, setOpacity] = useState(1)
+  const [barOpacity, setBarOpacity] = useState(1);
+  const [trek, setTrek] = useState('none');
+  const [trekOpacity, setTrekOpacity] = useState(1)
+  const [chess, setChess] = useState('none');
+  const [chessOpacity, setChessOpacity] = useState(1)
+  const [ham, setHam] = useState('none');
+  const [hamOpacity, setHamOpacity] = useState(1)
+  const [readme, setReadme] = useState('none');
+  const [readmeOpacity, setReadmeOpacity] = useState(1)
+  const [quiz, setQuiz] = useState('none');
+  const [quizOpacity, setQuizOpacity] = useState(1)
+  const [weather, setWeather] = useState('none');
+  const [weatherOpacity, setWeatherOpacity] = useState(1)
+  const [template, setTemplate] = useState('none');
+  const [templateOpacity, setTemplateOpacity] = useState(1)
+  const [work, setWork] = useState('none');
+  const [workOpacity, setWorkOpacity] = useState(1)
+  const [balance, setBalance] = useState('none');
+  const [balanceOpacity, setBalanceOpacity] = useState(1)
+  const [connect, setConnect] = useState('none');
+  const [connectOpacity, setConnectOpacity] = useState(1)
+
   const styles = {
     card: {
       'width': '30rem'
@@ -21,35 +42,394 @@ function Portfolio() {
       boxShadow: '5px 5px 5px black',
       display: bartender,
       transition: 'opacity 1s',
-      opacity: opacity
+      opacity: barOpacity
+    },
+    trekImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: trek,
+      transition: 'opacity 1s',
+      opacity: trekOpacity
+    },
+    chessImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: chess,
+      transition: 'opacity 1s',
+      opacity: chessOpacity
+    },
+    hamImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: ham,
+      transition: 'opacity 1s',
+      opacity: hamOpacity
+    },
+    readmeImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: readme,
+      transition: 'opacity 1s',
+      opacity: readmeOpacity
+    },
+    quizImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: quiz,
+      transition: 'opacity 1s',
+      opacity: quizOpacity
+    },
+    weatherImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: weather,
+      transition: 'opacity 1s',
+      opacity: weatherOpacity
+    },
+    templateImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: template,
+      transition: 'opacity 1s',
+      opacity: templateOpacity
+    },
+    workImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: work,
+      transition: 'opacity 1s',
+      opacity: workOpacity
+    },
+    balanceImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: balance,
+      transition: 'opacity 1s',
+      opacity: balanceOpacity
+    },
+    connectImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: connect,
+      transition: 'opacity 1s',
+      opacity: connectOpacity
     }
+  
+  
+  
   }
 
-  let bartenderImg;
-
+  // ==================  Express bartender image functions 
   // the user may click anywhere on the window to run the imageFade function, to get rid of the image
-  let imageZoom = () => {
+  let bartenderZoom = () => {
     setBartender('block');
     setTimeout(() => {
-      window.addEventListener("click", imageFade)
+      window.addEventListener("click", bartenderFade)
     }, 100)
   }
 
-
   // lets the image fade in upon a change in the display style from none to block
   useEffect(() => {
-    console.log('opacity', opacity)
-    if (opacity === 0) {
-      setOpacity(1)
+    if (barOpacity === 0) {
+      setBarOpacity(1)
     }
     else {
-      setOpacity(0)
+      setBarOpacity(0)
     }
   }, [bartender])
 
-  let imageFade = () => {
+  let bartenderFade = () => {
     setBartender('none');
-    window.removeEventListener("click", imageFade);
+    window.removeEventListener("click", bartenderFade);
+  }
+
+
+  // ================= Trek image functions
+  let trekZoom = () => {
+    setTrek('block');
+    setTimeout(() => {
+      window.addEventListener("click", trekFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (trekOpacity === 0) {
+      setTrekOpacity(1)
+    }
+    else {
+      setTrekOpacity(0)
+    }
+  }, [trek])
+
+  let trekFade = () => {
+    setTrek('none');
+    window.removeEventListener("click", trekFade);
+  }
+
+
+  // ========== chess image functions
+  let chessZoom = () => {
+    setChess('block');
+    setTimeout(() => {
+      window.addEventListener("click", chessFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (chessOpacity === 0) {
+      setChessOpacity(1)
+    }
+    else {
+      setChessOpacity(0)
+    }
+  }, [chess])
+
+  let chessFade = () => {
+    setChess('none');
+    window.removeEventListener("click", chessFade);
+  }
+
+
+  //================ hamburger image functions
+  let hamZoom = () => {
+    setHam('block');
+    setTimeout(() => {
+      window.addEventListener("click", hamFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (hamOpacity === 0) {
+      setHamOpacity(1)
+    }
+    else {
+      setHamOpacity(0)
+    }
+  }, [ham])
+
+  let hamFade = () => {
+    setHam('none');
+    window.removeEventListener("click", hamFade);
+  }
+
+
+  //================ readme image functions
+  let readmeZoom = () => {
+    setReadme('block');
+    setTimeout(() => {
+      window.addEventListener("click", readmeFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (readmeOpacity === 0) {
+      setReadmeOpacity(1)
+    }
+    else {
+      setReadmeOpacity(0)
+    }
+  }, [readme])
+
+  let readmeFade = () => {
+    setReadme('none');
+    window.removeEventListener("click", readmeFade);
+  }
+
+
+  //================ quiz image functions
+  let quizZoom = () => {
+    setQuiz('block');
+    setTimeout(() => {
+      window.addEventListener("click", quizFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (quizOpacity === 0) {
+      setQuizOpacity(1)
+    }
+    else {
+      setQuizOpacity(0)
+    }
+  }, [quiz])
+
+  let quizFade = () => {
+    setQuiz('none');
+    window.removeEventListener("click", quizFade);
+  }
+
+  //================ weather image functions
+  let weatherZoom = () => {
+    setWeather('block');
+    setTimeout(() => {
+      window.addEventListener("click", weatherFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (weatherOpacity === 0) {
+      setWeatherOpacity(1)
+    }
+    else {
+      setWeatherOpacity(0)
+    }
+  }, [weather])
+
+  let weatherFade = () => {
+    setWeather('none');
+    window.removeEventListener("click", weatherFade);
+  }
+
+
+  //================ template image functions
+  let templateZoom = () => {
+    setTemplate('block');
+    setTimeout(() => {
+      window.addEventListener("click", templateFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (templateOpacity === 0) {
+      setTemplateOpacity(1)
+    }
+    else {
+      setTemplateOpacity(0)
+    }
+  }, [template])
+
+  let templateFade = () => {
+    setTemplate('none');
+    window.removeEventListener("click", templateFade);
+  }
+
+
+  //================ work image functions
+  let workZoom = () => {
+    setWork('block');
+    setTimeout(() => {
+      window.addEventListener("click", workFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (workOpacity === 0) {
+      setWorkOpacity(1)
+    }
+    else {
+      setWorkOpacity(0)
+    }
+  }, [work])
+
+  let workFade = () => {
+    setWork('none');
+    window.removeEventListener("click", workFade);
+  }
+
+
+  //================ balance image functions
+  let balanceZoom = () => {
+    setBalance('block');
+    setTimeout(() => {
+      window.addEventListener("click", balanceFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (balanceOpacity === 0) {
+      setBalanceOpacity(1)
+    }
+    else {
+      setBalanceOpacity(0)
+    }
+  }, [balance])
+
+  let balanceFade = () => {
+    setBalance('none');
+    window.removeEventListener("click", balanceFade);
+  }
+
+
+  //================ connect image functions
+  let connectZoom = () => {
+    setConnect('block');
+    setTimeout(() => {
+      window.addEventListener("click", connectFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (connectOpacity === 0) {
+      setConnectOpacity(1)
+    }
+    else {
+      setConnectOpacity(0)
+    }
+  }, [connect])
+
+  let connectFade = () => {
+    setConnect('none');
+    window.removeEventListener("click", connectFade);
   }
 
 
@@ -57,7 +437,21 @@ function Portfolio() {
   return (
     <>
       <Background image='../assets/images/koi.jpg' />
-            <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} onClick={imageFade}/>
+
+      {/* Zoomed images */}
+      <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} />
+      <img src={require("../assets/images/trek.png")} style={styles.trekImg} />
+      <img src={require("../assets/images/chess.PNG")} style={styles.chessImg} />
+      <img src={require("../assets/images/hamburger.PNG")} style={styles.hamImg} />
+      <img src={require("../assets/images/readme-gen.jpeg")} style={styles.readmeImg} />
+      <img src={require("../assets/images/quiz.png")} style={styles.quizImg} />
+      <img src={require("../assets/images/weather-forecaster.png")} style={styles.weatherImg} />
+      <img src={require("../assets/images/template-engine.png")} style={styles.templateImg} />
+      <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} />
+      <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} />
+      <img src={require("../assets/images/connect-4.PNG")} style={styles.connectImg} />
+
+      
       <main className='container nav-avoid bottom-space'>
 
         <section className='row'>
@@ -65,7 +459,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={imageZoom}/>
+                <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom}/>
                 <div className="card-body">
                   <h5 className="card-title">Express Bartender</h5>
                   <h6 className="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
@@ -84,7 +478,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" />
+                <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom}/>
                 <div className="card-body">
                   <h5 className="card-title">TREK</h5>
                   <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
@@ -105,7 +499,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" />
+                <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" onClick={chessZoom}/>
                 <div className="card-body">
                   <h5 className="card-title">Chess</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
@@ -122,7 +516,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" />
+                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" onClick={hamZoom}/>
                 <div className="card-body">
                   <h5 className="card-title">Hamburger Handling</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
@@ -158,7 +552,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/readme-gen.jpeg")} className="card-img-top" alt="A sample readme" />
+                <img src={require("../assets/images/readme-gen.jpeg")} className="card-img-top" alt="A sample readme" onClick={readmeZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Quick Readme Generator</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Practical development tool</h6>
@@ -179,7 +573,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/quiz.png")} className="card-img-top" alt="Quiz" />
+                <img src={require("../assets/images/quiz.png")} className="card-img-top" alt="Quiz" onClick={quizZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Quiz Template</h5>
                   <h6 className="card-subtitle mb-2 text-muted">A JavaScript and HTML Quiz Template Package</h6>
@@ -197,7 +591,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/weather-forecaster.png")} className="card-img-top" alt="Weather forecast app" />
+                <img src={require("../assets/images/weather-forecaster.png")} className="card-img-top" alt="Weather forecast app" onClick={weatherZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Weather Forecasting app</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Find the weather in your city</h6>
@@ -219,7 +613,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/template-engine.png")} className="card-img-top" alt="Templated Object Engine in Browser" />
+                <img src={require("../assets/images/template-engine.png")} className="card-img-top" alt="Templated Object Engine in Browser" onClick={templateZoom}/>
                 <div className="card-body">
                   <h5 className="card-title">Templated Object Engine</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Object-oriented programming used to generate HTML templates</h6>
@@ -236,7 +630,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/work-day-scheduler.png")} className="card-img-top" alt="WorkDay Scheduler" />
+                <img src={require("../assets/images/work-day-scheduler.png")} className="card-img-top" alt="WorkDay Scheduler" onClick={workZoom}/>
                 <div className="card-body">
                   <h5 className="card-title">Workday Scheduler</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Stores notes on a local machine in the browser</h6>
@@ -257,7 +651,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/bal_sheet.jpg")} className="card-img-top" alt="Balance Sheet" />
+                <img src={require("../assets/images/bal_sheet.jpg")} className="card-img-top" alt="Balance Sheet" onClick={balanceZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Balance Sheet reader</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
@@ -271,7 +665,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/connect-4.PNG")} className="card-img-top" alt="Connect 4" />
+                <img src={require("../assets/images/connect-4.PNG")} className="card-img-top" alt="Connect 4" onClick={connectZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Connect 4 in JavaScript</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Simple Browser Games</h6>
