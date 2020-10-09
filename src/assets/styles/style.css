@@ -7,6 +7,7 @@
 }
 
 .nav-tabs {
+  
   border-bottom: 1px solid rgb(81, 0, 97);
 }
 
@@ -239,17 +240,9 @@ when the screen is reduced in width */
 
 
 /* Code that will make pictures in the carousel smaller: */
-/* #bass {
+/*
+.my-carousel-pic {
   scale: 50%;
   height: 25%;
 }
-#saskia {
-  scale: 50%;
-  height: 25%;
-}
-#self {
-  scale: 50%;
-  height: 25%;
-} */
-
-
+*/

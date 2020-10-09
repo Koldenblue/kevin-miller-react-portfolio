@@ -2,9 +2,8 @@ import React from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
-class SummaryTabs extends React.Component {
+function SummaryTabs(props) {
 
-  render() {
   return (
     <Tabs defaultActiveKey="summary">
       <Tab eventKey="summary" title="Summary">
@@ -48,12 +47,11 @@ class SummaryTabs extends React.Component {
 
       <Tab eventKey="contact" title="Contact">
         <p className='tab-para'>
-        My prefered method of contact is through email, at {this.props.contact.email + this.props.contact.domain}. My cell phone may be reached at {this.props.contact.areaCode + this.props.contact.phone}. 
+        My prefered method of contact is through email, at {props.contact.email + props.contact.domain}. My cell phone may be reached at {props.contact.areaCode + props.contact.phone}. 
         </p>
       </Tab>
     </Tabs>
   )
-  }
 }
 
 export default SummaryTabs;

@@ -58,7 +58,6 @@ function Home() {
 
           <SummaryTabs contact={contact}/>
 
-
       </main>
     </>
   )
