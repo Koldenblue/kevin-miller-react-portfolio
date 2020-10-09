@@ -19,12 +19,12 @@ function App() {
     <Router>
         <NavBar />
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/aboutme' component={AboutMe} />
-        <Route exact path='/chemistry' component={Chemistry}/>
-        <Route exact path='/portfolio' component={Portfolio}/>
-        <Route exact path='/resume' component={Resume} />
-        <Route exact path='/pictures' component={Pictures} />
+        <Route exact path='/kevin-miller-react-portfolio' component={Home} />
+        <Route exact path='/kevin-miller-react-portfolio/aboutme' component={AboutMe} />
+        <Route exact path='/kevin-miller-react-portfolio/chemistry' component={Chemistry}/>
+        <Route exact path='/kevin-miller-react-portfolio/portfolio' component={Portfolio}/>
+        <Route exact path='/kevin-miller-react-portfolio/resume' component={Resume} />
+        <Route exact path='/kevin-miller-react-portfolio/pictures' component={Pictures} />
       </Switch>
     </Router>
   );
