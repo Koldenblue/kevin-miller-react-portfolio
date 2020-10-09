@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "../components/Background";
 import Image from 'react-bootstrap/Image'
-
+const util = require("util");
 
 function Portfolio() {
   const [bartender, setBartender] = useState('none');
-
+  const [opacity, setOpacity] = useState(1)
   const styles = {
     card: {
       'width': '30rem'
@@ -19,20 +19,45 @@ function Portfolio() {
       width: 'auto',
       transform: 'translateX(-50%)',
       boxShadow: '5px 5px 5px black',
-      display: bartender
+      display: bartender,
+      transition: 'opacity 1s',
+      opacity: opacity
     }
   }
 
   let bartenderImg;
 
+  // the user may click anywhere on the window to run the imageFade function, to get rid of the image
   let imageZoom = () => {
-    setBartender("block");
+    setBartender('block');
+    setTimeout(() => {
+      window.addEventListener("click", imageFade)
+    }, 100)
   }
+
+
+  // lets the image fade in upon a change in the display style from none to block
+  useEffect(() => {
+    console.log('opacity', opacity)
+    if (opacity === 0) {
+      setOpacity(1)
+    }
+    else {
+      setOpacity(0)
+    }
+  }, [bartender])
+
+  let imageFade = () => {
+    setBartender('none');
+    window.removeEventListener("click", imageFade);
+  }
+
+
 
   return (
     <>
       <Background image='../assets/images/koi.jpg' />
-            <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} onClick={() => setBartender('none')}/>
+            <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} onClick={imageFade}/>
       <main className='container nav-avoid bottom-space'>
 
         <section className='row'>
