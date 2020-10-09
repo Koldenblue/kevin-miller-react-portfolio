@@ -19,7 +19,7 @@ function App() {
     <Router>
         <NavBar />
       <Switch>
-        <Route exact path='/' component={Home} />
+        <Route exact path='/kevin-miller-react-portfolio/' component={Home} />
         <Route exact path='/aboutme' component={AboutMe} />
         <Route exact path='/chemistry' component={Chemistry}/>
         <Route exact path='/portfolio' component={Portfolio}/>
