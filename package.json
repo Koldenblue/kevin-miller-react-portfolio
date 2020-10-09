@@ -18,7 +18,7 @@
   "homepage":"https://koldenblue.github.io/kevin-miller-react-portfolio",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b deployment-branch -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
