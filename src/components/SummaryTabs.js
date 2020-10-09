@@ -9,7 +9,7 @@ function SummaryTabs(props) {
       <Tab eventKey="summary" title="Summary">
         <p className='tab-para'>
           Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA). 
-          Experienced problem-solver and scientific researcher with major <a href='/chemistry'>publications</a>. 
+          Experienced problem-solver and scientific researcher with major <a href='#/chemistry'>publications</a>. 
           Education in full-stack development from UCLA. 
           Technical skills include JavaScript, HTML, CSS, jQuery, Python, C/C++, responsive web design, and working with API databases. 
           I value ethics, integrity, and good business sense, having spent years as a business manager and scientist. 

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/style.css";
 import React from 'react';
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import { Switch } from 'react-router-dom';
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
@@ -24,7 +24,7 @@ function App() {
         <Route exact path='/portfolio' component={Portfolio}/>
         <Route exact path='/resume' component={Resume} />
         <Route exact path='/pictures' component={Pictures} />
-        <Route exact path='/' component={Home} />
+        <Route exact path='/home' component={Home} />
       </Switch>
     </Router>
   );
