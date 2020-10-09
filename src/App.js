@@ -19,12 +19,12 @@ function App() {
     <Router>
         <NavBar />
       <Switch>
-        <Route exact path='/home' component={Home} />
         <Route exact path='/aboutme' component={AboutMe} />
         <Route exact path='/chemistry' component={Chemistry}/>
         <Route exact path='/portfolio' component={Portfolio}/>
         <Route exact path='/resume' component={Resume} />
         <Route exact path='/pictures' component={Pictures} />
+        <Route exact path='/' component={Home} />
       </Switch>
     </Router>
   );
