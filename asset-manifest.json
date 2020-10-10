@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/kevin-miller-react-portfolio/static/css/main.6053e324.chunk.css",
-    "main.js": "/kevin-miller-react-portfolio/static/js/main.0f732635.chunk.js",
-    "main.js.map": "/kevin-miller-react-portfolio/static/js/main.0f732635.chunk.js.map",
+    "main.js": "/kevin-miller-react-portfolio/static/js/main.21750229.chunk.js",
+    "main.js.map": "/kevin-miller-react-portfolio/static/js/main.21750229.chunk.js.map",
     "runtime-main.js": "/kevin-miller-react-portfolio/static/js/runtime-main.0e2f3e7d.js",
     "runtime-main.js.map": "/kevin-miller-react-portfolio/static/js/runtime-main.0e2f3e7d.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/kevin-miller-react-portfolio/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.665b3cea.chunk.js": "/kevin-miller-react-portfolio/static/js/2.665b3cea.chunk.js",
-    "static/js/2.665b3cea.chunk.js.map": "/kevin-miller-react-portfolio/static/js/2.665b3cea.chunk.js.map",
+    "static/js/2.5112f9bd.chunk.js": "/kevin-miller-react-portfolio/static/js/2.5112f9bd.chunk.js",
+    "static/js/2.5112f9bd.chunk.js.map": "/kevin-miller-react-portfolio/static/js/2.5112f9bd.chunk.js.map",
     "index.html": "/kevin-miller-react-portfolio/index.html",
-    "precache-manifest.5721e7b3dc353bc76e2475d9a7a4cce7.js": "/kevin-miller-react-portfolio/precache-manifest.5721e7b3dc353bc76e2475d9a7a4cce7.js",
+    "precache-manifest.57a1e1861a272a886ae6607f27de302f.js": "/kevin-miller-react-portfolio/precache-manifest.57a1e1861a272a886ae6607f27de302f.js",
     "service-worker.js": "/kevin-miller-react-portfolio/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/kevin-miller-react-portfolio/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.6053e324.chunk.css.map": "/kevin-miller-react-portfolio/static/css/main.6053e324.chunk.css.map",
-    "static/js/2.665b3cea.chunk.js.LICENSE.txt": "/kevin-miller-react-portfolio/static/js/2.665b3cea.chunk.js.LICENSE.txt",
+    "static/js/2.5112f9bd.chunk.js.LICENSE.txt": "/kevin-miller-react-portfolio/static/js/2.5112f9bd.chunk.js.LICENSE.txt",
     "static/media/Kevin Miller_General Resume_8-27-2020.pdf": "/kevin-miller-react-portfolio/static/media/Kevin Miller_General Resume_8-27-2020.29cf1a29.pdf",
     "static/media/astronaut.jpg": "/kevin-miller-react-portfolio/static/media/astronaut.347f4d28.jpg",
     "static/media/bal_sheet.jpg": "/kevin-miller-react-portfolio/static/media/bal_sheet.38954cc1.jpg",
@@ -26,6 +26,7 @@
     "static/media/express-bartender.png": "/kevin-miller-react-portfolio/static/media/express-bartender.f4146e79.png",
     "static/media/guitar3.jpg": "/kevin-miller-react-portfolio/static/media/guitar3.dc1b5b9c.jpg",
     "static/media/hamburger.PNG": "/kevin-miller-react-portfolio/static/media/hamburger.4ecaea13.PNG",
+    "static/media/inform.png": "/kevin-miller-react-portfolio/static/media/inform.a491198b.png",
     "static/media/koi.jpg": "/kevin-miller-react-portfolio/static/media/koi.a78288bb.jpg",
     "static/media/prof-photo.png": "/kevin-miller-react-portfolio/static/media/prof-photo.67d37217.png",
     "static/media/psychic.jpg": "/kevin-miller-react-portfolio/static/media/psychic.bac0fb3e.jpg",
@@ -43,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.0e2f3e7d.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.665b3cea.chunk.js",
+    "static/js/2.5112f9bd.chunk.js",
     "static/css/main.6053e324.chunk.css",
-    "static/js/main.0f732635.chunk.js"
+    "static/js/main.21750229.chunk.js"
   ]
 }

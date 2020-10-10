@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1cc9da90df2b970c4baf79c8c2ec171e",
+    "revision": "05c5855a27303d7d9193bafa16ae9047",
     "url": "/kevin-miller-react-portfolio/index.html"
   },
   {
-    "revision": "bb097d322307c28f33e9",
+    "revision": "17460967dcb536ac2c8a",
     "url": "/kevin-miller-react-portfolio/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "05be401c3c5d40edf9c5",
+    "revision": "3d3c3607fa31b661cdae",
     "url": "/kevin-miller-react-portfolio/static/css/main.6053e324.chunk.css"
   },
   {
-    "revision": "bb097d322307c28f33e9",
-    "url": "/kevin-miller-react-portfolio/static/js/2.665b3cea.chunk.js"
+    "revision": "17460967dcb536ac2c8a",
+    "url": "/kevin-miller-react-portfolio/static/js/2.5112f9bd.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/kevin-miller-react-portfolio/static/js/2.665b3cea.chunk.js.LICENSE.txt"
+    "url": "/kevin-miller-react-portfolio/static/js/2.5112f9bd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "05be401c3c5d40edf9c5",
-    "url": "/kevin-miller-react-portfolio/static/js/main.0f732635.chunk.js"
+    "revision": "3d3c3607fa31b661cdae",
+    "url": "/kevin-miller-react-portfolio/static/js/main.21750229.chunk.js"
   },
   {
     "revision": "29b470efbec64d467d39",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4ecaea13abbd16287c7cc11f287cb8a1",
     "url": "/kevin-miller-react-portfolio/static/media/hamburger.4ecaea13.PNG"
+  },
+  {
+    "revision": "a491198b7ed1109ab1d880b1357f22d4",
+    "url": "/kevin-miller-react-portfolio/static/media/inform.a491198b.png"
   },
   {
     "revision": "a78288bb6d3caaba63d22be6ad2a27c8",
