@@ -26,6 +26,8 @@ function Portfolio() {
   const [balanceOpacity, setBalanceOpacity] = useState(1)
   const [connect, setConnect] = useState('none');
   const [connectOpacity, setConnectOpacity] = useState(1)
+  const [inform, setInform] = useState('none');
+  const [informOpacity, setInformOpacity] = useState(1)
 
   const styles = {
     card: {
@@ -173,7 +175,21 @@ function Portfolio() {
       display: connect,
       transition: 'opacity 1s',
       opacity: connectOpacity
+    },
+    informImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: inform,
+      transition: 'opacity 1s',
+      opacity: informOpacity
     }
+  
   
   
   
@@ -432,24 +448,47 @@ function Portfolio() {
     window.removeEventListener("click", connectFade);
   }
 
-
+  //================ inform image functions
+    let informZoom = () => {
+      setInform('block');
+      setTimeout(() => {
+        window.addEventListener("click", informFade)
+      }, 100)
+    }
+  
+    useEffect(() => {
+      if (informOpacity === 0) {
+        setInformOpacity(1)
+      }
+      else {
+        setInformOpacity(0)
+      }
+    }, [inform])
+  
+    let informFade = () => {
+      setInform('none');
+      window.removeEventListener("click", informFade);
+    }
+  
+  
 
   return (
     <>
       <Background image='../assets/images/koi.jpg' />
 
       {/* Zoomed images */}
-      <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} />
-      <img src={require("../assets/images/trek.png")} style={styles.trekImg} />
-      <img src={require("../assets/images/chess.PNG")} style={styles.chessImg} />
-      <img src={require("../assets/images/hamburger.PNG")} style={styles.hamImg} />
-      <img src={require("../assets/images/readme-gen.jpeg")} style={styles.readmeImg} />
-      <img src={require("../assets/images/quiz.png")} style={styles.quizImg} />
-      <img src={require("../assets/images/weather-forecaster.png")} style={styles.weatherImg} />
-      <img src={require("../assets/images/template-engine.png")} style={styles.templateImg} />
-      <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} />
-      <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} />
-      <img src={require("../assets/images/connect-4.PNG")} style={styles.connectImg} />
+      <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} alt='Express Bartender app'/>
+      <img src={require("../assets/images/trek.png")} style={styles.trekImg} alt='Trek app'/>
+      <img src={require("../assets/images/chess.PNG")} style={styles.chessImg} alt='Python Chess'/>
+      <img src={require("../assets/images/hamburger.PNG")} style={styles.hamImg} alt='hamburger database app'/>
+      <img src={require("../assets/images/readme-gen.jpeg")} style={styles.readmeImg} alt='readme generator app'/>
+      <img src={require("../assets/images/quiz.png")} style={styles.quizImg} alt='quiz generator'/>
+      <img src={require("../assets/images/weather-forecaster.png")} style={styles.weatherImg} alt='weather app'/>
+      <img src={require("../assets/images/template-engine.png")} style={styles.templateImg} alt='template generator'/>
+      <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} alt='workday scheduler'/>
+      <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} alt='balance sheet searcher'/>
+      <img src={require("../assets/images/connect-4.PNG")} style={styles.connectImg} alt='connect 4 app'/>
+      <img src={require("../assets/images/inform.png")} style={styles.informImg} alt='connect 4 app'/>
 
       
       <main className='container nav-avoid bottom-space'>
@@ -533,17 +572,19 @@ function Portfolio() {
         </section>
 
         <section className='row card-gutters'>
-          <div className='col-md-6'>
+
+        <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
+                <img src={require("../assets/images/inform.png")} className="card-img-top" alt="Inform and React app" onClick={informZoom} />
                 <div className="card-body">
-                  <h5 className="card-title">More Projects coming soon!</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Check back for updates!</h6>
-                  <p className="card-text">I work in Javascript/CSS/HTML, Python 3, as well as C/C++!
-                  My aim is to build websites for both personal and professional use.
-                  I welcome programming challenges as learning opportunities. General utility programming makes for a good project.
-                  I am also learning and programming game development for fun!
-            </p>
+                  <h5 className="card-title">Inform and React</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Important Voter Information</h6>
+                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. The app pulls information relevant to voters for APIs, based upon a user's address. 
+                  The address and voter information is stored in a database, and retrieved upon page load. Above all, work on this app highlighted how team effort and good teamwork can help achieve great results in a short amount of time.
+                </p>
+                  <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">Source code on GitHub</a>
+                  <a href="https://inform-react.herokuapp.com/" className="card-link">See the deployed app! The username 'america' with password 'america' may be used in leiu of signing up.</a>
                 </div>
               </div>
             </div>
@@ -559,7 +600,7 @@ function Portfolio() {
                   <p className="card-text">Quickly generates a basic readme, based upon user input from a terminal. Requires Node.js and Node Package Manager.
                   I personally find this useful, and I'm planning to add more features. As a scientist, I know the importance of good documentation.
                   I have my work cut out for me with programs and documents to write. This readme generator helps.
-            </p>
+                </p>
                   <a href="https://youtu.be/G-kk2_u-25k" className="card-link">Quick YouTube demonstration - updates pending on this</a>
                   <a href="https://github.com/Koldenblue/readme-generator" className="card-link">See the program and sample readmes on GitHub</a>
                 </div>
@@ -679,7 +720,23 @@ function Portfolio() {
             </div>
           </div>
         </section>
-
+      <section className='row'>
+        <div className='col-md-12'>
+            <div className='box-all box'>
+              <div className="card" style={styles.card}>
+                <div className="card-body">
+                  <h5 className="card-title">More Projects coming soon!</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Check back for updates!</h6>
+                  <p className="card-text">I work in Javascript/CSS/HTML, Python 3, as well as C/C++!
+                  My aim is to build websites for both personal and professional use.
+                  I welcome programming challenges as learning opportunities. General utility programming makes for a good project.
+                  I am also learning and programming game development for fun!
+            </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
