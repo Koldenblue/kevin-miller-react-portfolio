@@ -21,18 +21,25 @@ function SummaryTabs(props) {
       </Tab>
 
       <Tab eventKey="technicalSkills" title="Technical Skills">
-        <ul className='tab-para'>
-          <li>Main coding written in JavaScript/HTML/CSS for web applications</li>
-          <li>Coding techniques include object-oriented programming, asynchronous function handling, Application Programming Interface (API) integration with apps, responsive web design, client-server communication, routing, interface design, and code testing</li>
-          <li>Database work done with Structured Query Language (SQL) through MySQL and the Sequelize Object-Relational Mapper (ORM)</li>
-          <li>MongoDB</li>
-          <li>Handlebars</li>
-          <li>React</li>
-          <li>AJAX and APIs</li>
-          <li>Non-relational database management through MongoDB</li>
-          <li>Python and C/C++ programming accomplished through self-study and professional certification</li>
-          <li>JavaScript libraries include Node.js, jQuery, Express, Bootstrap, and Handlebars, as well as various smaller packages found with Node Package Manager</li>
-        </ul>
+        <div className='tab-para'>
+          <h5>Full-stack Web Developer with emphasis MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
+          <ul className='tab-para'>
+            <li>JavaScript/HTML/CSS used as main coding languages for a variety of web applications</li>
+            <li>Experience with established JavaScript libraries for streamlining web development, such as jQuery, Bootstrap, and Handlebars</li>
+            <li>Database work with MongoDB, as well as the Mongoose Object Document Mapper (ODM) or mongo.js package, for non-relational database management</li>
+            <li>Database work done with Structured Query Language (SQL) through MySQL and the Sequelize Object-Relational Mapper (ORM)</li>
+            <li>Express framework for back-end route and database setup</li>
+            <li>React framework for front-end design and routing</li>
+            <li>Application Programming Interface (API) integration with apps</li>
+            <li> responsive web design, client-server communication, and code testing</li>
+            <li>AJAX calls for retrieving data from and interacting with APIs </li>
+            <li>Coding techniques include object-oriented programming and asynchronous function handling</li>
+            <li>Familiar with researching and implementing new technologies or libraries as needed - for example, implementation of the Moment.js library, or implementatioon of various smaller packages found with Node Package Manager, such as Inquirer</li>
+            <li>Ability to quickyly learn additional programming languages - for example, Python and C/C++ programming accomplished through self-study and professional certification</li>
+            <li>Handlebars templating engine</li>
+            <li>GitHub for version control</li>
+          </ul>
+        </div>
       </Tab>
 
       <Tab eventKey="about" title="About This Webpage">
