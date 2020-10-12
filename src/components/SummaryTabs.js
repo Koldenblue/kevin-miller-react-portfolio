@@ -9,13 +9,13 @@ function SummaryTabs(props) {
       <Tab eventKey="summary" title="Summary">
         <p className='tab-para'>
           Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA). 
+          Education in full-stack development from UCLA.
           Experienced problem-solver and scientific researcher with seven major <a href='/chemistry'>scientific publications</a>. 
-          Education in full-stack development from UCLA. 
-          I value ethics, integrity, and good business sense, having spent years as a business manager and scientist. 
-          I have teaching experience as both a classroom teacher and group fitness leader, which lends itself to public speaking and teamwork skills. 
+          Values ethics, integrity, and good business sense, having spent years as a business manager and scientist. 
+          Extensive teaching experience stems from being both a classroom teacher and a group fitness leader, which lend themselves to public speaking and teamwork skills. 
           Programming certifications include the UCLA extension coding bootcamp course and the Harvard edX online CS50 course. 
-          My top aim is to contribute to a team which can aid me in improving my own coding skills. 
-          I seek to be in a position where I can improve the lives of those around me, whether that be teammates or clients, in the real world or the digital world.
+          Top aim is to contribute to a team while continuously improving coding skills. 
+          Seeks to improve the lives of both teammates and clients, whether that be in the real world or the digital world.
         </p>
       </Tab>
 
@@ -23,20 +23,19 @@ function SummaryTabs(props) {
         <div className='tab-para'>
           <h5>Full-stack Web Developer with emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
           <ul className='tab-para'>
-            <li>JavaScript/HTML/CSS used as main coding languages for a variety of web applications</li>
-            <li>Experience with established JavaScript libraries for streamlining web development, such as jQuery, Bootstrap, and Handlebars</li>
-            <li>Database work with MongoDB, as well as the Mongoose Object Document Mapper (ODM) or mongo.js package, for non-relational database management</li>
-            <li>Database work done with Structured Query Language (SQL) through MySQL and the Sequelize Object-Relational Mapper (ORM)</li>
-            <li>Express framework for back-end route and database setup</li>
+            <li>JavaScript/HTML/CSS used as main coding languages</li>
             <li>React framework for front-end design and routing</li>
+            <li>Express framework for back-end route and database setup</li>
+            <li>MongoDB for non-relational database management, as well as the Mongoose Object Document Mapper (ODM) or mongo.js package </li>
+            <li>Structured Query Language (SQL) database work, through MySQL and the Sequelize Object-Relational Mapper (ORM)</li>
+            <li>jQuery, Bootstrap, Handlebars, and other established JavaScript libraries for streamlining web development</li>
+            <li>GitHub for version control</li>
             <li>Application Programming Interface (API) integration with apps</li>
             <li>Responsive web design, client-server communication, and code testing</li>
             <li>AJAX calls for retrieving data from and interacting with APIs </li>
-            <li>Coding techniques include object-oriented programming and asynchronous function handling</li>
-            <li>Familiar with researching and implementing new technologies or libraries as needed - for example, implementation of the Moment.js library, or implementation of various smaller packages found with Node Package Manager, such as Inquirer</li>
-            <li>Ability to quickly learn additional programming languages - for example, Python and C/C++ programming accomplished through self-study and professional certification</li>
-            <li>Handlebars templating engine</li>
-            <li>GitHub for version control</li>
+            <li>Object-oriented programming and asynchronous function handling</li>
+            <li>Researching and implementing new technologies or libraries as needed - for example, implementation of the Moment.js library or various small packages found with Node Package Manager, such as Inquirer</li>
+            <li>Ability to quickly learn additional programming languages and techniques - for example, Python and C/C++ programming accomplished through self-study and professional certification</li>
           </ul>
         </div>
       </Tab>
