@@ -9,9 +9,8 @@ function SummaryTabs(props) {
       <Tab eventKey="summary" title="Summary">
         <p className='tab-para'>
           Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA). 
-          Experienced problem-solver and scientific researcher with major <a href='/chemistry'>publications</a>. 
+          Experienced problem-solver and scientific researcher with seven major <a href='/chemistry'>scientific publications</a>. 
           Education in full-stack development from UCLA. 
-          Technical skills include JavaScript, HTML, CSS, jQuery, Python, C/C++, responsive web design, and working with API databases. 
           I value ethics, integrity, and good business sense, having spent years as a business manager and scientist. 
           I have teaching experience as both a classroom teacher and group fitness leader, which lends itself to public speaking and teamwork skills. 
           Programming certifications include the UCLA extension coding bootcamp course and the Harvard edX online CS50 course. 
@@ -31,18 +30,18 @@ function SummaryTabs(props) {
             <li>Express framework for back-end route and database setup</li>
             <li>React framework for front-end design and routing</li>
             <li>Application Programming Interface (API) integration with apps</li>
-            <li> responsive web design, client-server communication, and code testing</li>
+            <li>Responsive web design, client-server communication, and code testing</li>
             <li>AJAX calls for retrieving data from and interacting with APIs </li>
             <li>Coding techniques include object-oriented programming and asynchronous function handling</li>
-            <li>Familiar with researching and implementing new technologies or libraries as needed - for example, implementation of the Moment.js library, or implementatioon of various smaller packages found with Node Package Manager, such as Inquirer</li>
-            <li>Ability to quickyly learn additional programming languages - for example, Python and C/C++ programming accomplished through self-study and professional certification</li>
+            <li>Familiar with researching and implementing new technologies or libraries as needed - for example, implementation of the Moment.js library, or implementation of various smaller packages found with Node Package Manager, such as Inquirer</li>
+            <li>Ability to quickly learn additional programming languages - for example, Python and C/C++ programming accomplished through self-study and professional certification</li>
             <li>Handlebars templating engine</li>
             <li>GitHub for version control</li>
           </ul>
         </div>
       </Tab>
 
-      <Tab eventKey="about" title="About This Webpage">
+      {/* <Tab eventKey="about" title="About This Webpage">
       <p className='tab-para'>WHAT IS THE HEIGHT</p>
 
       </Tab>
@@ -50,7 +49,7 @@ function SummaryTabs(props) {
       <Tab eventKey="projects" title="Projects">
       <p className='tab-para'>WHAT IS THE HEIGHT</p>
 
-      </Tab>
+      </Tab> */}
 
       <Tab eventKey="contact" title="Contact">
         <p className='tab-para'>
