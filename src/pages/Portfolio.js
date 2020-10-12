@@ -3,6 +3,9 @@ import Background from "../components/Background";
 import Image from 'react-bootstrap/Image'
 const util = require("util");
 
+// Note on this function: this may have to be refactored sometime to not repeat so much. Prob the different cards
+// could be broken out to independent components. Only issue is that images must be directly required.
+// For now, easier to find and replace the necessary image functions found in the develop folder
 function Portfolio() {
   const [bartender, setBartender] = useState('none');
   const [barOpacity, setBarOpacity] = useState(1);
@@ -28,6 +31,14 @@ function Portfolio() {
   const [connectOpacity, setConnectOpacity] = useState(1)
   const [inform, setInform] = useState('none');
   const [informOpacity, setInformOpacity] = useState(1)
+  const [rippler, setRippler] = useState('none');
+  const [ripplerOpacity, setRipplerOpacity] = useState(1)
+  const [manager, setManager] = useState('none');
+  const [managerOpacity, setManagerOpacity] = useState(1)
+  const [empFinder, setEmpFinder] = useState('none');
+  const [empFinderOpacity, setEmpFinderOpacity] = useState(1);
+  const [connectReact, setConnectReact] = useState('none');
+  const [connectReactOpacity, setConnectReactOpacity] = useState(1);
 
   const styles = {
     card: {
@@ -188,10 +199,59 @@ function Portfolio() {
       display: inform,
       transition: 'opacity 1s',
       opacity: informOpacity
+    },
+    ripplerImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: rippler,
+      transition: 'opacity 1s',
+      opacity: ripplerOpacity
+    },
+    managerImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: manager,
+      transition: 'opacity 1s',
+      opacity: managerOpacity
+    },
+    empFinderImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: empFinder,
+      transition: 'opacity 1s',
+      opacity: empFinderOpacity
+    },
+    connectReactImg: {
+      position: 'fixed',
+      zIndex: '9999',
+      top: '90px',
+      left: '50%',
+      height: '85%',
+      width: 'auto',
+      transform: 'translateX(-50%)',
+      boxShadow: '5px 5px 5px black',
+      display: connectReact,
+      transition: 'opacity 1s',
+      opacity: connectReactOpacity
     }
-  
-  
-  
   
   }
 
@@ -469,7 +529,97 @@ function Portfolio() {
       setInform('none');
       window.removeEventListener("click", informFade);
     }
+
+  //================ rippler image functions
+  let ripplerZoom = () => {
+    setRippler('block');
+    setTimeout(() => {
+      window.addEventListener("click", ripplerFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (ripplerOpacity === 0) {
+      setRipplerOpacity(1)
+    }
+    else {
+      setRipplerOpacity(0)
+    }
+  }, [rippler])
+
+  let ripplerFade = () => {
+    setRippler('none');
+    window.removeEventListener("click", ripplerFade);
+  }
+
+  //================ manager image functions
+  let managerZoom = () => {
+    setManager('block');
+    setTimeout(() => {
+      window.addEventListener("click", managerFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (managerOpacity === 0) {
+      setManagerOpacity(1)
+    }
+    else {
+      setManagerOpacity(0)
+    }
+  }, [manager])
+
+  let managerFade = () => {
+    setManager('none');
+    window.removeEventListener("click", managerFade);
+  }
+
+  //================ empFinder image functions
+  let empFinderZoom = () => {
+    setEmpFinder('block');
+    setTimeout(() => {
+      window.addEventListener("click", empFinderFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (empFinderOpacity === 0) {
+      setEmpFinderOpacity(1)
+    }
+    else {
+      setEmpFinderOpacity(0)
+    }
+  }, [empFinder])
+
+  let empFinderFade = () => {
+    setEmpFinder('none');
+    window.removeEventListener("click", empFinderFade);
+  }
+
+    //================ connectReact image functions
+    let connectReactZoom = () => {
+      setConnectReact('block');
+      setTimeout(() => {
+        window.addEventListener("click", connectReactFade)
+      }, 100)
+    }
   
+    useEffect(() => {
+      if (connectReactOpacity === 0) {
+        setConnectReactOpacity(1)
+      }
+      else {
+        setConnectReactOpacity(0)
+      }
+    }, [connectReact])
+  
+    let connectReactFade = () => {
+      setConnectReact('none');
+      window.removeEventListener("click", connectReactFade);
+    }
+  
+
+
   
 
   return (
@@ -488,9 +638,13 @@ function Portfolio() {
       <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} alt='workday scheduler'/>
       <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} alt='balance sheet searcher'/>
       <img src={require("../assets/images/connect-4.PNG")} style={styles.connectImg} alt='connect 4 app'/>
-      <img src={require("../assets/images/inform.png")} style={styles.informImg} alt='connect 4 app'/>
-
+      <img src={require("../assets/images/inform.png")} style={styles.informImg} alt='Inform and React app'/>
+      <img src={require("../assets/images/color-rippler.PNG")} style={styles.ripplerImg} alt='color rippler app'/>
+      <img src={require("../assets/images/database-manager.png")} style={styles.managerImg} alt='database manager in a terminal'/>
+      <img src={require("../assets/images/emp-finder.png")} style={styles.empFinderImg} alt='Employee Finder React App'/>
+      <img src={require("../assets/images/connect-4-react.PNG")} style={styles.connectReactImg} alt='Connect 4 in a browser'/>
       
+
       <main className='container nav-avoid bottom-space'>
 
         <section className='row'>
@@ -503,9 +657,9 @@ function Portfolio() {
                   <h5 className="card-title">Express Bartender</h5>
                   <h6 className="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
                   <p className="card-text">Users can log in, search through a database of alcoholic and non-alcoholic drinks, and create and store their own recipes. User data is stored in a structured query library (SQL) database.
-                  Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort. It really came together excellently as a result of our teamwork.
-                  I directed overall coding direction. I was also the main backend coder for database management and routing.
-            </p>
+                    Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort. It really came together excellently as a result of our teamwork.
+                    I directed overall coding direction. I was also the main backend coder for database management and routing.
+                  </p>
                   <a href="https://team-express-bartender.herokuapp.com/" className="card-link">Express yourself on the website! Signup is free and no-strings-attached.</a>
                   <br />
                   <a href="https://github.com/FuDoggy/project2" className="card-link">View the project summary and source <code></code> on GitHub</a>
@@ -517,21 +671,77 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom}/>
+                <img src={require("../assets/images/inform.png")} className="card-img-top" alt="Inform and React app" onClick={informZoom} />
                 <div className="card-body">
-                  <h5 className="card-title">TREK</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
-                  <p className="card-text">A collaborative project between several programmers. I performed lead script coding for this project, as well as organization on GitHub.
-                  I coded all Google Maps Platform functions, in addition to helping out with multiple smaller contributions.
-                This app is designed to map out a days journey, from hiking to eating to home again.</p>
-                  <a href="koldenblue.github.io/trek/" className="card-link">Use the TREK app to plan a day</a>
-                  <br />
-                  <a href="https://github.com/Koldenblue/Trek" className="card-link">See the code on GitHub</a>
+                  <h5 className="card-title">Inform and React</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Important Voter Information</h6>
+                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. The app pulls information relevant to voters for APIs, based upon a user's address. 
+                  The address and voter information is stored in a database, and retrieved upon page load. Above all, work on this app highlighted how team effort and good teamwork can help achieve great results in a short amount of time.
+                </p>
+                  <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">Source code on GitHub</a>
+                  <a href="https://inform-react.herokuapp.com/" className="card-link">See the deployed app! The username 'america' with password 'america' may be used in leiu of signing up.</a>
                 </div>
               </div>
             </div>
           </div>
         </ section>
+
+        <section className='row card-gutters'>
+
+        <div className='col-md-6'>
+            <div className='box-all box'>
+              <div className="card" style={styles.card}>
+                <img src={require("../assets/images/color-rippler.PNG")} className="card-img-top" alt="Color Rippler app" onClick={ripplerZoom} />
+                <div className="card-body">
+                  <h5 className="card-title">Color Rippler</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
+                  <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
+                    This app takes advantage of the React framework to display and update a large number of components in a web browser. Self-contained components may also be ported to other apps - the color grid may possibly 
+                    be used as a background for other React web pages. Future direction for this app includes routing to an additional options page.
+                  </p>
+                  <a href="https://github.com/Koldenblue/color-rippler" className="card-link">Source code on GitHub</a>
+                  <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out! Simply click on the grid. Reload the page to generate a new grid.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+        <section className='row card-gutters'>
+
+        <div className='col-md-6'>
+            <div className='box-all box'>
+              <div className="card" style={styles.card}>
+                <img src={require("../assets/images/emp-finder.png")} className="card-img-top" alt="Mock Employee Directory" onClick={empFinderZoom} />
+                <div className="card-body">
+                  <h5 className="card-title">Mock Employee Directory</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Search and Filter an employee directory, through the power of React!</h6>
+                  <p className="card-text">To be written</p>
+                  <a href="https://github.com/Koldenblue/employee-directory" className="card-link">Source code on GitHub</a>
+                  <a href="https://koldenblue.github.io/employee-directory/" className="card-link">Deployed Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-md-6'>
+            <div className='box-all box'>
+              <div className="card" style={styles.card}>
+                <img src={require("../assets/images/database-manager.png")} className="card-img-top" alt="Database Manager" onClick={managerZoom} />
+                <div className="card-body">
+                  <h5 className="card-title">Database Manager</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">TBD</h6>
+                  <p className="card-text">To be written
+                  </p>
+                  <a href="https://github.com/Koldenblue/Node-Python-SQL-Database-Manager" className="card-link">Source code on GitHub</a>
+                  <a href="https://youtu.be/ZgNN19BSUyg" className="card-link">YouTube Demonstration</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className='row card-gutters'>
 
@@ -576,15 +786,16 @@ function Portfolio() {
         <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/inform.png")} className="card-img-top" alt="Inform and React app" onClick={informZoom} />
+                <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom}/>
                 <div className="card-body">
-                  <h5 className="card-title">Inform and React</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Important Voter Information</h6>
-                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. The app pulls information relevant to voters for APIs, based upon a user's address. 
-                  The address and voter information is stored in a database, and retrieved upon page load. Above all, work on this app highlighted how team effort and good teamwork can help achieve great results in a short amount of time.
-                </p>
-                  <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">Source code on GitHub</a>
-                  <a href="https://inform-react.herokuapp.com/" className="card-link">See the deployed app! The username 'america' with password 'america' may be used in leiu of signing up.</a>
+                  <h5 className="card-title">TREK</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
+                  <p className="card-text">A collaborative project between several programmers. I performed lead script coding for this project, as well as organization on GitHub.
+                  I coded all Google Maps Platform functions, in addition to helping out with multiple smaller contributions.
+                This app is designed to map out a days journey, from hiking to eating to home again.</p>
+                  <a href="koldenblue.github.io/trek/" className="card-link">Use the TREK app to plan a day</a>
+                  <br />
+                  <a href="https://github.com/Koldenblue/Trek" className="card-link">See the code on GitHub</a>
                 </div>
               </div>
             </div>
@@ -688,7 +899,7 @@ function Portfolio() {
 
         </section>
 
-        <section className='row card-gutters bottom-card-gutter' >
+        <section className='row card-gutters' >
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
@@ -703,12 +914,33 @@ function Portfolio() {
             </div>
           </div>
 
-          <div className='col-md-6'>
+
+        </section>
+        <section className='row card-gutters'>
+
+
+        <div className='col-md-6'>
+            <div className='box-all box'>
+              <div className="card" style={styles.card}>
+                <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
+                <div className="card-body">
+                  <h5 className="card-title">Connect 4</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">In react</h6>
+                  <p className="card-text">TBD</p>
+                  <a href="#" className="card-link">Play Connect 4!</a>
+                  <br />
+                  <a href="#" className="card-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <img src={require("../assets/images/connect-4.PNG")} className="card-img-top" alt="Connect 4" onClick={connectZoom} />
                 <div className="card-body">
-                  <h5 className="card-title">Connect 4 in JavaScript</h5>
+                  <h5 className="card-title">Connect 4</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Simple Browser Games</h6>
                   <p className="card-text">The classic game of Connect 4 in a browser. This one is a work in progress, but I'm enjoying working on making some browser games.
               I'd actually like to program more complicated games as well, such as adventure games or strategy games.</p>
@@ -719,8 +951,11 @@ function Portfolio() {
               </div>
             </div>
           </div>
-        </section>
-      <section className='row'>
+
+    </section>
+
+
+      <section className='row card-gutters bottom-card-gutter'>
         <div className='col-md-12'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
