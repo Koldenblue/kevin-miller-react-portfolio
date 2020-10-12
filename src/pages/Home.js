@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Animated } from "react-animated-css";
 import Background from '../components/Background';
 import SummaryTabs from '../components/SummaryTabs';
 
 
 function Home() {
-  
+  const [opacity, setOpacity] = useState(0)
+
   let contact = {
     areaCode: '(310) ',
     phone: '562-4572',
@@ -19,8 +20,15 @@ function Home() {
     },
     inlineAnimated: {
       'display': 'inline-block'
+    },
+    homepagePhoto: {
+      opacity: opacity
     }
   }
+
+  useEffect(() => {
+    setOpacity(1);
+  },[])
 
   return (
     <>
@@ -29,7 +37,7 @@ function Home() {
       <main className='container bottom-space nav-avoid index-container'>
 
         <section className="jumbotron">
-          <img src={require('../assets/images/prof-photo.png')} className='homepage-photo' />
+            <img src={require('../assets/images/prof-photo.png')} className='homepage-photo' style={styles.homepagePhoto}/>
           <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
             <h1 className="display-4">Kevin Miller, PhD</h1>
           </Animated>
@@ -39,7 +47,7 @@ function Home() {
           <Animated animationIn="fadeInLeft" animationInDelay='1200' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
             <p className="lead">{contact.email + contact.domain}</p>
           </Animated>
-          <hr className="my-4" />
+          <hr className="my-4" style={{width: '70%'}}/>
           <p>
             <Animated animationIn="fadeInLeft" animationInDelay='2500' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Chemist, </pre>

@@ -21,7 +21,7 @@ function SummaryTabs(props) {
 
       <Tab eventKey="technicalSkills" title="Technical Skills">
         <div className='tab-para'>
-          <h5>Full-stack Web Developer with emphasis MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
+          <h5>Full-stack Web Developer with emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
           <ul className='tab-para'>
             <li>JavaScript/HTML/CSS used as main coding languages for a variety of web applications</li>
             <li>Experience with established JavaScript libraries for streamlining web development, such as jQuery, Bootstrap, and Handlebars</li>
