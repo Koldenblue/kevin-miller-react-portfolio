@@ -156,7 +156,7 @@ when the screen is reduced in width */
 .box-all {
   border-radius: 15px;
   height: 100%;
-  margin: 0.5em;
+  /* margin: 0.5em; */
   background-repeat: no-repeat;
   background-color: #F8C9F8;
   background-attachment: fixed;

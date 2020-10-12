@@ -36,7 +36,10 @@ function Portfolio() {
   const [connectReact, setConnectReact] = useState('none');
   const [connectReactOpacity, setConnectReactOpacity] = useState(1);
 
+  // most of these should actually be consolidated into a single class in the css file.
+  // Only the display and opacity need be here, since they currently rely on the state.
   const styles = {
+    // the card style can be removed to set the card size equal to the column size on the grid
     card: {
       'width': '30rem'
     },
@@ -648,32 +651,97 @@ function Portfolio() {
         </ section>
 
         <section className='row card-gutters'>
+          <div className='col-md-12'>
+            <div className='box-all box'>
+              <div className="card">
+                <div className='row no-gutters'>
+                  <div className='col-md-5'>
+                  <img src={require("../assets/images/color-rippler.PNG")} className="card-img-top" alt="Color Rippler app" onClick={ripplerZoom} />
+                  </div>
+                  <div className='col-md-7'>
+                  <div className="card-body">
+                    <h5 className="card-title">Color Rippler</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
+                    <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
+                      This app takes advantage of the React framework to display and update a large number of components in a web browser. Self-contained components may also be ported to other apps - the color grid may possibly 
+                      be used as a background for other React web pages. Future direction for this app includes routing to an additional options page.
+                    </p>
+                    <a href="https://github.com/Koldenblue/color-rippler" className="card-link">Get the source code on GitHub</a>
+                    <br />
+                    <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out! Simply click on the grid. Reload the page to generate a new grid.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className='col-md-6'>
+        <section className='row card-gutters'>
+          <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/color-rippler.PNG")} className="card-img-top" alt="Color Rippler app" onClick={ripplerZoom} />
+                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" onClick={hamZoom}/>
                 <div className="card-body">
-                  <h5 className="card-title">Color Rippler</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
-                  <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
-                    This app takes advantage of the React framework to display and update a large number of components in a web browser. Self-contained components may also be ported to other apps - the color grid may possibly 
-                    be used as a background for other React web pages. Future direction for this app includes routing to an additional options page.
+                  <h5 className="card-title">Hamburger Handling</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
+                  <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
+                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
                   </p>
-                  <a href="https://github.com/Koldenblue/color-rippler" className="card-link">Get the source code on GitHub</a>
+                  <a href="https://github.com/Koldenblue/games-websites" className="card-link">Ham it up on GitHub</a>
                   <br />
-                  <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out! Simply click on the grid. Reload the page to generate a new grid.</a>
+                  <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">Serve up some hamburgers!</a>
                 </div>
               </div>
             </div>
           </div>
 
-
+          <div className='col-md-6'>
+            <div className='box-all box'>
+              <div className="card" style={styles.card}>
+                <img src={require("../assets/images/readme-gen.jpeg")} className="card-img-top" alt="A sample readme" onClick={readmeZoom} />
+                <div className="card-body">
+                  <h5 className="card-title">Quick Readme Generator</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Practical development tool</h6>
+                  <p className="card-text">Quickly and dynamically generates a basic readme, based upon user input from a terminal. Requires Node.js and Node Package Manager.
+                  I personally use this program quite often, and I'm planning to add more features. As a scientist, I know the importance of good documentation.
+                  I have my work cut out for me with programs and documents to write. This readme generator helps.
+                </p>
+                  <a href="https://github.com/Koldenblue/readme-generator" className="card-link">Get the program and sample readmes on GitHub</a>
+                  <br />
+                  <a href="https://youtu.be/G-kk2_u-25k" className="card-link">Quick YouTube demonstration</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className='row card-gutters'>
+          <div className='col-md-12'>
+            <div className='box-all box'>
+              <div className="card">
+                <div className='row no-gutters'>
+                  <div className='col-md-5'>
+                    <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" onClick={chessZoom}/>
+                  </div>
+                  <div className='col-md-7'>
+                    <div className="card-body">
+                      <h5 className="card-title">Chess</h5>
+                      <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
+                      <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python.
+                        Future plans for this program include exporting it to run in a browser.
+                      </p>
+                      <a href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! Requires Python to function.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className='col-md-6'>
+        <section className='row card-gutters'>
+          <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <img src={require("../assets/images/emp-finder.png")} className="card-img-top" alt="Mock Employee Directory" onClick={empFinderZoom} />
@@ -713,48 +781,14 @@ function Portfolio() {
 
         <section className='row card-gutters'>
 
-          <div className='col-md-6'>
-            <div className='box-all box'>
-              <div className="card" style={styles.card}>
-                <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" onClick={chessZoom}/>
-                <div className="card-body">
-                  <h5 className="card-title">Chess</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
-                  <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python.
-                    Future plans for this program include exporting it to run in a browser.
-                  </p>
-                  <a href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! Requires Python to function.</a>
+        <div className='col-md-12'>
+          <div className='box-all box'>
+            <div className="card">
+              <div className='row no-gutters'>
+                <div className='col-md-5'>
+                  <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom}/>
                 </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div className='col-md-6'>
-            <div className='box-all box'>
-              <div className="card" style={styles.card}>
-                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" onClick={hamZoom}/>
-                <div className="card-body">
-                  <h5 className="card-title">Hamburger Handling</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
-                  <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
-                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
-                  </p>
-                  <a href="https://github.com/Koldenblue/games-websites" className="card-link">Ham it up on GitHub</a>
-                  <br />
-                  <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">Serve up some hamburgers!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className='row card-gutters'>
-
-        <div className='col-md-6'>
-            <div className='box-all box'>
-              <div className="card" style={styles.card}>
-                <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom}/>
+                <div className='col-md-7'>
                 <div className="card-body">
                   <h5 className="card-title">TREK</h5>
                   <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
@@ -764,29 +798,12 @@ function Portfolio() {
                   <a href="https://github.com/Koldenblue/Trek" className="card-link">See the code and project summary on GitHub</a>
                   <br />
                   <a href="koldenblue.github.io/trek/" className="card-link">Use the TREK app to plan a day</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className='col-md-6'>
-            <div className='box-all box'>
-              <div className="card" style={styles.card}>
-                <img src={require("../assets/images/readme-gen.jpeg")} className="card-img-top" alt="A sample readme" onClick={readmeZoom} />
-                <div className="card-body">
-                  <h5 className="card-title">Quick Readme Generator</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Practical development tool</h6>
-                  <p className="card-text">Quickly and dynamically generates a basic readme, based upon user input from a terminal. Requires Node.js and Node Package Manager.
-                  I personally use this program quite often, and I'm planning to add more features. As a scientist, I know the importance of good documentation.
-                  I have my work cut out for me with programs and documents to write. This readme generator helps.
-                </p>
-                  <a href="https://github.com/Koldenblue/readme-generator" className="card-link">Get the program and sample readmes on GitHub</a>
-                  <br />
-                  <a href="https://youtu.be/G-kk2_u-25k" className="card-link">Quick YouTube demonstration</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
         </section>
 
         <section className='row card-gutters'>
@@ -888,39 +905,33 @@ function Portfolio() {
             </div>
           </div>
 
-
-        </section>
-        <section className='row card-gutters'>
-
-
-        <div className='col-md-6'>
+          <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
-                <div className="card-body">
-                  <h5 className="card-title">Connect 4</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
-                  <p className="card-text">The classic game of Connect 4 in a browser. I'd look forward to programming more complicated games as well, such as adventure games or strategy games.
-                    This project focuses on using React components and algorithmic logic to present a simple interactive game.
-                    This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a href='"https://github.com/Koldenblue/games-websites"'> GitHub</a>. 
-                    The orginal page was <a href="https://koldenblue.github.io/games-websites/">deployed using GitHub pages</a>.
-                  </p>
-                  <a href="https://connect-4-react.herokuapp.com/" className="card-link">Play Connect 4!</a>
-                  <br />
-                  <a href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub Source Code</a>
-                </div>
+                  <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
+
+                  <div className="card-body">
+                    <h5 className="card-title">Connect 4</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
+                    <p className="card-text">The classic game of Connect 4 in a browser. I'd look forward to programming more complicated games as well, such as adventure games or strategy games.
+                      This project focuses on using React components and algorithmic logic to present a simple interactive game.
+                      This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a href='"https://github.com/Koldenblue/games-websites"'> GitHub</a>. 
+                      The orginal page was <a href="https://koldenblue.github.io/games-websites/">deployed using GitHub pages</a>.
+                    </p>
+                    <a href="https://connect-4-react.herokuapp.com/" className="card-link">Play Connect 4!</a>
+                    <br />
+                    <a href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub Source Code</a>
+                    </div>
               </div>
             </div>
           </div>
-
-
-    </section>
+      </section>
 
 
       <section className='row card-gutters bottom-card-gutter'>
         <div className='col-md-12'>
             <div className='box-all box'>
-              <div className="card" style={styles.card}>
+              <div className="card" >
                 <div className="card-body">
                   <h5 className="card-title">More Projects coming soon!</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Check back for updates!</h6>
