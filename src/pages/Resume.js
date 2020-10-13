@@ -7,7 +7,7 @@ class Resume extends React.Component {
       <>
         <Background image='../assets/images/beach-hut.jpg' />
         <main class="container nav-avoid bottom-space" id="resume-container">
-          <iframe src={require("../assets/images/Kevin Miller_General Resume_8-27-2020.pdf")} id='resume-pdf'></iframe>
+          <iframe src={require("../assets/images/Kevin Miller_General Resume_10-11-2020.pdf")} id='resume-pdf'></iframe>
         </main>
       </>
     )
