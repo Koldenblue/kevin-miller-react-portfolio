@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Switch } from 'react-router-dom';
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
-import Contact from "./pages/Contact";
 import Chemistry from './pages/Chemistry';
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";

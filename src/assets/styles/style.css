@@ -38,7 +38,7 @@
   background-color: #f7c5f7;
   background-attachment: fixed;
   background-image: linear-gradient(to top, #f7c5f7, rgb(129, 238, 214) );
-  padding: 1em;
+  padding: 0.5em;
   padding-left: 1.8em;
   padding-right: 1.8em;
   border-bottom-left-radius: 10px;
@@ -49,7 +49,7 @@
 .jumbotron {
   background-color: rgba(224, 239, 245, 0.4);
   font-family: 'Audiowide', cursive;
-
+  padding: 4rem 2rem 1rem 2rem;
 }
 
 .homepage-photo {

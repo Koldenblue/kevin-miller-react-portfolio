@@ -699,7 +699,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/readme-gen.jpeg")} className="card-img-top" alt="A sample readme" onClick={readmeZoom} />
+                <img src={require("../assets/images/readme-gen.PNG")} className="card-img-top" alt="A sample readme" onClick={readmeZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Quick Readme Generator</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Practical development tool</h6>
@@ -918,9 +918,9 @@ function Portfolio() {
                       This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a href='"https://github.com/Koldenblue/games-websites"'> GitHub</a>. 
                       The orginal page was <a href="https://koldenblue.github.io/games-websites/">deployed using GitHub pages</a>.
                     </p>
-                    <a href="https://connect-4-react.herokuapp.com/" className="card-link">Play Connect 4!</a>
-                    <br />
                     <a href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub Source Code</a>
+                    <br />
+                    <a href="https://connect-4-react.herokuapp.com/" className="card-link">Play Connect 4!</a>
                     </div>
               </div>
             </div>
