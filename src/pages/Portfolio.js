@@ -622,7 +622,7 @@ function Portfolio() {
                     Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort. It really came together excellently as a result of our teamwork.
                     I directed overall coding direction. I was also the main backend coder for database management and routing.
                   </p>
-                  <a href="https://github.com/FuDoggy/project2" className="card-link">GitHub repository and project summary</a>
+                  <a href="https://github.com/Koldenblue/Express-Bartender" className="card-link">GitHub repository and project summary</a>
                   <br />
                   <a href="https://team-express-bartender.herokuapp.com/" className="card-link">Express yourself on the website! The username 'kevin@kevin.com' and password '10Characters!' may be used in leiu of signing up.</a>
                   <br />
