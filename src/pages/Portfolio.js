@@ -238,7 +238,7 @@ function Portfolio() {
       transition: 'opacity 1s',
       opacity: connectReactOpacity
     }
-  
+
   }
 
   // ==================  Express bartender image functions 
@@ -472,26 +472,26 @@ function Portfolio() {
   }
 
   //================ inform image functions
-    let informZoom = () => {
-      setInform('block');
-      setTimeout(() => {
-        window.addEventListener("click", informFade)
-      }, 100)
+  let informZoom = () => {
+    setInform('block');
+    setTimeout(() => {
+      window.addEventListener("click", informFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (informOpacity === 0) {
+      setInformOpacity(1)
     }
-  
-    useEffect(() => {
-      if (informOpacity === 0) {
-        setInformOpacity(1)
-      }
-      else {
-        setInformOpacity(0)
-      }
-    }, [inform])
-  
-    let informFade = () => {
-      setInform('none');
-      window.removeEventListener("click", informFade);
+    else {
+      setInformOpacity(0)
     }
+  }, [inform])
+
+  let informFade = () => {
+    setInform('none');
+    window.removeEventListener("click", informFade);
+  }
 
   //================ rippler image functions
   let ripplerZoom = () => {
@@ -559,52 +559,52 @@ function Portfolio() {
     window.removeEventListener("click", empFinderFade);
   }
 
-    //================ connectReact image functions
-    let connectReactZoom = () => {
-      setConnectReact('block');
-      setTimeout(() => {
-        window.addEventListener("click", connectReactFade)
-      }, 100)
+  //================ connectReact image functions
+  let connectReactZoom = () => {
+    setConnectReact('block');
+    setTimeout(() => {
+      window.addEventListener("click", connectReactFade)
+    }, 100)
+  }
+
+  useEffect(() => {
+    if (connectReactOpacity === 0) {
+      setConnectReactOpacity(1)
     }
-  
-    useEffect(() => {
-      if (connectReactOpacity === 0) {
-        setConnectReactOpacity(1)
-      }
-      else {
-        setConnectReactOpacity(0)
-      }
-    }, [connectReact])
-  
-    let connectReactFade = () => {
-      setConnectReact('none');
-      window.removeEventListener("click", connectReactFade);
+    else {
+      setConnectReactOpacity(0)
     }
-  
+  }, [connectReact])
+
+  let connectReactFade = () => {
+    setConnectReact('none');
+    window.removeEventListener("click", connectReactFade);
+  }
 
 
-  
+
+
 
   return (
     <>
       <Background image='../assets/images/koi.jpg' />
 
       {/* Zoomed images */}
-      <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} alt='Express Bartender app'/>
-      <img src={require("../assets/images/trek.png")} style={styles.trekImg} alt='Trek app'/>
-      <img src={require("../assets/images/chess.PNG")} style={styles.chessImg} alt='Python Chess'/>
-      <img src={require("../assets/images/hamburger.PNG")} style={styles.hamImg} alt='hamburger database app'/>
-      <img src={require("../assets/images/readme-zoom.png")} style={styles.readmeImg} alt='readme generator app'/>
-      <img src={require("../assets/images/quiz.png")} style={styles.quizImg} alt='quiz generator'/>
-      <img src={require("../assets/images/weather-forecaster.png")} style={styles.weatherImg} alt='weather app'/>
-      <img src={require("../assets/images/template-engine.png")} style={styles.templateImg} alt='template generator'/>
-      <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} alt='workday scheduler'/>
-      <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} alt='balance sheet searcher'/>
-      <img src={require("../assets/images/inform.png")} style={styles.informImg} alt='Inform and React app'/>
-      <img src={require("../assets/images/color-rippler.PNG")} style={styles.ripplerImg} alt='color rippler app'/>
-      <img src={require("../assets/images/database-manager.png")} style={styles.managerImg} alt='database manager in a terminal'/>
-      <img src={require("../assets/images/emp-finder.png")} style={styles.empFinderImg} alt='Employee Finder React App'/>
-      <img src={require("../assets/images/connect-4-react.PNG")} style={styles.connectReactImg} alt='Connect 4 in a browser'/>
+      <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} alt='Express Bartender app' />
+      <img src={require("../assets/images/trek.png")} style={styles.trekImg} alt='Trek app' />
+      <img src={require("../assets/images/chess.PNG")} style={styles.chessImg} alt='Python Chess' />
+      <img src={require("../assets/images/hamburger.PNG")} style={styles.hamImg} alt='hamburger database app' />
+      <img src={require("../assets/images/readme-zoom.png")} style={styles.readmeImg} alt='readme generator app' />
+      <img src={require("../assets/images/quiz.png")} style={styles.quizImg} alt='quiz generator' />
+      <img src={require("../assets/images/weather-forecaster.png")} style={styles.weatherImg} alt='weather app' />
+      <img src={require("../assets/images/template-engine.png")} style={styles.templateImg} alt='template generator' />
+      <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} alt='workday scheduler' />
+      <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} alt='balance sheet searcher' />
+      <img src={require("../assets/images/inform.png")} style={styles.informImg} alt='Inform and React app' />
+      <img src={require("../assets/images/color-rippler.PNG")} style={styles.ripplerImg} alt='color rippler app' />
+      <img src={require("../assets/images/database-manager.png")} style={styles.managerImg} alt='database manager in a terminal' />
+      <img src={require("../assets/images/emp-finder.png")} style={styles.empFinderImg} alt='Employee Finder React App' />
+      <img src={require("../assets/images/connect-4-react.PNG")} style={styles.connectReactImg} alt='Connect 4 in a browser' />
 
 
       {/* Main project card container */}
@@ -614,18 +614,22 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom}/>
+                <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Express Bartender</h5>
                   <h6 className="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
                   <p className="card-text">Users can log in, search through a database of alcoholic and non-alcoholic drinks, and create and store their own recipes. User data is stored in a structured query library (SQL) database.
-                    Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort. It really came together excellently as a result of our teamwork.
-                    I directed overall coding direction. I was also the main backend coder for database management and routing.
+                  Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort. It really came together excellently as a result of our teamwork.
+                  I directed overall coding direction. I was also the main backend coder for database management and routing.
                   </p>
-                  <a href="https://github.com/Koldenblue/Express-Bartender" className="card-link">GitHub repository and project summary</a>
-                  <br />
-                  <a href="https://team-express-bartender.herokuapp.com/" className="card-link">Express yourself on the website! The username 'kevin@kevin.com' and password '10Characters!' may be used in leiu of signing up.</a>
-                  <br />
+                  <ul className='project-list'>
+                    <li>
+                      Check out the <a href="https://github.com/Koldenblue/Express-Bartender" className="card-link">GitHub </a>repository for a project summary
+                    </li>
+                    <li>
+                      Express yourself on the <a href="https://team-express-bartender.herokuapp.com/" className="card-link">website</a>! The username 'kevin@kevin.com' and password '10Characters!' may be used in leiu of signing up.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -638,12 +642,17 @@ function Portfolio() {
                 <div className="card-body">
                   <h5 className="card-title">Inform and React</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Important Voter Information</h6>
-                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. The app pulls information relevant to voters for APIs, based upon a user's address. 
+                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. The app pulls information relevant to voters for APIs, based upon a user's address.
                   The address and voter information is stored in a database, and retrieved upon page load. Above all, work on this app highlighted how team effort and good teamwork can help achieve great results in a short amount of time.
                 </p>
-                  <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">GitHub repository and project summary</a>
-                  <br />
-                  <a href="https://inform-react.herokuapp.com/" className="card-link">See the deployed app! The username 'america' with password 'america' may be used in leiu of signing up.</a>
+                  <ul className='project-list'>
+                    <li>
+                      See the <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">GitHub </a>repository and project summary
+                    </li>
+                    <li>
+                      See the<a href="https://inform-react.herokuapp.com/" className="card-link"> deployed app</a>! The username 'america' with password 'america' may be used in leiu of signing up.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -656,19 +665,24 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                  <img src={require("../assets/images/color-rippler.PNG")} className="card-img-top" alt="Color Rippler app" onClick={ripplerZoom} />
+                    <img src={require("../assets/images/color-rippler.PNG")} className="card-img-top" alt="Color Rippler app" onClick={ripplerZoom} />
                   </div>
                   <div className='col-md-7'>
-                  <div className="card-body">
-                    <h5 className="card-title">Color Rippler</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
-                    <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
-                      This app takes advantage of the React framework to display and update a large number of components in a web browser. Self-contained components may also be ported to other apps - the color grid may possibly 
+                    <div className="card-body">
+                      <h5 className="card-title">Color Rippler</h5>
+                      <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
+                      <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
+                      This app takes advantage of the React framework to display and update a large number of components in a web browser. Self-contained components may also be ported to other apps - the color grid may possibly
                       be used as a background for other React web pages. Future direction for this app includes routing to an additional options page.
                     </p>
-                    <a href="https://github.com/Koldenblue/color-rippler" className="card-link">Get the source code on GitHub</a>
-                    <br />
-                    <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out! Simply click on the grid. Reload the page to generate a new grid.</a>
+                      <ul className='project-list'>
+                        <li>
+                          Get the source code on<a href="https://github.com/Koldenblue/color-rippler" className="card-link"> GitHub</a>
+                        </li>
+                        <li>
+                          <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid. Reload the page to generate a new grid.
+                      </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -681,16 +695,21 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" onClick={hamZoom}/>
+                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" onClick={hamZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Hamburger Handling</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
                   <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
-                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
+                  The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
                   </p>
-                  <a href="https://github.com/Koldenblue/games-websites" className="card-link">Ham it up on GitHub</a>
-                  <br />
-                  <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">Serve up some hamburgers!</a>
+                  <ul className='project-list'>
+                    <li>
+                      Ham it up on <a href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
+                    </li>
+                    <li>
+                      Serve up some hamburgers on the <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website!</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -707,9 +726,14 @@ function Portfolio() {
                   I personally use this program quite often, and I'm planning to add more features. As a scientist, I know the importance of good documentation.
                   I have my work cut out for me with programs and documents to write. This readme generator helps.
                 </p>
-                  <a href="https://github.com/Koldenblue/readme-generator" className="card-link">Get the program and sample readmes on GitHub</a>
-                  <br />
-                  <a href="https://youtu.be/G-kk2_u-25k" className="card-link">Quick YouTube demonstration</a>
+                  <ul className='project-list'>
+                    <li>
+                      Download the program and see sample readmes on<a href="https://github.com/Koldenblue/readme-generator" className="card-link"> GitHub</a>
+                    </li>
+                    <li>
+                      Quick<a href="https://youtu.be/G-kk2_u-25k" className="card-link"> YouTube</a> demonstration
+                  </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -722,16 +746,20 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" onClick={chessZoom}/>
+                    <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" onClick={chessZoom} />
                   </div>
                   <div className='col-md-7'>
                     <div className="card-body">
                       <h5 className="card-title">Chess</h5>
                       <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
                       <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python.
-                        Future plans for this program include exporting it to run in a browser.
+                      Future plans for this program include exporting it to run in a browser.
                       </p>
-                      <a href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! Requires Python to function.</a>
+                      <ul className='project-list'>
+                        <li>
+                          <a href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! </a>Requires Python to function.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -751,9 +779,14 @@ function Portfolio() {
                   <p className="card-text">Retrieves randomly generated employee through an API database, then displays each employee as an individual React component on a webpage. Search filter and sort functions are also available.
                   Since the search filter and sort functions are programmed using React, results are almost immediate and only individual employee components in the document object model (DOM) are updated. This is as opposed to rendering the page using traditional vanilla JavaScript,
                   in which the functionality would result in a reload of the DOM. This app demonstrates how the component-based React framework, utilizing a virtual DOM, can be used for performance, efficiency, and code organization advantages. </p>
-                  <a href="https://github.com/Koldenblue/employee-directory" className="card-link">View an in-depth expanation on GitHub</a>
-                  <br />
-                  <a href="https://koldenblue.github.io/employee-directory/" className="card-link">Hire some new employees and sort them!</a>
+                  <ul className='project-list'>
+                    <li>
+                      View an in-depth explanation on<a href="https://github.com/Koldenblue/employee-directory" className="card-link"> GitHub</a>
+                    </li>
+                    <li>
+                      Hire some new employees and sort them on the <a href="https://koldenblue.github.io/employee-directory/" className="card-link">website!</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -766,13 +799,18 @@ function Portfolio() {
                 <div className="card-body">
                   <h5 className="card-title">Node Python SQL Database Manager</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Stores Employee Input in an SQL database</h6>
-                  <p className="card-text">This project allows storage and retrieval of basic employee information from an SQL database, including names, salaries, titles, managers, and department information. 
+                  <p className="card-text">This project allows storage and retrieval of basic employee information from an SQL database, including names, salaries, titles, managers, and department information.
                   This program was designed to run using Node.js in a terminal, and heavily utilizes promise-based asynchronous programming and the Inquirer package from Node Package Manager.
-                   Basic communication between the JavaScript program and a Python script is also demonstrated.
+                  Basic communication between the JavaScript program and a Python script is also demonstrated.
                   </p>
-                  <a href="https://github.com/Koldenblue/Node-Python-SQL-Database-Manager" className="card-link">View an in-depth expanation on GitHub</a>
-                  <br />
-                  <a href="https://youtu.be/ZgNN19BSUyg" className="card-link">YouTube Demonstration</a>
+                  <ul className='project-list'>
+                    <li>
+                      View an in-depth explanation on<a href="https://github.com/Koldenblue/Node-Python-SQL-Database-Manager" className="card-link"> GitHub</a>
+                    </li>
+                    <li>
+                      <a href="https://youtu.be/ZgNN19BSUyg" className="card-link">YouTube</a> Demonstration
+                  </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -781,29 +819,34 @@ function Portfolio() {
 
         <section className='row card-gutters'>
 
-        <div className='col-md-12'>
-          <div className='box-all box'>
-            <div className="card">
-              <div className='row no-gutters'>
-                <div className='col-md-5'>
-                  <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom}/>
-                </div>
-                <div className='col-md-7'>
-                <div className="card-body">
-                  <h5 className="card-title">TREK</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
-                  <p className="card-text">A collaborative project between several programmers. I performed lead script coding for this project, as well as organization on GitHub.
-                  I coded all Google Maps Platform functions, in addition to helping out with multiple smaller contributions.
+          <div className='col-md-12'>
+            <div className='box-all box'>
+              <div className="card">
+                <div className='row no-gutters'>
+                  <div className='col-md-5'>
+                    <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom} />
+                  </div>
+                  <div className='col-md-7'>
+                    <div className="card-body">
+                      <h5 className="card-title">TREK</h5>
+                      <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
+                      <p className="card-text">A collaborative project between several programmers. I performed lead script coding for this project, as well as organization on GitHub.
+                      I coded all Google Maps Platform functions, in addition to helping out with multiple smaller contributions.
                 This app is designed to map out a days journey, from hiking to eating to home again.</p>
-                  <a href="https://github.com/Koldenblue/Trek" className="card-link">See the code and project summary on GitHub</a>
-                  <br />
-                  <a href="koldenblue.github.io/trek/" className="card-link">Use the TREK app to plan a day</a>
+                      <ul className='project-list'>
+                        <li>
+                          See the code and project summary on <a href="https://github.com/Koldenblue/Trek" className="card-link">GitHub</a>
+                        </li>
+                        <li>
+                          Use the <a href="koldenblue.github.io/trek/" className="card-link">TREK app </a>to plan a day
+                      </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </section>
 
         <section className='row card-gutters'>
@@ -818,9 +861,14 @@ function Portfolio() {
                   <p className="card-text">This project is a simple HTML and JavaScript template for creating quizzes in a browser. The HTML is designed to be easy to incorporate into an existing website.
                   The quiz is largely run through DOM manipulation. Quiz questions and parameters can be edited in the JavaScript file.
             </p>
-                  <a href="https://github.com/Koldenblue/quiz-template" className="card-link">GitHub repository and project summary</a>
-                  <br />
-                  <a href="https://koldenblue.github.io/quiz-template/" className="card-link">Take a short JavaScript Quiz!</a>
+                  <ul className='project-list'>
+                    <li>
+                      <a href="https://github.com/Koldenblue/quiz-template" className="card-link">GitHub </a>repository and project summary
+                  </li>
+                    <li>
+                      Take a short <a href="https://koldenblue.github.io/quiz-template/" className="card-link">JavaScript Quiz!</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -836,10 +884,17 @@ function Portfolio() {
                   <p className="card-text">Searches a weather database for the 5-day forecast of the weather in any city. Your previous searches are stored as well!
                   This app utilizes AJAX calls to the OpenWeather API in order to retrieve weather data, and local storage to store previous sessions.
             </p>
-                  <a href="https://github.com/Koldenblue/weather-forecaster" className="card-link">GitHub repository and project summary</a>
-                  <br />
-                  <a href="https://koldenblue.github.io/weather-forecaster/" className="card-link">Find the weather in your city!</a>
+                  <ul className='project-list'>
+                    <li>
+                      <a href="https://github.com/Koldenblue/weather-forecaster" className="card-link">GitHub </a>repository and project summary
+                  </li>
+                    <li>
+                      <a href="https://koldenblue.github.io/weather-forecaster/" className="card-link">Find the weather </a>in your city!
+                  </li>
+                  </ul>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -851,7 +906,7 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/template-engine.png")} className="card-img-top" alt="Templated Object Engine in Browser" onClick={templateZoom}/>
+                <img src={require("../assets/images/template-engine.png")} className="card-img-top" alt="Templated Object Engine in Browser" onClick={templateZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Templated Object Engine</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Object-oriented programming used to generate HTML templates</h6>
@@ -860,10 +915,14 @@ function Portfolio() {
                   Object-oriented programming techniques include utilization of classes and subclasses, as well as organization of asynchronous functions.
                   The template could also be repurposed. Questions and employee objects could be changed to
               to generate an HTML template about anything - students, or books, or video games, for example.</p>
-                  <a href='https://github.com/Koldenblue/template-engine'>GitHub source code, runnable in a terminal</a>
-                  <br />
-                  <a href='https://youtu.be/SdOaaAi9A-Q'>View a YouTube demonstration</a>
-                  
+                  <ul className='project-list'>
+                    <li>
+                      <a href='https://github.com/Koldenblue/template-engine' className="card-link">GitHub </a>source code, runnable in a terminal
+                    </li>
+                    <li>
+                      View a <a href='https://youtu.be/SdOaaAi9A-Q' className="card-link">YouTube</a> demonstration
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -872,17 +931,22 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/work-day-scheduler.png")} className="card-img-top" alt="WorkDay Scheduler" onClick={workZoom}/>
+                <img src={require("../assets/images/work-day-scheduler.png")} className="card-img-top" alt="WorkDay Scheduler" onClick={workZoom} />
                 <div className="card-body">
                   <h5 className="card-title">Workday Scheduler</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Stores notes on a local machine in the browser</h6>
-                  <p className="card-text">A simple webpage that can store and retrieve notes, oriented around a 9am-5pm workday. The page changes based
-                  on the current time, by using the moment.js library.
+                  <p className="card-text">A simple webpage that can store and retrieve notes, oriented around a 9am-5pm workday.
+                  The page changes based on the current time, by using the moment.js library.
                   Utilizes the local storage feature of the browser to store notes, even after the browser is closed.
-            </p>
-                  <a href="https://github.com/Koldenblue/work-day-scheduler" className="card-link">Workday scheduler and project summary on GitHub</a>
-                  <br />
-                  <a href="https://koldenblue.github.io/work-day-scheduler/" className="card-link">Save notes for a scheduled workday!</a>
+                  </p>
+                  <ul className='project-list'>
+                    <li>
+                      Workday scheduler and project summary on <a href="https://github.com/Koldenblue/work-day-scheduler" className="card-link">GitHub</a>
+                    </li>
+                    <li>
+                      Save notes for a scheduled workday with the <a href="https://koldenblue.github.io/work-day-scheduler/" className="card-link">scheduler app</a>!
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -899,37 +963,47 @@ function Portfolio() {
                   <h5 className="card-title">Balance Sheet reader</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
                   <p className="card-text">A balance sheet reader, programmed to help company efficiency in reading large amounts of excel files.</p>
-                  <a href="https://github.com/Koldenblue/balance-sheet-reader" className="card-link">Balance sheet reader on GitHub!</a>
+                  <ul className='project-list'>
+                    <li>
+                      Balance sheet reader on <a href="https://github.com/Koldenblue/balance-sheet-reader" className="card-link">GitHub!</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
 
+
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                  <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
+                <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
 
-                  <div className="card-body">
-                    <h5 className="card-title">Connect 4</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
-                    <p className="card-text">The classic game of Connect 4 in a browser. I'd look forward to programming more complicated games as well, such as adventure games or strategy games.
-                      This project focuses on using React components and algorithmic logic to present a simple interactive game.
-                      This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a href='"https://github.com/Koldenblue/games-websites"'> GitHub</a>. 
-                      The orginal page was <a href="https://koldenblue.github.io/games-websites/">deployed using GitHub pages</a>.
+                <div className="card-body">
+                  <h5 className="card-title">Connect 4</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
+                  <p className="card-text">The classic game of Connect 4 in a browser. I'd look forward to programming more complicated games as well, such as adventure games or strategy games.
+                  This project focuses on using React components and algorithmic logic to present a simple interactive game.
+                      This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a href='"https://github.com/Koldenblue/games-websites"' className='psychic-link'> GitHub</a>.
+                      The orginal page was <a href="https://koldenblue.github.io/games-websites/" className='psychic-link'>deployed using GitHub pages</a>.
                     </p>
-                    <a href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub Source Code</a>
-                    <br />
-                    <a href="https://connect-4-react.herokuapp.com/" className="card-link">Play Connect 4!</a>
-                    </div>
+                  <ul className='project-list'>
+                    <li>
+                      <a href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub </a>Source Code
+                  </li>
+                    <li>
+                      Play <a href="https://connect-4-react.herokuapp.com/" className="card-link">Connect 4!</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-      </section>
+        </section>
 
 
-      <section className='row card-gutters bottom-card-gutter'>
-        <div className='col-md-12'>
+        <section className='row card-gutters bottom-card-gutter'>
+          <div className='col-md-12'>
             <div className='box-all box'>
               <div className="card" >
                 <div className="card-body">
