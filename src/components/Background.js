@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-const path = require('path')
+import React from 'react';
 
 function Background(props) {
     let styles = {
@@ -17,8 +16,6 @@ function Background(props) {
             position: 'fixed'
         }
     }
-
-    let image = props.image.toString()
 
     switch (props.image) {
         case '../assets/images/beach.jpg':
