@@ -5,32 +5,35 @@ import Background from "../components/Background";
 // could be broken out to independent components. Only issue is that images must be directly required.
 // For now, easier to find and replace the necessary image functions found in the develop folder
 function Portfolio() {
+  const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
+
+  // image opacity states
   const [bartender, setBartender] = useState('none');
   const [barOpacity, setBarOpacity] = useState(1);
   const [trek, setTrek] = useState('none');
-  const [trekOpacity, setTrekOpacity] = useState(1)
+  const [trekOpacity, setTrekOpacity] = useState(1);
   const [chess, setChess] = useState('none');
-  const [chessOpacity, setChessOpacity] = useState(1)
+  const [chessOpacity, setChessOpacity] = useState(1);
   const [ham, setHam] = useState('none');
-  const [hamOpacity, setHamOpacity] = useState(1)
+  const [hamOpacity, setHamOpacity] = useState(1);
   const [readme, setReadme] = useState('none');
-  const [readmeOpacity, setReadmeOpacity] = useState(1)
+  const [readmeOpacity, setReadmeOpacity] = useState(1);
   const [quiz, setQuiz] = useState('none');
-  const [quizOpacity, setQuizOpacity] = useState(1)
+  const [quizOpacity, setQuizOpacity] = useState(1);
   const [weather, setWeather] = useState('none');
-  const [weatherOpacity, setWeatherOpacity] = useState(1)
+  const [weatherOpacity, setWeatherOpacity] = useState(1);
   const [template, setTemplate] = useState('none');
-  const [templateOpacity, setTemplateOpacity] = useState(1)
+  const [templateOpacity, setTemplateOpacity] = useState(1);
   const [work, setWork] = useState('none');
-  const [workOpacity, setWorkOpacity] = useState(1)
+  const [workOpacity, setWorkOpacity] = useState(1);
   const [balance, setBalance] = useState('none');
-  const [balanceOpacity, setBalanceOpacity] = useState(1)
+  const [balanceOpacity, setBalanceOpacity] = useState(1);
   const [inform, setInform] = useState('none');
-  const [informOpacity, setInformOpacity] = useState(1)
+  const [informOpacity, setInformOpacity] = useState(1);
   const [rippler, setRippler] = useState('none');
-  const [ripplerOpacity, setRipplerOpacity] = useState(1)
+  const [ripplerOpacity, setRipplerOpacity] = useState(1);
   const [manager, setManager] = useState('none');
-  const [managerOpacity, setManagerOpacity] = useState(1)
+  const [managerOpacity, setManagerOpacity] = useState(1);
   const [empFinder, setEmpFinder] = useState('none');
   const [empFinderOpacity, setEmpFinderOpacity] = useState(1);
   const [connectReact, setConnectReact] = useState('none');
@@ -244,10 +247,13 @@ function Portfolio() {
   // ==================  Express bartender image functions 
   // the user may click anywhere on the window to run the imageFade function, to get rid of the image
   let bartenderZoom = () => {
-    setBartender('block');
-    setTimeout(() => {
-      window.addEventListener("click", bartenderFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setBartender('block');
+      setTimeout(() => {
+        window.addEventListener("click", bartenderFade)
+      }, 100)
+    }
   }
 
   // lets the image fade in upon a change in the display style from none to block
@@ -262,16 +268,20 @@ function Portfolio() {
 
   let bartenderFade = () => {
     setBartender('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", bartenderFade);
   }
 
 
   // ================= Trek image functions
   let trekZoom = () => {
-    setTrek('block');
-    setTimeout(() => {
-      window.addEventListener("click", trekFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setTrek('block');
+      setTimeout(() => {
+        window.addEventListener("click", trekFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -285,16 +295,20 @@ function Portfolio() {
 
   let trekFade = () => {
     setTrek('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", trekFade);
   }
 
 
   // ========== chess image functions
   let chessZoom = () => {
-    setChess('block');
-    setTimeout(() => {
-      window.addEventListener("click", chessFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setChess('block');
+      setTimeout(() => {
+        window.addEventListener("click", chessFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -308,16 +322,20 @@ function Portfolio() {
 
   let chessFade = () => {
     setChess('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", chessFade);
   }
 
 
   //================ hamburger image functions
   let hamZoom = () => {
-    setHam('block');
-    setTimeout(() => {
-      window.addEventListener("click", hamFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setHam('block');
+      setTimeout(() => {
+        window.addEventListener("click", hamFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -331,16 +349,20 @@ function Portfolio() {
 
   let hamFade = () => {
     setHam('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", hamFade);
   }
 
 
   //================ readme image functions
   let readmeZoom = () => {
-    setReadme('block');
-    setTimeout(() => {
-      window.addEventListener("click", readmeFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setReadme('block');
+      setTimeout(() => {
+        window.addEventListener("click", readmeFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -354,16 +376,20 @@ function Portfolio() {
 
   let readmeFade = () => {
     setReadme('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", readmeFade);
   }
 
 
   //================ quiz image functions
   let quizZoom = () => {
-    setQuiz('block');
-    setTimeout(() => {
-      window.addEventListener("click", quizFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setQuiz('block');
+      setTimeout(() => {
+        window.addEventListener("click", quizFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -377,15 +403,19 @@ function Portfolio() {
 
   let quizFade = () => {
     setQuiz('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", quizFade);
   }
 
   //================ weather image functions
   let weatherZoom = () => {
-    setWeather('block');
-    setTimeout(() => {
-      window.addEventListener("click", weatherFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setWeather('block');
+      setTimeout(() => {
+        window.addEventListener("click", weatherFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -399,16 +429,20 @@ function Portfolio() {
 
   let weatherFade = () => {
     setWeather('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", weatherFade);
   }
 
 
   //================ template image functions
   let templateZoom = () => {
-    setTemplate('block');
-    setTimeout(() => {
-      window.addEventListener("click", templateFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setTemplate('block');
+      setTimeout(() => {
+        window.addEventListener("click", templateFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -422,16 +456,20 @@ function Portfolio() {
 
   let templateFade = () => {
     setTemplate('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", templateFade);
   }
 
 
   //================ work image functions
   let workZoom = () => {
-    setWork('block');
-    setTimeout(() => {
-      window.addEventListener("click", workFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setWork('block');
+      setTimeout(() => {
+        window.addEventListener("click", workFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -445,16 +483,20 @@ function Portfolio() {
 
   let workFade = () => {
     setWork('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", workFade);
   }
 
 
   //================ balance image functions
   let balanceZoom = () => {
-    setBalance('block');
-    setTimeout(() => {
-      window.addEventListener("click", balanceFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setBalance('block');
+      setTimeout(() => {
+        window.addEventListener("click", balanceFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -468,15 +510,19 @@ function Portfolio() {
 
   let balanceFade = () => {
     setBalance('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", balanceFade);
   }
 
   //================ inform image functions
   let informZoom = () => {
-    setInform('block');
-    setTimeout(() => {
-      window.addEventListener("click", informFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setInform('block');
+      setTimeout(() => {
+        window.addEventListener("click", informFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -490,15 +536,19 @@ function Portfolio() {
 
   let informFade = () => {
     setInform('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", informFade);
   }
 
   //================ rippler image functions
   let ripplerZoom = () => {
-    setRippler('block');
-    setTimeout(() => {
-      window.addEventListener("click", ripplerFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setRippler('block');
+      setTimeout(() => {
+        window.addEventListener("click", ripplerFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -512,15 +562,19 @@ function Portfolio() {
 
   let ripplerFade = () => {
     setRippler('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", ripplerFade);
   }
 
   //================ manager image functions
   let managerZoom = () => {
-    setManager('block');
-    setTimeout(() => {
-      window.addEventListener("click", managerFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setManager('block');
+      setTimeout(() => {
+        window.addEventListener("click", managerFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -534,15 +588,19 @@ function Portfolio() {
 
   let managerFade = () => {
     setManager('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", managerFade);
   }
 
   //================ empFinder image functions
   let empFinderZoom = () => {
-    setEmpFinder('block');
-    setTimeout(() => {
-      window.addEventListener("click", empFinderFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setEmpFinder('block');
+      setTimeout(() => {
+        window.addEventListener("click", empFinderFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -556,15 +614,19 @@ function Portfolio() {
 
   let empFinderFade = () => {
     setEmpFinder('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", empFinderFade);
   }
 
   //================ connectReact image functions
   let connectReactZoom = () => {
-    setConnectReact('block');
-    setTimeout(() => {
-      window.addEventListener("click", connectReactFade)
-    }, 100)
+    if (!currentlyZoomed) {
+      setCurrentlyZoomed(true);
+      setConnectReact('block');
+      setTimeout(() => {
+        window.addEventListener("click", connectReactFade)
+      }, 100)
+    }
   }
 
   useEffect(() => {
@@ -578,6 +640,7 @@ function Portfolio() {
 
   let connectReactFade = () => {
     setConnectReact('none');
+    setCurrentlyZoomed(false);
     window.removeEventListener("click", connectReactFade);
   }
 
