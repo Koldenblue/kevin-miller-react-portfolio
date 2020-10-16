@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Background from "../components/Background";
+import ProjectTableOfContents from "../components/ProjectTableOfContents";
 
 // Note on this function: this may have to be refactored sometime to not repeat so much. Prob the different cards
 // could be broken out to independent components. Only issue is that images must be directly required.
@@ -588,6 +589,9 @@ function Portfolio() {
   return (
     <>
       <Background image='../assets/images/koi.jpg' />
+      <container>
+        <ProjectTableOfContents />
+      </container>
 
       {/* Zoomed images */}
       <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} alt='Express Bartender app' />
@@ -611,7 +615,7 @@ function Portfolio() {
       <main className='container nav-avoid bottom-space'>
         <section className='row'>
 
-          <div className='col-md-6'>
+          <div className='col-md-6' id='bartender'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom} />
@@ -974,7 +978,7 @@ function Portfolio() {
           </div>
 
 
-          <div className='col-md-6'>
+          <div className='col-md-6' id='connect'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
