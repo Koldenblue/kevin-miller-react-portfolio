@@ -9,7 +9,7 @@ import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 // For now, easier to find and replace the necessary image functions found in the develop folder
 function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
-
+  const [opacity, setOpacity] = useState(0)
 
   // image opacity states
 
@@ -114,7 +114,7 @@ function Portfolio() {
 
   return (
     <>
-    <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
+    <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed, opacity, setOpacity}}>
 
       <Background image='../assets/images/koi.jpg' />
       {/* <container>

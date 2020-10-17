@@ -4,9 +4,10 @@ import ZoomFadeContext from './ZoomFadeContext';
 
 function ZoomFadeIn(props) {
   // const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
-  const {currentlyZoomed, setCurrentlyZoomed} = useContext(ZoomFadeContext);
+  const {currentlyZoomed, setCurrentlyZoomed, opacity, setOpacity} = useContext(ZoomFadeContext);
+  
   const [disp, setDisp] = useState("none");
-  const [opacity, setOpacity] = useState('0')
+  // const [opacity, setOpacity] = useState('0')
 
   const styles = {
     // the card style can be removed to set the card size equal to the column size on the grid
@@ -19,8 +20,8 @@ function ZoomFadeIn(props) {
       width: 'auto',
       transform: 'translateX(-50%)',
       boxShadow: '5px 5px 5px black',
-      display: disp,
       transition: 'opacity 0.5s',
+      display: disp,
       opacity: `${opacity}`
     }
   }
