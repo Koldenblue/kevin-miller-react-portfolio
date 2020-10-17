@@ -1,43 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Background from "../components/Background";
+import ProjectTableOfContents from "../components/ProjectTableOfContents";
+import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
+import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 
 // Note on this function: this may have to be refactored sometime to not repeat so much. Prob the different cards
 // could be broken out to independent components. Only issue is that images must be directly required.
 // For now, easier to find and replace the necessary image functions found in the develop folder
 function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
+  const [opacity, setOpacity] = useState(0)
 
   // image opacity states
-  const [bartender, setBartender] = useState('none');
-  const [barOpacity, setBarOpacity] = useState(1);
-  const [trek, setTrek] = useState('none');
-  const [trekOpacity, setTrekOpacity] = useState(1);
-  const [chess, setChess] = useState('none');
-  const [chessOpacity, setChessOpacity] = useState(1);
-  const [ham, setHam] = useState('none');
-  const [hamOpacity, setHamOpacity] = useState(1);
+
   const [readme, setReadme] = useState('none');
   const [readmeOpacity, setReadmeOpacity] = useState(1);
-  const [quiz, setQuiz] = useState('none');
-  const [quizOpacity, setQuizOpacity] = useState(1);
-  const [weather, setWeather] = useState('none');
-  const [weatherOpacity, setWeatherOpacity] = useState(1);
-  const [template, setTemplate] = useState('none');
-  const [templateOpacity, setTemplateOpacity] = useState(1);
-  const [work, setWork] = useState('none');
-  const [workOpacity, setWorkOpacity] = useState(1);
-  const [balance, setBalance] = useState('none');
-  const [balanceOpacity, setBalanceOpacity] = useState(1);
-  const [inform, setInform] = useState('none');
-  const [informOpacity, setInformOpacity] = useState(1);
   const [rippler, setRippler] = useState('none');
   const [ripplerOpacity, setRipplerOpacity] = useState(1);
-  const [manager, setManager] = useState('none');
-  const [managerOpacity, setManagerOpacity] = useState(1);
-  const [empFinder, setEmpFinder] = useState('none');
-  const [empFinderOpacity, setEmpFinderOpacity] = useState(1);
-  const [connectReact, setConnectReact] = useState('none');
-  const [connectReactOpacity, setConnectReactOpacity] = useState(1);
+
 
   // most of these should actually be consolidated into a single class in the css file.
   // Only the display and opacity need be here, since they currently rely on the state.
@@ -45,58 +25,6 @@ function Portfolio() {
     // the card style can be removed to set the card size equal to the column size on the grid
     card: {
       'width': '30rem'
-    },
-    bartenderImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: bartender,
-      transition: 'opacity 1s',
-      opacity: barOpacity
-    },
-    trekImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: trek,
-      transition: 'opacity 1s',
-      opacity: trekOpacity
-    },
-    chessImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: chess,
-      transition: 'opacity 1s',
-      opacity: chessOpacity
-    },
-    hamImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: ham,
-      transition: 'opacity 1s',
-      opacity: hamOpacity
     },
     readmeImg: {
       position: 'fixed',
@@ -111,84 +39,7 @@ function Portfolio() {
       transition: 'opacity 1s',
       opacity: readmeOpacity
     },
-    quizImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: quiz,
-      transition: 'opacity 1s',
-      opacity: quizOpacity
-    },
-    weatherImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: weather,
-      transition: 'opacity 1s',
-      opacity: weatherOpacity
-    },
-    templateImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: template,
-      transition: 'opacity 1s',
-      opacity: templateOpacity
-    },
-    workImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: work,
-      transition: 'opacity 1s',
-      opacity: workOpacity
-    },
-    balanceImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: balance,
-      transition: 'opacity 1s',
-      opacity: balanceOpacity
-    },
-    informImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: inform,
-      transition: 'opacity 1s',
-      opacity: informOpacity
-    },
+    
     ripplerImg: {
       position: 'fixed',
       zIndex: '9999',
@@ -202,157 +53,9 @@ function Portfolio() {
       transition: 'opacity 1s',
       opacity: ripplerOpacity
     },
-    managerImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: manager,
-      transition: 'opacity 1s',
-      opacity: managerOpacity
-    },
-    empFinderImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: empFinder,
-      transition: 'opacity 1s',
-      opacity: empFinderOpacity
-    },
-    connectReactImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: connectReact,
-      transition: 'opacity 1s',
-      opacity: connectReactOpacity
-    }
+    
 
   }
-
-  // ==================  Express bartender image functions 
-  // the user may click anywhere on the window to run the imageFade function, to get rid of the image
-  let bartenderZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setBartender('block');
-      setTimeout(() => {
-        window.addEventListener("click", bartenderFade)
-      }, 100)
-    }
-  }
-
-  // lets the image fade in upon a change in the display style from none to block
-  useEffect(() => {
-    if (barOpacity === 0) {
-      setBarOpacity(1)
-    }
-    else {
-      setBarOpacity(0)
-    }
-  }, [bartender])
-
-  let bartenderFade = () => {
-    setBartender('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", bartenderFade);
-  }
-
-
-  // ================= Trek image functions
-  let trekZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setTrek('block');
-      setTimeout(() => {
-        window.addEventListener("click", trekFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (trekOpacity === 0) {
-      setTrekOpacity(1)
-    }
-    else {
-      setTrekOpacity(0)
-    }
-  }, [trek])
-
-  let trekFade = () => {
-    setTrek('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", trekFade);
-  }
-
-
-  // ========== chess image functions
-  let chessZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setChess('block');
-      setTimeout(() => {
-        window.addEventListener("click", chessFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (chessOpacity === 0) {
-      setChessOpacity(1)
-    }
-    else {
-      setChessOpacity(0)
-    }
-  }, [chess])
-
-  let chessFade = () => {
-    setChess('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", chessFade);
-  }
-
-
-  //================ hamburger image functions
-  let hamZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setHam('block');
-      setTimeout(() => {
-        window.addEventListener("click", hamFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (hamOpacity === 0) {
-      setHamOpacity(1)
-    }
-    else {
-      setHamOpacity(0)
-    }
-  }, [ham])
-
-  let hamFade = () => {
-    setHam('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", hamFade);
-  }
-
 
   //================ readme image functions
   let readmeZoom = () => {
@@ -381,165 +84,6 @@ function Portfolio() {
   }
 
 
-  //================ quiz image functions
-  let quizZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setQuiz('block');
-      setTimeout(() => {
-        window.addEventListener("click", quizFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (quizOpacity === 0) {
-      setQuizOpacity(1)
-    }
-    else {
-      setQuizOpacity(0)
-    }
-  }, [quiz])
-
-  let quizFade = () => {
-    setQuiz('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", quizFade);
-  }
-
-  //================ weather image functions
-  let weatherZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setWeather('block');
-      setTimeout(() => {
-        window.addEventListener("click", weatherFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (weatherOpacity === 0) {
-      setWeatherOpacity(1)
-    }
-    else {
-      setWeatherOpacity(0)
-    }
-  }, [weather])
-
-  let weatherFade = () => {
-    setWeather('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", weatherFade);
-  }
-
-
-  //================ template image functions
-  let templateZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setTemplate('block');
-      setTimeout(() => {
-        window.addEventListener("click", templateFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (templateOpacity === 0) {
-      setTemplateOpacity(1)
-    }
-    else {
-      setTemplateOpacity(0)
-    }
-  }, [template])
-
-  let templateFade = () => {
-    setTemplate('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", templateFade);
-  }
-
-
-  //================ work image functions
-  let workZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setWork('block');
-      setTimeout(() => {
-        window.addEventListener("click", workFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (workOpacity === 0) {
-      setWorkOpacity(1)
-    }
-    else {
-      setWorkOpacity(0)
-    }
-  }, [work])
-
-  let workFade = () => {
-    setWork('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", workFade);
-  }
-
-
-  //================ balance image functions
-  let balanceZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setBalance('block');
-      setTimeout(() => {
-        window.addEventListener("click", balanceFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (balanceOpacity === 0) {
-      setBalanceOpacity(1)
-    }
-    else {
-      setBalanceOpacity(0)
-    }
-  }, [balance])
-
-  let balanceFade = () => {
-    setBalance('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", balanceFade);
-  }
-
-  //================ inform image functions
-  let informZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setInform('block');
-      setTimeout(() => {
-        window.addEventListener("click", informFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (informOpacity === 0) {
-      setInformOpacity(1)
-    }
-    else {
-      setInformOpacity(0)
-    }
-  }, [inform])
-
-  let informFade = () => {
-    setInform('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", informFade);
-  }
-
   //================ rippler image functions
   let ripplerZoom = () => {
     if (!currentlyZoomed) {
@@ -566,118 +110,34 @@ function Portfolio() {
     window.removeEventListener("click", ripplerFade);
   }
 
-  //================ manager image functions
-  let managerZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setManager('block');
-      setTimeout(() => {
-        window.addEventListener("click", managerFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (managerOpacity === 0) {
-      setManagerOpacity(1)
-    }
-    else {
-      setManagerOpacity(0)
-    }
-  }, [manager])
-
-  let managerFade = () => {
-    setManager('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", managerFade);
-  }
-
-  //================ empFinder image functions
-  let empFinderZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setEmpFinder('block');
-      setTimeout(() => {
-        window.addEventListener("click", empFinderFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (empFinderOpacity === 0) {
-      setEmpFinderOpacity(1)
-    }
-    else {
-      setEmpFinderOpacity(0)
-    }
-  }, [empFinder])
-
-  let empFinderFade = () => {
-    setEmpFinder('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", empFinderFade);
-  }
-
-  //================ connectReact image functions
-  let connectReactZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setConnectReact('block');
-      setTimeout(() => {
-        window.addEventListener("click", connectReactFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (connectReactOpacity === 0) {
-      setConnectReactOpacity(1)
-    }
-    else {
-      setConnectReactOpacity(0)
-    }
-  }, [connectReact])
-
-  let connectReactFade = () => {
-    setConnectReact('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", connectReactFade);
-  }
-
-
-
 
 
   return (
     <>
+    <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed, opacity, setOpacity}}>
+
       <Background image='../assets/images/koi.jpg' />
+      {/* <container>
+        <ProjectTableOfContents />
+
+      </container> */}
 
       {/* Zoomed images */}
-      <img src={require('../assets/images/express-bartender.png')} style={styles.bartenderImg} alt='Express Bartender app' />
-      <img src={require("../assets/images/trek.png")} style={styles.trekImg} alt='Trek app' />
-      <img src={require("../assets/images/chess.PNG")} style={styles.chessImg} alt='Python Chess' />
-      <img src={require("../assets/images/hamburger.PNG")} style={styles.hamImg} alt='hamburger database app' />
-      <img src={require("../assets/images/readme-zoom.png")} style={styles.readmeImg} alt='readme generator app' />
-      <img src={require("../assets/images/quiz.png")} style={styles.quizImg} alt='quiz generator' />
-      <img src={require("../assets/images/weather-forecaster.png")} style={styles.weatherImg} alt='weather app' />
-      <img src={require("../assets/images/template-engine.png")} style={styles.templateImg} alt='template generator' />
-      <img src={require("../assets/images/work-day-scheduler.png")} style={styles.workImg} alt='workday scheduler' />
-      <img src={require("../assets/images/bal_sheet.jpg")} style={styles.balanceImg} alt='balance sheet searcher' />
-      <img src={require("../assets/images/inform.png")} style={styles.informImg} alt='Inform and React app' />
-      <img src={require("../assets/images/color-rippler.PNG")} style={styles.ripplerImg} alt='color rippler app' />
-      <img src={require("../assets/images/database-manager.png")} style={styles.managerImg} alt='database manager in a terminal' />
-      <img src={require("../assets/images/emp-finder.png")} style={styles.empFinderImg} alt='Employee Finder React App' />
-      <img src={require("../assets/images/connect-4-react.PNG")} style={styles.connectReactImg} alt='Connect 4 in a browser' />
+      {/* <img src={require("../assets/images/readme-zoom.png")} style={styles.readmeImg} alt='readme generator app' />
+      <img src={require("../assets/images/color-rippler.PNG")} style={styles.ripplerImg} alt='color rippler app' /> */}
 
 
       {/* Main project card container */}
       <main className='container nav-avoid bottom-space'>
         <section className='row'>
 
-          <div className='col-md-6'>
+          <div className='col-md-6' id='bartender'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom} />
+                <ZoomFadeIn>
+                  <img src={require("../assets/images/express-bartender.png")} alt="Express Bartender app" />
+                </ZoomFadeIn>
+                {/* <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom} /> */}
                 <div className="card-body">
                   <h5 className="card-title">Express Bartender</h5>
                   <h6 className="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
@@ -701,7 +161,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/inform.png")} className="card-img-top" alt="Inform and React app" onClick={informZoom} />
+                <ZoomFadeIn>
+                  <img src={require("../assets/images/inform.png")} alt="Inform and React app" />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Inform and React</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Important Voter Information</h6>
@@ -728,7 +190,9 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <img src={require("../assets/images/color-rippler.PNG")} className="card-img-top" alt="Color Rippler app" onClick={ripplerZoom} />
+                    <ZoomFadeIn>
+                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" />
+                    </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
                     <div className="card-body">
@@ -758,7 +222,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/hamburger.PNG")} className="card-img-top" alt="Hamburger Website" onClick={hamZoom} />
+                <ZoomFadeIn>
+                  <img src={require("../assets/images/hamburger.PNG")} alt="Hamburger Website"/>
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Hamburger Handling</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
@@ -781,7 +247,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/readme-gen.PNG")} className="card-img-top" alt="A sample readme" onClick={readmeZoom} />
+                <ZoomFadeIn>
+                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Quick Readme Generator</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Practical development tool</h6>
@@ -809,7 +277,9 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <img src={require("../assets/images/chess.PNG")} className="card-img-top" alt="Chess in a Python Terminal" onClick={chessZoom} />
+                    <ZoomFadeIn>
+                      <img src={require("../assets/images/chess.PNG")} alt="Chess in a Python Terminal" />
+                    </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
                     <div className="card-body">
@@ -835,7 +305,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/emp-finder.png")} className="card-img-top" alt="Mock Employee Directory" onClick={empFinderZoom} />
+                <ZoomFadeIn>
+                <img src={require("../assets/images/emp-finder.png")}  alt="Mock Employee Directory" />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Mock Employee Directory</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Search and Filter an employee directory, through the power of React!</h6>
@@ -858,7 +330,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/database-manager.png")} className="card-img-top" alt="Database Manager" onClick={managerZoom} />
+                <ZoomFadeIn>
+                <img src={require("../assets/images/database-manager.png")}  alt="Database Manager"  />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Node Python SQL Database Manager</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Stores Employee Input in an SQL database</h6>
@@ -887,7 +361,9 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <img src={require("../assets/images/trek.png")} className="card-img-top" alt="TREK app" onClick={trekZoom} />
+                    <ZoomFadeIn>
+                    <img src={require("../assets/images/trek.png")} alt="TREK app"  />
+                    </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
                     <div className="card-body">
@@ -917,7 +393,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/quiz.png")} className="card-img-top" alt="Quiz" onClick={quizZoom} />
+                <ZoomFadeIn>
+                <img src={require("../assets/images/quiz.png")} alt="Quiz" />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Quiz Template</h5>
                   <h6 className="card-subtitle mb-2 text-muted">A JavaScript and HTML Quiz Template Package</h6>
@@ -940,7 +418,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/weather-forecaster.png")} className="card-img-top" alt="Weather forecast app" onClick={weatherZoom} />
+                <ZoomFadeIn>
+                <img src={require("../assets/images/weather-forecaster.png")} alt="Weather forecast app" />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Weather Forecasting app</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Find the weather in your city</h6>
@@ -969,7 +449,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/template-engine.png")} className="card-img-top" alt="Templated Object Engine in Browser" onClick={templateZoom} />
+                <ZoomFadeIn>
+                <img src={require("../assets/images/template-engine.png")}  alt="Templated Object Engine in Browser" />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Templated Object Engine</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Object-oriented programming used to generate HTML templates</h6>
@@ -994,7 +476,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/work-day-scheduler.png")} className="card-img-top" alt="WorkDay Scheduler" onClick={workZoom} />
+                <ZoomFadeIn>
+                <img src={require("../assets/images/work-day-scheduler.png")} alt="WorkDay Scheduler"  />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Workday Scheduler</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Stores notes on a local machine in the browser</h6>
@@ -1021,8 +505,10 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/bal_sheet.jpg")} className="card-img-top" alt="Balance Sheet" onClick={balanceZoom} />
-                <div className="card-body">
+                <ZoomFadeIn>
+                <img src={require("../assets/images/bal_sheet.jpg")}  alt="Balance Sheet"  />
+      </ZoomFadeIn>
+                  <div className="card-body">
                   <h5 className="card-title">Balance Sheet reader</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
                   <p className="card-text">A balance sheet reader, programmed to help company efficiency in reading large amounts of excel files.</p>
@@ -1037,11 +523,12 @@ function Portfolio() {
           </div>
 
 
-          <div className='col-md-6'>
+          <div className='col-md-6' id='connect'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <img src={require("../assets/images/connect-4-react.PNG")} className="card-img-top" alt="Connect 4" onClick={connectReactZoom} />
-
+                <ZoomFadeIn>
+                <img src={require("../assets/images/connect-4-react.PNG")}  alt="Connect 4"  />
+</ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Connect 4</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
@@ -1083,6 +570,7 @@ function Portfolio() {
           </div>
         </section>
       </main>
+      </ZoomFadeContext.Provider>
     </>
   )
 }
