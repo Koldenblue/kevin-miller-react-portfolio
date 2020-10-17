@@ -13,8 +13,8 @@ export default function ProjectTableOfContents() {
 
   return (
     <div style={styles.tableOfContents}>
-      <Link to='/#bartender'>Express Bartender</Link>
-      <a href='/#connect'>Connect 4</a>
+      <a href='#bartender'>Express Bartender</a>
+      <a href='#connect'>Connect 4</a>
     </div>
   )
 }
