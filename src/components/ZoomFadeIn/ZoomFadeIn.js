@@ -38,6 +38,10 @@ function ZoomFadeIn(props) {
 
   // lets the image fade in upon a change in the display style from none to block
   useEffect(() => {
+    // maybe it's buggy because the disp is being set to block, but then 
+    // the opacity is set before the component even gets rerendered.
+    // so disp => block, but need to rerender component then set opacity.
+    // solve with lower order component?
     if (disp === 'block') {
       setOpacity(1)
     }
