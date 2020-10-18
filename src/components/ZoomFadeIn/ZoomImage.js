@@ -43,7 +43,7 @@ function ZoomImage(props) {
   return (
     <>
       <div className='hidden-image' style={styles.img}>
-        {props.children}
+        {props.zoomedChild}
       </div>
     </>
   )
