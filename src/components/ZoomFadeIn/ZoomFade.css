@@ -9,12 +9,14 @@ width: 100%;
 .hidden-image img {
   position: fixed;
   z-index: 9999;
-  top: 90px;
+  /* top: 90px; */
   left: 50%;
-  height: 85%;
+  height: 100%;
   width: auto;
   transform: translateX(-50%);
   box-shadow: 5px 5px 5px black;
+  max-height: 100%;
+  max-width: 100vw;
 }
 
 .card-img-top:hover {
