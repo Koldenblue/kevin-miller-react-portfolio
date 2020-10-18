@@ -1,10 +1,9 @@
-import { createContext, useState } from 'react';
+import { createContext } from 'react';
 
 const ZoomFadeContext = createContext({
   currentlyZoomed: false,
-  setCurrentlyZoomed: () => {},
-  opacity: 0,
-  setOpacity: () => {}
+  setCurrentlyZoomed: () => {}
 })
 
 export default ZoomFadeContext;
+

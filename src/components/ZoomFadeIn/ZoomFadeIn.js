@@ -1,30 +1,28 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import './ZoomFade.css'
 import ZoomFadeContext from './ZoomFadeContext';
+import ZoomImage from "./ZoomImage";
+
+// to use these files, need to wrap everything in the context provider, ZoomFadeContext, in the higher order component
+/* Add in:
+import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
+import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
+
+    <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
+      {wrapped content}
+      <ZoomFadeIn>
+        {IMAGE}
+      </ZoomFadeIn>
+    </ZoomFadeContext>
+*/
+// Edit styles as appropriate, in both the CSS and inline styles
+// If large image is diff from small image, set the diffZoomedImage={true} attribute on <ZoomFadeIn>
+// then wrap the two images. The small image will have smImg={true}
+// and the large image will be lgImg={true}
 
 function ZoomFadeIn(props) {
-  // const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
-  const {currentlyZoomed, setCurrentlyZoomed, opacity, setOpacity} = useContext(ZoomFadeContext);
-  
+  const { currentlyZoomed, setCurrentlyZoomed } = useContext(ZoomFadeContext);
   const [disp, setDisp] = useState("none");
-  // const [opacity, setOpacity] = useState('0')
-
-  const styles = {
-    // the card style can be removed to set the card size equal to the column size on the grid
-    img: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      transition: 'opacity 0.5s',
-      display: disp,
-      opacity: `${opacity}`
-    }
-  }
 
   let imgZoom = () => {
     if (!currentlyZoomed) {
@@ -36,33 +34,43 @@ function ZoomFadeIn(props) {
     }
   }
 
-  // lets the image fade in upon a change in the display style from none to block
-  useEffect(() => {
-    if (disp === 'block') {
-      setOpacity(1)
-    }
-    else {
-      setOpacity(0)
-    }
-  }, [disp])
-
   let imgFade = () => {
     setDisp('none');
     setCurrentlyZoomed(false);
     window.removeEventListener("click", imgFade);
   }
 
-
-  return (
-    <>
-      <div className='hidden-image' style={styles.img}>
-        {props.children}
-      </div>
-      <div className='card-img-top' onClick={imgZoom}>
-        {props.children}
-      </div>
-    </>
-  )
+  // if large image is different from small image, return appropriate images
+  if (props.diffZoomedImage) {
+    return (
+      <>
+        <ZoomImage
+          disp={disp}
+          zoomedChild={props.children.filter((index) => {
+            return index.props.lgImg
+          })}
+        />
+        <div className='card-img-top' onClick={imgZoom}>
+          {props.children.filter((index) => {
+            return index.props.smImg
+          })}
+        </div>
+      </>
+    )
+  }
+  else {
+    return (
+      <>
+        <ZoomImage
+          disp={disp}
+          zoomedChild={props.children}
+        />
+        <div className='card-img-top' onClick={imgZoom}>
+          {props.children}
+        </div>
+      </>
+    )
+  }
 }
 
 export default ZoomFadeIn;

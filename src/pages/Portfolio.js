@@ -9,7 +9,6 @@ import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 // For now, easier to find and replace the necessary image functions found in the develop folder
 function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
-  const [opacity, setOpacity] = useState(0)
 
   // image opacity states
 
@@ -114,7 +113,7 @@ function Portfolio() {
 
   return (
     <>
-    <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed, opacity, setOpacity}}>
+    <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
 
       <Background image='../assets/images/koi.jpg' />
       {/* <container>
@@ -190,8 +189,9 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <ZoomFadeIn>
-                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" />
+                    <ZoomFadeIn diffZoomedImage={true}>
+                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smImg={true}/>
+                      <img src={require("../assets/images/readme-zoom.png")} alt='readme generator app' lgImg={true} />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
