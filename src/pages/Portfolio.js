@@ -4,111 +4,16 @@ import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
 import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 
-// Note on this function: this may have to be refactored sometime to not repeat so much. Prob the different cards
-// could be broken out to independent components. Only issue is that images must be directly required.
-// For now, easier to find and replace the necessary image functions found in the develop folder
 function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
-  // image opacity states
 
-  const [readme, setReadme] = useState('none');
-  const [readmeOpacity, setReadmeOpacity] = useState(1);
-  const [rippler, setRippler] = useState('none');
-  const [ripplerOpacity, setRipplerOpacity] = useState(1);
-
-
-  // most of these should actually be consolidated into a single class in the css file.
-  // Only the display and opacity need be here, since they currently rely on the state.
   const styles = {
     // the card style can be removed to set the card size equal to the column size on the grid
     card: {
       'width': '30rem'
-    },
-    readmeImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: readme,
-      transition: 'opacity 1s',
-      opacity: readmeOpacity
-    },
-    
-    ripplerImg: {
-      position: 'fixed',
-      zIndex: '9999',
-      top: '90px',
-      left: '50%',
-      height: '85%',
-      width: 'auto',
-      transform: 'translateX(-50%)',
-      boxShadow: '5px 5px 5px black',
-      display: rippler,
-      transition: 'opacity 1s',
-      opacity: ripplerOpacity
-    },
-    
-
-  }
-
-  //================ readme image functions
-  let readmeZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setReadme('block');
-      setTimeout(() => {
-        window.addEventListener("click", readmeFade)
-      }, 100)
     }
   }
-
-  useEffect(() => {
-    if (readmeOpacity === 0) {
-      setReadmeOpacity(1)
-    }
-    else {
-      setReadmeOpacity(0)
-    }
-  }, [readme])
-
-  let readmeFade = () => {
-    setReadme('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", readmeFade);
-  }
-
-
-  //================ rippler image functions
-  let ripplerZoom = () => {
-    if (!currentlyZoomed) {
-      setCurrentlyZoomed(true);
-      setRippler('block');
-      setTimeout(() => {
-        window.addEventListener("click", ripplerFade)
-      }, 100)
-    }
-  }
-
-  useEffect(() => {
-    if (ripplerOpacity === 0) {
-      setRipplerOpacity(1)
-    }
-    else {
-      setRipplerOpacity(0)
-    }
-  }, [rippler])
-
-  let ripplerFade = () => {
-    setRippler('none');
-    setCurrentlyZoomed(false);
-    window.removeEventListener("click", ripplerFade);
-  }
-
 
 
   return (
@@ -191,7 +96,7 @@ function Portfolio() {
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
                       <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smImg={true}/>
-                      <img src={require("../assets/images/readme-zoom.png")} alt='readme generator app' lgImg={true} />
+                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgImg={true} />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
@@ -247,8 +152,9 @@ function Portfolio() {
           <div className='col-md-6'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <ZoomFadeIn>
-                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" />
+                <ZoomFadeIn diffZoomedImage={true}>
+                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" smImg={true}/>
+                  <img src={require("../assets/images/readme-zoom.png")} alt="A sample readme" lgImg={true}/>
                 </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Quick Readme Generator</h5>
@@ -331,7 +237,7 @@ function Portfolio() {
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <ZoomFadeIn>
-                <img src={require("../assets/images/database-manager.png")}  alt="Database Manager"  />
+                <img src={require("../assets/images/database-manager.png")} alt="Database Manager"  />
                 </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Node Python SQL Database Manager</h5>
@@ -506,7 +412,7 @@ function Portfolio() {
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <ZoomFadeIn>
-                <img src={require("../assets/images/bal_sheet.jpg")}  alt="Balance Sheet"  />
+                <img src={require("../assets/images/bal_sheet.jpg")} alt="Balance Sheet"  />
       </ZoomFadeIn>
                   <div className="card-body">
                   <h5 className="card-title">Balance Sheet reader</h5>
@@ -527,8 +433,8 @@ function Portfolio() {
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <ZoomFadeIn>
-                <img src={require("../assets/images/connect-4-react.PNG")}  alt="Connect 4"  />
-</ZoomFadeIn>
+                  <img src={require("../assets/images/connect-4-react.PNG")} alt="Connect 4"  />
+                </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Connect 4</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
@@ -560,10 +466,10 @@ function Portfolio() {
                   <h5 className="card-title">More Projects coming soon!</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Check back for updates!</h6>
                   <p className="card-text">I work in Javascript/CSS/HTML, Python 3, as well as C/C++!
-                  My aim is to build websites for both personal and professional use.
-                  I welcome programming challenges as learning opportunities. General utility programming makes for a good project.
-                  I am also learning and programming game development for fun!
-            </p>
+                    My aim is to build websites for both personal and professional use.
+                    I welcome programming challenges as learning opportunities. General utility programming makes for a good project.
+                    I am also learning and programming game development for fun!
+                  </p>
                 </div>
               </div>
             </div>
