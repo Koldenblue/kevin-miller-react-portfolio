@@ -11,6 +11,7 @@ class Pictures extends React.Component {
         <main id="carousel-box" class='bottom-space'>
           <div class="nav-avoid container-lg">
             <Carousel>
+
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -18,6 +19,7 @@ class Pictures extends React.Component {
                   alt="Playing the Bass"
                 />
               </Carousel.Item>
+
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -25,6 +27,7 @@ class Pictures extends React.Component {
                   alt="Me and my dog, Saskia"
                 />
               </Carousel.Item>
+
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -32,6 +35,31 @@ class Pictures extends React.Component {
                   alt="me"
                 />
               </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/images/diploma.JPG")}
+                  alt="PhD diploma"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/images/dissertation.JPG")}
+                  alt="dissertation title"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={require("../assets/images/dissertation-page.JPG")}
+                  alt="page from dissertation"
+                />
+              </Carousel.Item>
+
             </Carousel>
           </div>
         </main>

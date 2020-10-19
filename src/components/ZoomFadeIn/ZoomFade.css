@@ -1,12 +1,12 @@
 
-.card-img-top img {
+.zoom-card-img-top img {
   border-top-left-radius: calc(.25rem - 1px);
 border-top-right-radius: calc(.25rem - 1px);
 flex-shrink: 0;
 width: 100%;
 }
 
-.hidden-image img {
+.zoom-hidden-image img {
   position: fixed;
   z-index: 9999;
   /* top: 90px; */
@@ -19,7 +19,7 @@ width: 100%;
   max-width: 100vw;
 }
 
-.card-img-top:hover {
+.zoom-card-img-top:hover {
   box-shadow: 5px 5px 5px black;
   /* transform: translateX(-5px); */
   /* transform: translateY(-5px); */
