@@ -14,7 +14,7 @@ class Pictures extends React.Component {
 
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 carousel-image"
                   src={require("../assets/images/guitar3.jpg")}
                   alt="Playing the Bass"
                 />
@@ -22,7 +22,7 @@ class Pictures extends React.Component {
 
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 carousel-image"
                   src={require("../assets/images/saskia2.JPG")}
                   alt="Me and my dog, Saskia"
                 />
@@ -30,7 +30,7 @@ class Pictures extends React.Component {
 
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 carousel-image"
                   src={require("../assets/images/self2.jpg")}
                   alt="me"
                 />
@@ -38,24 +38,24 @@ class Pictures extends React.Component {
 
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
-                  src={require("../assets/images/diploma.JPG")}
+                  className="d-block w-100 carousel-image"
+                  src={require("../assets/images/diploma.png")}
                   alt="PhD diploma"
                 />
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
-                  src={require("../assets/images/dissertation.JPG")}
+                  className="d-block w-100 carousel-image"
+                  src={require("../assets/images/dissertation.png")}
                   alt="dissertation title"
                 />
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
-                  src={require("../assets/images/dissertation-page.JPG")}
+                  className="d-block w-100 carousel-image"
+                  src={require("../assets/images/dissertation-page.png")}
                   alt="page from dissertation"
                 />
               </Carousel.Item>
