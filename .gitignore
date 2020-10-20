@@ -6,6 +6,7 @@ node_modules/
 Develop/**
 develop/**
 *.code-workspace
+koi/
 
 # dependencies
 /node_modules

@@ -26,10 +26,6 @@ function Portfolio() {
 
       </container> */}
 
-      {/* Zoomed images */}
-      {/* <img src={require("../assets/images/readme-zoom.png")} style={styles.readmeImg} alt='readme generator app' />
-      <img src={require("../assets/images/color-rippler.PNG")} style={styles.ripplerImg} alt='color rippler app' /> */}
-
 
       {/* Main project card container */}
       <main className='container nav-avoid bottom-space'>
