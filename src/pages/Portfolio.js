@@ -90,6 +90,41 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
+                    <ZoomFadeIn>
+                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app"/>
+                    </ZoomFadeIn>
+                  </div>
+                  <div className='col-md-7'>
+                    <div className="card-body">
+                      <h5 className="card-title">Para-bubbles</h5>
+                      <h6 className="card-subtitle mb-2 text-muted">Parallaxed Background Bubbles</h6>
+                      <p className="card-text">A great looking, colorful background of bubbles that all scroll at different rates, for a neat parallax effect!
+                        This app uses the react-spring package to demonstrate how a basic menu can be made much more interesting with a bit of simple animation. React also offers the advantage of easy component mapping and quick updating of the DOM.
+                        Although similar animation effects are achievable with CSS, the react-spring package uses JavaScript for physics based, intuitive animation coding. As a bonus, simple API calls for searchable GIFs are possible!
+                    </p>
+                      <ul className='project-list'>
+                        <li>
+                          See the source code on<a href="https://github.com/Koldenblue/para-bubbles" className="card-link"> GitHub</a>
+                        </li>
+                        <li>
+                          Check out the <a href="https://para-bubbles.herokuapp.com" className="card-link">para-bubbles demo</a>! Scroll the page for animation, and perform simple customization with the options menu.
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section className='row card-gutters'>
+          <div className='col-md-12'>
+            <div className='box-all box'>
+              <div className="card">
+                <div className='row no-gutters'>
+                  <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
                       <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smImg={true}/>
                       <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgImg={true} />
