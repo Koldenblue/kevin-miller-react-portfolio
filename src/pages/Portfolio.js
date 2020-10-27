@@ -92,11 +92,9 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <ZoomFadeIn diffZoomedImage={true} diffHover={true} diffHoverClass='para-bubbles para-container'>
-                      {/* <img src={require("../assets/images/para-bubbles.gif")} alt="Color Rippler app" smimg='true'/> */}
-                      <img className='para-bubbles' alt="Color Rippler app" smimg='true'/>
-                      <img src={require('../assets/images/para-bubbles.PNG')} lgimg='true' />
-
+                    <ZoomFadeIn diffZoomedImage={true}>
+                      <img src={require("../assets/images/para-bubbles.gif")} alt="Color Rippler app" smimg='true'/>
+                      <img src={require("../assets/images/para-bubbles.PNG")} lgimg='true' />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>

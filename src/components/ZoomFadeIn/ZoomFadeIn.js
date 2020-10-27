@@ -58,7 +58,7 @@ function ZoomFadeIn(props) {
             return (index.props.lgimg === 'true')
           })}
         />
-        <div className={props.diffHover ? props.diffHoverClass : hoverClass} onClick={imgZoom}>
+        <div className={hoverClass} onClick={imgZoom}>
           {props.children.filter((index) => {
             return (index.props.smimg === 'true')
           })}
