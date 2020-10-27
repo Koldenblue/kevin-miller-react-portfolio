@@ -23,8 +23,6 @@ function ZoomImage(props) {
 
 
   useEffect(() => {
-    console.log(props.disp)
-    console.log(opacity)
     if (props.disp === 'block') {
       // maybe bad coding practice, but the only way I could figure out to set the opacity
       // after rendering the block display. As opposed to setting the opacity along with the block display

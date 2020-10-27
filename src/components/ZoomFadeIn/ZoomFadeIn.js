@@ -18,8 +18,8 @@ import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 */
 // Edit styles as appropriate, in BOTH the CSS and inline styles
 /* If large image is diff from small image, set the diffZoomedImage={true} attribute on <ZoomFadeIn>
- then wrap the two images. The small image will have smImg={true}
- and the large image will be lgImg={true} */
+ then wrap the two images. The small image will have small_image={true}
+ and the large image will be large_image={true} */
 // ========================================================================================
 
 function ZoomFadeIn(props) {
@@ -49,12 +49,12 @@ function ZoomFadeIn(props) {
         <ZoomImage
           disp={disp}
           zoomedChild={props.children.filter((index) => {
-            return index.props.lgImg
+            return (index.props.large_image === 'true')
           })}
         />
         <div className='zoom-card-img-top' onClick={imgZoom}>
           {props.children.filter((index) => {
-            return index.props.smImg
+            return (index.props.small_image === 'true')
           })}
         </div>
       </>
@@ -67,7 +67,7 @@ function ZoomFadeIn(props) {
           disp={disp}
           zoomedChild={props.children}
         />
-        <div className='zoom-card-img-top' onClick={imgZoom}>
+        <div className='zoom-card-img-top' onClick={imgZoom} >
           {props.children}
         </div>
       </>
