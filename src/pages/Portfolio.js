@@ -90,8 +90,8 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" small_image='true'/>
-      <img src={require('../assets/images/para-bubbles.gif')} large_image='true' />
+                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" smimg='true'/>
+      <img src={require('../assets/images/para-bubbles.gif')} lgimg='true' />
 
                     </ZoomFadeIn>
                   </div>
@@ -127,8 +127,8 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" small_image='true'/>
-                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' large_image='true' />
+                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smimg='true'/>
+                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
@@ -185,8 +185,8 @@ function Portfolio() {
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <ZoomFadeIn diffZoomedImage={true}>
-                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" small_image='true'/>
-                  <img src={require("../assets/images/readme-zoom.png")} alt="A sample readme" large_image='true'/>
+                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" smimg='true'/>
+                  <img src={require("../assets/images/readme-zoom.png")} alt="A sample readme" lgimg='true'/>
                 </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Quick Readme Generator</h5>
