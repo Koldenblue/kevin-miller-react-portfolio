@@ -26,7 +26,6 @@ function Portfolio() {
 
       </container> */}
 
-
       {/* Main project card container */}
       <main className='container nav-avoid bottom-space'>
         <section className='row'>
@@ -90,8 +89,10 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <ZoomFadeIn>
-                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app"/>
+                    <ZoomFadeIn diffZoomedImage={true}>
+                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" smImg={true}/>
+      <img src={require('../assets/images/para-bubbles.gif')} lgImg={true} />
+
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
