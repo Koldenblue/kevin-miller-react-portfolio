@@ -36,11 +36,17 @@ function ZoomFadeIn(props) {
     }
   }
 
+  // default css class, which triggers a slight zoom on hover. 
+  // To use the custom gifHoverClass, set gifHover attribute = true, and gifHoverClass to a custom class
+  let hoverClass = 'zoom-card-img-top';
+
+
   let imgFade = () => {
     setDisp('none');
     setCurrentlyZoomed(false);
     window.removeEventListener("click", imgFade);
   }
+
 
   // if large image is different from small image, return appropriate images
   if (props.diffZoomedImage) {
@@ -52,7 +58,7 @@ function ZoomFadeIn(props) {
             return (index.props.lgimg === 'true')
           })}
         />
-        <div className='zoom-card-img-top' onClick={imgZoom}>
+        <div className={props.diffHover ? props.diffHoverClass : hoverClass} onClick={imgZoom}>
           {props.children.filter((index) => {
             return (index.props.smimg === 'true')
           })}
@@ -60,6 +66,7 @@ function ZoomFadeIn(props) {
       </>
     )
   }
+  
   else {
     return (
       <>
@@ -67,7 +74,7 @@ function ZoomFadeIn(props) {
           disp={disp}
           zoomedChild={props.children}
         />
-        <div className='zoom-card-img-top' onClick={imgZoom} >
+        <div className={props.diffHover ? props.diffHoverClass : hoverClass} onClick={imgZoom} >
           {props.children}
         </div>
       </>

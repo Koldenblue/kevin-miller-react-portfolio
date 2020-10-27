@@ -12,6 +12,9 @@ function Portfolio() {
     // the card style can be removed to set the card size equal to the column size on the grid
     card: {
       'width': '30rem'
+    },
+    paraBubbles: {
+      background: `url(require('../assets/images/para-bubbles.gif'))`
     }
   }
 
@@ -89,9 +92,10 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" smimg='true'/>
-      <img src={require('../assets/images/para-bubbles.gif')} lgimg='true' />
+                    <ZoomFadeIn diffZoomedImage={true} diffHover={true} diffHoverClass='para-bubbles para-container'>
+                      {/* <img src={require("../assets/images/para-bubbles.gif")} alt="Color Rippler app" smimg='true'/> */}
+                      <img className='para-bubbles' alt="Color Rippler app" smimg='true'/>
+                      <img src={require('../assets/images/para-bubbles.PNG')} lgimg='true' />
 
                     </ZoomFadeIn>
                   </div>
