@@ -19,13 +19,15 @@ function Portfolio() {
   }
 
 
+  // these functions change the para-bubbles image to a gif when moused over. The zoomed-in lgimg is still the original jpeg
   const paraGif = () => {
     document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
   }
-
+  // change back to the original jpeg upon mouseOut
   const restorePara = () => {
-    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.PNG'))
+    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.jpeg'))
   }
+
   return (
     <>
     <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
@@ -100,8 +102,8 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img id='para-img' onMouseOver={paraGif} onMouseOut={restorePara} src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" smimg='true'/>
-                      <img src={require("../assets/images/para-bubbles.PNG")} lgimg='true' />
+                      <img id='para-img' onMouseOver={paraGif} onMouseOut={restorePara} src={require("../assets/images/para-bubbles.jpeg")} alt="Color Rippler app" smimg='true'/>
+                      <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
@@ -117,7 +119,7 @@ function Portfolio() {
                           See the source code on<a href="https://github.com/Koldenblue/para-bubbles" className="card-link"> GitHub</a>
                         </li>
                         <li>
-                          Check out the <a href="https://para-bubbles.herokuapp.com" className="card-link">para-bubbles demo</a>! Scroll the page for animation, and perform simple customization with the options menu.
+                          Check out the <a href="https://para-bubbles.herokuapp.com" className="card-link">para-bubbles</a> demo! Scroll the page for animation, and perform simple customization with the options menu.
                       </li>
                       </ul>
                     </div>
