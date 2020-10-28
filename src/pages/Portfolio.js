@@ -12,10 +12,20 @@ function Portfolio() {
     // the card style can be removed to set the card size equal to the column size on the grid
     card: {
       'width': '30rem'
+    },
+    paraBubbles: {
+      background: `url(require('../assets/images/para-bubbles.gif'))`
     }
   }
 
 
+  const paraGif = () => {
+    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
+  }
+
+  const restorePara = () => {
+    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.PNG'))
+  }
   return (
     <>
     <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
@@ -25,7 +35,6 @@ function Portfolio() {
         <ProjectTableOfContents />
 
       </container> */}
-
 
       {/* Main project card container */}
       <main className='container nav-avoid bottom-space'>
@@ -90,8 +99,9 @@ function Portfolio() {
               <div className="card">
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
-                    <ZoomFadeIn>
-                      <img src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app"/>
+                    <ZoomFadeIn diffZoomedImage={true}>
+                      <img id='para-img' onMouseOver={paraGif} onMouseOut={restorePara} src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" smimg='true'/>
+                      <img src={require("../assets/images/para-bubbles.PNG")} lgimg='true' />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
@@ -126,8 +136,8 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smImg={true}/>
-                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgImg={true} />
+                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smimg='true'/>
+                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>
@@ -184,8 +194,8 @@ function Portfolio() {
             <div className='box-all box'>
               <div className="card" style={styles.card}>
                 <ZoomFadeIn diffZoomedImage={true}>
-                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" smImg={true}/>
-                  <img src={require("../assets/images/readme-zoom.png")} alt="A sample readme" lgImg={true}/>
+                  <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" smimg='true'/>
+                  <img src={require("../assets/images/readme-zoom.png")} alt="A sample readme" lgimg='true'/>
                 </ZoomFadeIn>
                 <div className="card-body">
                   <h5 className="card-title">Quick Readme Generator</h5>

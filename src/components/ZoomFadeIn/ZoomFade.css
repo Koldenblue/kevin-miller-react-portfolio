@@ -1,9 +1,9 @@
 
-.zoom-card-img-top img {
+.zoom-card-img-top img, .zoom-card-hover-gif img {
   border-top-left-radius: calc(.25rem - 1px);
-border-top-right-radius: calc(.25rem - 1px);
-flex-shrink: 0;
-width: 100%;
+  border-top-right-radius: calc(.25rem - 1px);
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .zoom-hidden-image img {

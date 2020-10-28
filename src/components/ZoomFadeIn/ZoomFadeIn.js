@@ -18,8 +18,8 @@ import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 */
 // Edit styles as appropriate, in BOTH the CSS and inline styles
 /* If large image is diff from small image, set the diffZoomedImage={true} attribute on <ZoomFadeIn>
- then wrap the two images. The small image will have smImg={true}
- and the large image will be lgImg={true} */
+ then wrap the two images. The small image will have smimg={true}
+ and the large image will be lgimg={true} */
 // ========================================================================================
 
 function ZoomFadeIn(props) {
@@ -36,11 +36,17 @@ function ZoomFadeIn(props) {
     }
   }
 
+  // default css class, which triggers a slight zoom on hover. 
+  // To use the custom gifHoverClass, set gifHover attribute = true, and gifHoverClass to a custom class
+  let hoverClass = 'zoom-card-img-top';
+
+
   let imgFade = () => {
     setDisp('none');
     setCurrentlyZoomed(false);
     window.removeEventListener("click", imgFade);
   }
+
 
   // if large image is different from small image, return appropriate images
   if (props.diffZoomedImage) {
@@ -49,17 +55,18 @@ function ZoomFadeIn(props) {
         <ZoomImage
           disp={disp}
           zoomedChild={props.children.filter((index) => {
-            return index.props.lgImg
+            return (index.props.lgimg === 'true')
           })}
         />
-        <div className='zoom-card-img-top' onClick={imgZoom}>
+        <div className={hoverClass} onClick={imgZoom}>
           {props.children.filter((index) => {
-            return index.props.smImg
+            return (index.props.smimg === 'true')
           })}
         </div>
       </>
     )
   }
+  
   else {
     return (
       <>
@@ -67,7 +74,7 @@ function ZoomFadeIn(props) {
           disp={disp}
           zoomedChild={props.children}
         />
-        <div className='zoom-card-img-top' onClick={imgZoom}>
+        <div className={props.diffHover ? props.diffHoverClass : hoverClass} onClick={imgZoom} >
           {props.children}
         </div>
       </>
