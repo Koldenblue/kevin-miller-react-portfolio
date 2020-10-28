@@ -43,7 +43,7 @@ function Chemistry() {
         </p>
 
           <p>
-            <b>Synthesis of symmetrically and unsymmetrically 3,5-dimethylbenzyl-substituted 1,1′-ferrocene diamines.</b>
+            <b>Synthesis of symmetrically and unsymmetrically 3,5-dimethylbenzyl-substituted 1,1′-ferrocene diamines.</b> 
           Lee, J. A.; Williams, B. N.; Ogilby, K. R.; Miller, K. L.; Diaconescu, P. L. J. Organomet. Chem. 2011, 696,
           4090-4094.
         </p>
@@ -66,12 +66,12 @@ function Chemistry() {
         </p>
 
           <p>
-            <b>Dearomatization reactions of N-heterocycles mediated by highly electrophilic group III complexes.</b>
+            <b>Dearomatization reactions of N-heterocycles mediated by highly electrophilic group III complexes.</b> 
           Presented at the Southern California Organometallics Conference Fall 2009.
         </p>
 
           <p>
-            <b>Use of highly reactive metal centers to effect the dearomatization and ring-opening of N-heterocycles.</b>
+            <b>Use of highly reactive metal centers to effect the dearomatization and ring-opening of N-heterocycles.</b> 
           Presented at the 239th American Chemical Society Conference at San Francisco, 2010.
         </p>
 
@@ -81,7 +81,7 @@ function Chemistry() {
         </p>
 
           <p>
-            <b>Electronic communication between bridged ferrocene centers, mediated by group III and group IV metals.</b>
+            <b>Electronic communication between bridged ferrocene centers, mediated by group III and group IV metals.</b> 
           Presented at the Southern California Organometallics Conference Winter 2012.
         </p>
 
