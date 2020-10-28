@@ -19,6 +19,13 @@ function Portfolio() {
   }
 
 
+  const paraGif = () => {
+    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
+  }
+
+  const restorePara = () => {
+    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.PNG'))
+  }
   return (
     <>
     <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
@@ -93,7 +100,7 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/para-bubbles.gif")} alt="Color Rippler app" smimg='true'/>
+                      <img id='para-img' onMouseOver={paraGif} onMouseOut={restorePara} src={require("../assets/images/para-bubbles.PNG")} alt="Color Rippler app" smimg='true'/>
                       <img src={require("../assets/images/para-bubbles.PNG")} lgimg='true' />
                     </ZoomFadeIn>
                   </div>
