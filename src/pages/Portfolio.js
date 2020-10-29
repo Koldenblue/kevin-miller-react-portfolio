@@ -28,6 +28,13 @@ function Portfolio() {
     document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.jpeg'))
   }
 
+  const barGif = () => {
+    document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.gif'));
+  }
+  const restoreBar = () => {
+    document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.png'))
+  }
+
   return (
     <>
     <ZoomFadeContext.Provider value={{currentlyZoomed, setCurrentlyZoomed}}>
@@ -45,8 +52,16 @@ function Portfolio() {
           <div className='col-md-6' id='bartender'>
             <div className='box-all box'>
               <div className="card" style={styles.card}>
-                <ZoomFadeIn>
-                  <img src={require("../assets/images/express-bartender.png")} alt="Express Bartender app" />
+                <ZoomFadeIn diffZoomedImage={true}>
+                  <img
+                    id='bar-img'
+                    onMouseOver={barGif}
+                    onMouseOut={restoreBar}
+                    src={require("../assets/images/express-bartender.png")} 
+                    alt="Express Bartender app" 
+                    smimg='true'
+                  />
+                  <img src={require("../assets/images/express-bartender.png")} alt="Express Bartender app" lgimg='true'/>
                 </ZoomFadeIn>
                 {/* <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom} /> */}
                 <div className="card-body">
@@ -102,7 +117,14 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img id='para-img' onMouseOver={paraGif} onMouseOut={restorePara} src={require("../assets/images/para-bubbles.jpeg")} alt="Color Rippler app" smimg='true'/>
+                      <img 
+                        id='para-img' 
+                        onMouseOver={paraGif} 
+                        onMouseOut={restorePara} 
+                        src={require("../assets/images/para-bubbles.jpeg")} 
+                        alt="Color Rippler app" 
+                        smimg='true'
+                      />
                       <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' />
                     </ZoomFadeIn>
                   </div>
@@ -110,7 +132,7 @@ function Portfolio() {
                     <div className="card-body">
                       <h5 className="card-title">Para-bubbles</h5>
                       <h6 className="card-subtitle mb-2 text-muted">Parallaxed Background Bubbles</h6>
-                      <p className="card-text">A great looking, colorful background of bubbles that all scroll at different rates, for a neat parallax effect!
+                      <p className="card-text">A colorful background of bubbles that all scroll at different rates, for a neat parallax effect!
                         This app uses the react-spring package to demonstrate how a basic menu can be made much more interesting with a bit of simple animation. React also offers the advantage of easy component mapping and quick updating of the DOM.
                         Although similar animation effects are achievable with CSS, the react-spring package uses JavaScript for physics based, intuitive animation coding. As a bonus, simple API calls for searchable GIFs are possible!
                     </p>
