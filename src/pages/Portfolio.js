@@ -32,7 +32,7 @@ function Portfolio() {
     document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.gif'));
   }
   const restoreBar = () => {
-    document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.png'))
+    document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.jpeg'))
   }
 
   return (
@@ -57,11 +57,11 @@ function Portfolio() {
                     id='bar-img'
                     onMouseOver={barGif}
                     onMouseOut={restoreBar}
-                    src={require("../assets/images/express-bartender.png")} 
+                    src={require("../assets/images/express-bartender.jpeg")} 
                     alt="Express Bartender app" 
                     smimg='true'
                   />
-                  <img src={require("../assets/images/express-bartender.png")} alt="Express Bartender app" lgimg='true'/>
+                  <img src={require("../assets/images/express-bartender.jpeg")} alt="Express Bartender app" lgimg='true'/>
                 </ZoomFadeIn>
                 {/* <img src={require("../assets/images/express-bartender.png")} className="card-img-top" alt="Express Bartender app" onClick={bartenderZoom} /> */}
                 <div className="card-body">
