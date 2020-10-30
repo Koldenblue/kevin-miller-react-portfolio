@@ -68,8 +68,8 @@ function Portfolio() {
                   <h5 className="card-title">Express Bartender</h5>
                   <h6 className="card-subtitle mb-2 text-muted">User-focused experience, designed to provide drink info</h6>
                   <p className="card-text">Users can log in, search through a database of alcoholic and non-alcoholic drinks, and create and store their own recipes. User data is stored in a structured query library (SQL) database.
-                  Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort. It really came together excellently as a result of our teamwork.
-                  I directed overall coding direction. I was also the main backend coder for database management and routing.
+                  Among other technologies, the Node.js Express framework and the Sequelize library for SQL database management are heavily utilized. Above all, this project was a team effort.
+                  I directed overall coding direction. I was also the main backend coder for database management and routing. I contributed to front-end polish as well.
                   </p>
                   <ul className='project-list'>
                     <li>
@@ -93,8 +93,8 @@ function Portfolio() {
                 <div className="card-body">
                   <h5 className="card-title">Inform and React</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Important Voter Information</h6>
-                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. The app pulls information relevant to voters for APIs, based upon a user's address.
-                  The address and voter information is stored in a database, and retrieved upon page load. Above all, work on this app highlighted how team effort and good teamwork can help achieve great results in a short amount of time.
+                  <p className="card-text">This app was a team effort, programmed using the React framework and a Mongo database backend. I led the team in programming a majority of website routes and database functions. 
+                  I also programmed functionality for API calls. I contributed a significant amount of front-end design work as well. The app retrieves relevant voter information, based upon user details in the Mongo database.
                 </p>
                   <ul className='project-list'>
                     <li>
