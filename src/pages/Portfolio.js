@@ -47,6 +47,43 @@ function Portfolio() {
 
       {/* Main project card container */}
       <main className='container nav-avoid bottom-space'>
+
+      <section className='row card-gutters'>
+          <div className='col-md-12'>
+            <div className='box-all box'>
+              <div className="card">
+                <div className='row no-gutters'>
+                  <div className='col-md-5'>
+                    <ZoomFadeIn diffZoomedImage={true}>
+                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smimg='true'/>
+                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
+                    </ZoomFadeIn>
+                  </div>
+                  <div className='col-md-7'>
+                    <div className="card-body">
+                      <h5 className="card-title">Color Rippler</h5>
+                      <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
+                      <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
+                      This app takes advantage of the React framework to display and update a large number of components in a web browser. 
+                      An array of colors is updated using an algorithm, and an options page allows the user a hefty degree of customization.
+                      Self-contained components may allow the color grid to
+                      be used as a background for other React web pages. 
+                    </p>
+                      <ul className='project-list'>
+                        <li>
+                          Get the source code on<a href="https://github.com/Koldenblue/color-rippler" className="card-link"> GitHub</a>
+                        </li>
+                        <li>
+                          <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid.
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className='row'>
 
           <div className='col-md-6' id='bartender'>
@@ -152,41 +189,6 @@ function Portfolio() {
           </div>
         </section>
 
-
-        <section className='row card-gutters'>
-          <div className='col-md-12'>
-            <div className='box-all box'>
-              <div className="card">
-                <div className='row no-gutters'>
-                  <div className='col-md-5'>
-                    <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smimg='true'/>
-                      <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
-                    </ZoomFadeIn>
-                  </div>
-                  <div className='col-md-7'>
-                    <div className="card-body">
-                      <h5 className="card-title">Color Rippler</h5>
-                      <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
-                      <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
-                      This app takes advantage of the React framework to display and update a large number of components in a web browser. Self-contained components may also be ported to other apps - the color grid may possibly
-                      be used as a background for other React web pages. Future direction for this app includes routing to an additional options page.
-                    </p>
-                      <ul className='project-list'>
-                        <li>
-                          Get the source code on<a href="https://github.com/Koldenblue/color-rippler" className="card-link"> GitHub</a>
-                        </li>
-                        <li>
-                          <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid. Reload the page to generate a new grid.
-                      </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className='row card-gutters'>
           <div className='col-md-6'>
