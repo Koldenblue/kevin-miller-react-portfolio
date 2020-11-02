@@ -8,6 +8,7 @@ function SummaryTabs(props) {
     <Tabs defaultActiveKey="summary">
       <Tab eventKey="summary" title="Summary">
         <p className='tab-para'>
+          <h5>Check out my <a href='/portfolio' className='psychic-link'>project portfolio</a>!</h5>
           Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA). 
           Education in full-stack development from UCLA.
           Experienced problem-solver and scientific researcher with seven major <a href='/chemistry' className='psychic-link'>scientific publications</a>. 
@@ -53,10 +54,10 @@ function SummaryTabs(props) {
       <Tab eventKey="contact" title="Contact">
         <div className='tab-para'>
         <p>
-        My prefered method of contact is through email, at {props.contact.email + props.contact.domain}. My cell phone may be reached at {props.contact.areaCode + props.contact.phone}.
+        My prefered method of contact is through email, at <strong>{props.contact.email + props.contact.domain}</strong>. My cell phone may be reached at <strong>{props.contact.areaCode + props.contact.phone}</strong>.
         I can also be reached through my <a href='https://www.linkedin.com/in/kevin-miller-phd-1b197986/' className='psychic-link'>LinkedIn profile page</a>.
         </p>
-        <p>Be sure to check out my portfolio of projects, by following the <a href='/portfolio' className='psychic-link'>portfolio</a> link in the NavBar, or by visiting my <a href='https://github.com/Koldenblue' className='psychic-link'>GitHub profile</a> directly!</p>
+        <p>Be sure to check out my <a href='/portfolio' className='psychic-link'>portfolio</a> of projects or to visit my <a href='https://github.com/Koldenblue' className='psychic-link'>GitHub profile</a>!</p>
         </div>
       </Tab>
     </Tabs>

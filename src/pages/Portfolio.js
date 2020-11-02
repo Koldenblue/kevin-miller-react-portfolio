@@ -20,6 +20,7 @@ function Portfolio() {
   const ripplerGif = () => {
     document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.gif'));
   }
+  // change back to the original image upon mouseOut
   const restoreRippler = () => {
     document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.PNG'))
   }
@@ -27,7 +28,6 @@ function Portfolio() {
   const paraGif = () => {
     document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
   }
-  // change back to the original jpeg upon mouseOut
   const restorePara = () => {
     document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.jpeg'))
   }
