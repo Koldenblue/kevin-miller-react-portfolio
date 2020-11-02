@@ -13,13 +13,10 @@ function Portfolio() {
     card: {
       'width': '30rem'
     },
-    paraBubbles: {
-      background: `url(require('../assets/images/para-bubbles.gif'))`
-    }
   }
 
-
-  // these functions change the para-bubbles image to a gif when moused over. The zoomed-in lgimg is still the original jpeg
+  // ==========================================================================================================================
+  // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const paraGif = () => {
     document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
   }
@@ -34,6 +31,7 @@ function Portfolio() {
   const restoreBar = () => {
     document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.jpeg'))
   }
+  // ==========================================================================================================================
 
   return (
     <>
@@ -42,7 +40,6 @@ function Portfolio() {
       <Background image='../assets/images/koi.jpg' />
       {/* <container>
         <ProjectTableOfContents />
-
       </container> */}
 
       {/* Main project card container */}
@@ -63,7 +60,7 @@ function Portfolio() {
                     <div className="card-body">
                       <h5 className="card-title">Color Rippler</h5>
                       <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
-                      <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the color change ripple outward!
+                      <p className="card-text">Generates a grid of colors in a browser. Click on any color box to see the colors ripple outward!
                       This app takes advantage of the React framework to display and update a large number of components in a web browser. 
                       An array of colors is updated using an algorithm, and an options page allows the user a hefty degree of customization.
                       Self-contained components may allow the color grid to
@@ -159,7 +156,7 @@ function Portfolio() {
                         onMouseOver={paraGif} 
                         onMouseOut={restorePara} 
                         src={require("../assets/images/para-bubbles.jpeg")} 
-                        alt="Color Rippler app" 
+                        alt="Parallaxed bubbles app" 
                         smimg='true'
                       />
                       <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' />

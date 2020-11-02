@@ -44,13 +44,13 @@ class Pictures extends React.Component {
                 />
               </Carousel.Item>
 
-              <Carousel.Item>
+              {/* <Carousel.Item>
                 <img
                   className="d-block w-100 carousel-image"
                   src={require("../assets/images/dissertation.png")}
                   alt="dissertation title"
                 />
-              </Carousel.Item>
+              </Carousel.Item> */}
 
               <Carousel.Item>
                 <img
