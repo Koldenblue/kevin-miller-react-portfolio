@@ -17,6 +17,13 @@ function Portfolio() {
 
   // ==========================================================================================================================
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
+  const ripplerGif = () => {
+    document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.gif'));
+  }
+  const restoreRippler = () => {
+    document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.PNG'))
+  }
+
   const paraGif = () => {
     document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
   }
@@ -52,7 +59,13 @@ function Portfolio() {
                 <div className='row no-gutters'>
                   <div className='col-md-5'>
                     <ZoomFadeIn diffZoomedImage={true}>
-                      <img src={require("../assets/images/color-rippler.PNG")} alt="Color Rippler app" smimg='true'/>
+                      <img
+                        id='rippler-img'
+                        onMouseOver={ripplerGif}
+                        onMouseOut={restoreRippler}
+                        src={require("../assets/images/color-rippler.PNG")} 
+                        alt="Color Rippler app" 
+                        smimg='true'/>
                       <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
                     </ZoomFadeIn>
                   </div>
