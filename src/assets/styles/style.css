@@ -157,6 +157,12 @@ when the screen is reduced in width */
 
 
 /* =============== portfolio section  =============== */
+.horizontal-card-body {
+  padding-bottom: 0px;
+}
+.horizontal-description, .horizontal-list {
+  margin-bottom: 4px;
+}
 .box3, .box2, .box1 {
   height: 100%;
   margin: 1em;
