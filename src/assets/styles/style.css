@@ -7,7 +7,6 @@
 }
 
 .nav-tabs {
-  
   border-bottom: 1px solid rgb(81, 0, 97);
 }
 
@@ -47,10 +46,25 @@
 }
 /*===================================================*/
 
-.jumbotron {
+/* ======== HOME PAGE ==============================*/
+.jumbotron-fluid {
   background-color: rgba(224, 239, 245, 0.4);
   font-family: 'Audiowide', cursive;
   padding: 4rem 2rem 1rem 2rem;
+  position: relative;
+  margin-top: 3rem;
+  border-width: 0 0 2px 0;
+  border-color: rgb(140, 226, 255);
+  border-style: groove;
+}
+
+#home-container {
+  background: rgb(255,138,0);
+  background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%);
+  padding:25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 0.99;
 }
 
 .homepage-photo {
@@ -84,6 +98,8 @@ pre {
   font-size: 1.2em;
 }
 
+/*===================================================*/
+
 
 .container, .container-lg {
   /* background-image: linear-gradient(to top, rgba(255, 138, 0, 0.5) rgba(255, 231, 92, 0.5), rgba(129, 238, 214,0.5), rgba(129, 238, 214, 0.5)); */
@@ -104,6 +120,7 @@ pre {
   border-radius: 20px;
   opacity: 0.99;
 }
+
 
 
 .card {
