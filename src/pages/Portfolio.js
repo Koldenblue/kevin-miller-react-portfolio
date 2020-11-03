@@ -146,7 +146,7 @@ function Portfolio() {
                         See the <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">GitHub </a>repository and project summary
                     </li>
                       <li>
-                        See the<a href="https://inform-react.herokuapp.com/" className="card-link"> deployed app</a>! The username 'america' with password 'america' may be used in leiu of signing up.
+                        See the<a href="https://inform-react.herokuapp.com/" className="card-link"> deployed app</a>! The username 'usa' with password 'america' may be used in leiu of signing up.
                     </li>
                     </ul>
                   </div>
