@@ -5,24 +5,38 @@ import Tabs from "react-bootstrap/Tabs";
 function SummaryTabs(props) {
 
   return (
-    <Tabs defaultActiveKey="summary">
-      <Tab eventKey="summary" title="Summary">
-        <p className='tab-para'>
-          <h5>Check out my <a href='/portfolio' className='psychic-link'>project portfolio</a>!</h5>
-          Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA). 
-          Education in full-stack development from UCLA.
-          Experienced problem-solver and scientific researcher with seven major <a href='/chemistry' className='psychic-link'>scientific publications</a>. 
-          Values ethics, integrity, and good business sense, having spent years as a business manager and scientist. 
-          Extensive teaching experience stems from being both a classroom teacher and a group fitness leader, which lend themselves to public speaking and teamwork skills. 
-          Programming certifications include the UCLA extension coding bootcamp course and the Harvard edX online CS50 course. 
-          Top aim is to contribute to a team while continuously improving coding skills. 
-          Seeks to improve the lives of both teammates and clients, whether that be in the real world or the digital world.
+    <Tabs defaultActiveKey="contact">
+      <Tab eventKey="contact" title="Contact">
+        <div className='tab-para'>
+          <p>
+            My prefered method of contact is through email, at <strong>{props.contact.email + props.contact.domain}</strong>. My cell phone may be reached at <strong>{props.contact.areaCode + props.contact.phone}</strong>.
+        I can also be reached through my <a href='https://www.linkedin.com/in/kevin-miller-phd-1b197986/' className='psychic-link'>LinkedIn profile page</a>.
         </p>
+          <p>Be sure to check out my <a href='/portfolio' className='psychic-link'>portfolio</a> of projects or to visit my <a href='https://github.com/Koldenblue' className='psychic-link'>GitHub profile</a>!</p>
+        </div>
+      </Tab>
+
+      <Tab eventKey="summary" title="Summary">
+        <div className='tab-para'>
+          <h5>Check out my <a href='/portfolio' className='psychic-link'>project portfolio</a>!</h5>
+          <hr />
+          <p>
+            Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA).
+            Education in full-stack development from UCLA.
+            Experienced problem-solver and scientific researcher with seven major <a href='/chemistry' className='psychic-link'>scientific publications</a>.
+            Values ethics, integrity, and good business sense, having spent years as a business manager and scientist.
+            Extensive teaching experience stems from being both a classroom teacher and a group fitness leader, which lend themselves to public speaking and teamwork skills.
+            Programming certifications include the UCLA extension coding bootcamp course and the Harvard edX online CS50 course.
+            Top aim is to contribute to a team while continuously improving coding skills.
+            Seeks to improve the lives of both teammates and clients, whether that be in the real world or the digital world.
+          </p>
+        </div>
       </Tab>
 
       <Tab eventKey="technicalSkills" title="Technical Skills">
         <div className='tab-para'>
           <h5>Full-stack Web Developer with emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
+          <hr />
           <ul className='tab-para'>
             <li>JavaScript/HTML/CSS used as main coding languages</li>
             <li>React framework for front-end design and routing</li>
@@ -51,15 +65,6 @@ function SummaryTabs(props) {
 
       </Tab> */}
 
-      <Tab eventKey="contact" title="Contact">
-        <div className='tab-para'>
-        <p>
-        My prefered method of contact is through email, at <strong>{props.contact.email + props.contact.domain}</strong>. My cell phone may be reached at <strong>{props.contact.areaCode + props.contact.phone}</strong>.
-        I can also be reached through my <a href='https://www.linkedin.com/in/kevin-miller-phd-1b197986/' className='psychic-link'>LinkedIn profile page</a>.
-        </p>
-        <p>Be sure to check out my <a href='/portfolio' className='psychic-link'>portfolio</a> of projects or to visit my <a href='https://github.com/Koldenblue' className='psychic-link'>GitHub profile</a>!</p>
-        </div>
-      </Tab>
     </Tabs>
   )
 }

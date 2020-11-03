@@ -1,5 +1,4 @@
 import React from "react";
-import {Animated} from "react-animated-css";
 import Background from "../components/Background";
 
 class AboutMe extends React.Component {

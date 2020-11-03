@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav';
 import HubLink from './HubLink';
 
 function NavBar() {
+
+  useEffect(() => {
+    console.log(window.location)
+  },[])
+
   return (
     <Navbar expand="lg" id='nav'>
       <Navbar.Brand href="/"> Kevin Miller, PhD - <span id="portfolio">Portfolio Home</span><span className="sr-only">(current)</span></Navbar.Brand>

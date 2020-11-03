@@ -5,9 +5,9 @@ function Chemistry() {
   return (
     <>
     <Background image='../assets/images/tidepool.jpg' />
-    <div class='container nav-avoid bottom-space'>
-      <div class='row'>
-        <div class='col-md-8'>
+    <div className='container nav-avoid bottom-space'>
+      <div className='row'>
+        <div className='col-md-8'>
           <h3>PUBLICATIONS</h3>
           <br />
 
@@ -49,14 +49,14 @@ function Chemistry() {
         </p>
         </div>
 
-        <figure class='col-md-4'>
-          <img src={require('../assets/images/astronaut.jpg')} alt='Graduation' id='astronaut' class="img-fluid" />
+        <figure className='col-md-4'>
+          <img src={require('../assets/images/astronaut.jpg')} alt='Graduation' id='astronaut' className="img-fluid" />
           <figcaption>Me at graduation, with astronaut Anna Lee Fisher and colleague Dr. Selma Duhović</figcaption>
         </figure>
       </div>
 
-      <div class='row'>
-        <div class='col-md-12'>
+      <div className='row'>
+        <div className='col-md-12'>
           <br />
 
           <h4>PRESENTATIONS</h4>

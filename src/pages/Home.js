@@ -37,31 +37,31 @@ function Home() {
       <main className='container bottom-space nav-avoid index-container'>
 
         <section className="jumbotron">
-            <img src={require('../assets/images/prof-photo.png')} className='homepage-photo' style={styles.homepagePhoto}/>
+            <img src={require('../assets/images/prof-photo.png')} className='homepage-photo' alt='headshot' style={styles.homepagePhoto}/>
           <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
             <h1 className="display-4">Kevin Miller, PhD</h1>
           </Animated>
-          <Animated animationIn="fadeInLeft" animationInDelay='1000' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
+          <Animated animationIn="fadeInLeft" animationInDelay={1000} animationInDuration={1500} animationOut="fadeOut" isVisible={true}>
             <p className="lead">Full-Stack Web Developer</p>
           </Animated>
-          <Animated animationIn="fadeInLeft" animationInDelay='1200' animationInDuration='1500' animationOut="fadeOut" isVisible={true}>
+          <Animated animationIn="fadeInLeft" animationInDelay={1200} animationInDuration={1500} animationOut="fadeOut" isVisible={true}>
             <p className="lead">{contact.email + contact.domain}</p>
           </Animated>
           <hr className="my-4" style={{width: '70%'}}/>
-          <p>
-            <Animated animationIn="fadeInLeft" animationInDelay='2500' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
+          <div>
+            <Animated animationIn="fadeInLeft" animationInDelay={2500} animationInDuration={2000} animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Chemist, </pre>
             </Animated>
-            <Animated animationIn="fadeInDown" animationInDelay='2700' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
+            <Animated animationIn="fadeInDown" animationInDelay={2700} animationInDuration={2000} animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Small Business Manager, </pre>
             </Animated>
-            <Animated animationIn="fadeInRight" animationInDelay='2900' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
+            <Animated animationIn="fadeInRight" animationInDelay={2900} animationInDuration={2000} animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Bassist, </pre>
             </Animated>
-            <Animated animationIn="fadeInUp" animationInDelay='3100' animationInDuration='2000' animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
+            <Animated animationIn="fadeInUp" animationInDelay={3100} animationInDuration={2000} animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
               <pre>Gym Fitness Teacher</pre>
             </Animated>
-          </p>
+          </div>
         </section>
 
           <SummaryTabs contact={contact}/>

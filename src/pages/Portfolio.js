@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Background from "../components/Background";
-import ProjectTableOfContents from "../components/ProjectTableOfContents";
+// import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
 import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 
 function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
-
 
   const styles = {
     // the card style can be removed to set the card size equal to the column size on the grid
@@ -172,7 +171,7 @@ function Portfolio() {
                         alt="Parallaxed bubbles app" 
                         smimg='true'
                       />
-                      <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' />
+                      <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' alt='Parallaxed Bubbles app'/>
                     </ZoomFadeIn>
                   </div>
                   <div className='col-md-7'>

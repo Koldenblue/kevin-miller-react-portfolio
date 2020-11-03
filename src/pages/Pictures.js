@@ -8,8 +8,8 @@ class Pictures extends React.Component {
       <>
         <Background image='../assets/images/shore.jpg' />
 
-        <main id="carousel-box" class='bottom-space'>
-          <div class="nav-avoid container-lg">
+        <main id="carousel-box" className='bottom-space'>
+          <div className="nav-avoid container-lg">
             <Carousel>
 
               <Carousel.Item>
