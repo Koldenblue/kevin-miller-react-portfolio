@@ -11,19 +11,29 @@ import Chemistry from './pages/Chemistry';
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Pictures from './pages/Pictures';
+import ParaPics from './pages/ParaPics';
+import { Parallax } from 'react-spring/renderprops-addons';
+
 
 
 function App() {
   return (
     <Router>
-        <NavBar />
+      <NavBar />
       <Switch>
         <Route exact path='/aboutme' component={AboutMe} />
-        <Route exact path='/chemistry' component={Chemistry}/>
-        <Route exact path='/portfolio' component={Portfolio}/>
+        <Route exact path='/chemistry' component={Chemistry} />
+        <Route exact path='/portfolio' component={Portfolio} />
         <Route exact path='/resume' component={Resume} />
-        <Route exact path='/pictures' component={Pictures} />
+        <Route exact path='/pictures' component={() => {
+          return (<>
+            <Parallax pages={4} scrolling={true} className='parallax-container'>
+              <ParaPics />
+            </Parallax>
+          </>)
+        }}/>
         <Route exact path='/' component={Home} />
+
       </Switch>
     </Router>
   );

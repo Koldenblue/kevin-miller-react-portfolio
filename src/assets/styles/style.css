@@ -1,6 +1,7 @@
 body{
-
+  font-family: 'PT Serif', serif;
 }
+
 /* ============= For SummaryTabs.js =============== */
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #ffffff;
@@ -62,7 +63,7 @@ body{
 }
 
 #home-container {
-  background: rgb(255,138,0);
+  background: rgb(221, 217, 253);
   background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%);
   padding:25px;
   border-bottom-left-radius: 20px;
@@ -261,6 +262,196 @@ when the screen is reduced in width */
   width: auto;
 }
 
+
+
+/* PICTURES SECTION =========================*/
+.photos-title {
+  top: 6%;
+  transform: translateY(-50%);
+  font-size: 10em;
+  z-index: 9999;
+  text-shadow: 0px 0px 20px rgba(224, 239, 245, 0.7);
+}
+
+@media screen and (max-width: 900px) {
+  .photos-title {
+   font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .photos-title {
+   font-size: 3em;
+  }
+}
+.titleP {
+  left: 20%;
+  transform: translateX(-25%);
+}
+
+.titleH {
+  left: 30%;
+  transform: translateX(-35%);
+}
+
+.titleO {
+  left: 40%;
+  transform: translateX(-45%);
+}
+
+.titleT {
+  left: 50%;
+  transform: translateX(-55%);
+}
+.titleO2 {
+  left: 60%;
+  transform: translateX(-65%);
+}
+
+.titleS {
+  left: 70%;
+  transform: translateX(-75%);
+}
+
+.parapics {
+  position: relative;
+}
+
+.separator-purple-top {
+  display: block;
+  width: 100%;
+  background: rgba(221, 217, 253,1);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.2em;
+  margin-top: 0px;
+  /* border-bottom: 25px solid rgb(161, 236, 220); */
+  border-top: 10px solid rgb(180, 170, 255);
+  border-top-style: groove;
+  position: relative;
+  rotate: -1deg;
+  box-shadow: 0 -2px 2px black;
+  
+  z-index: 9999;
+}
+.separator-purple {
+  top: 30px;
+  display: block;
+  width: 100%;
+  background: rgba(221, 217, 253, 1);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.5em;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999;
+}
+.separator-purple-bottom {
+  display: block;
+  width: 100%;
+  background: rgba(221, 217, 253,1);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.2em;
+  margin-top: 0px;
+  border-bottom: 10px solid rgb(161, 236, 220);
+  border-bottom-style: groove;
+  position: relative;
+  z-index: 9999;
+  box-shadow: 0 3px 3px black;
+
+  rotate: 1deg;
+}
+
+.separator-green-top {
+  display: block;
+  width: 100%;
+  background: rgb(220, 255, 188);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.2em;
+  margin-top: 0px;
+  /* border-bottom: 25px solid rgb(161, 236, 220); */
+  border-top: 10px solid rgb(175, 255, 159);
+  border-top-style: groove;
+  position: relative;
+  rotate: 1deg;
+  box-shadow: 0 -2px 2px black;
+  z-index: 9999;
+}
+.separator-green {
+  top: 30px;
+  display: block;
+  width: 100%;
+  background: rgba(220, 255, 188, 1);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.5em;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999;
+}
+.separator-green-bottom {
+  display: block;
+  width: 100%;
+  background: rgb(220, 255, 188);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.2em;
+  margin-top: 0px;
+  border-bottom: 10px solid rgb(161, 236, 236);
+
+  border-bottom-style: groove;
+  position: relative;
+  z-index: 9999;
+  rotate: -1deg;
+  box-shadow: 0 3px 3px black;
+}
+#exploding-brain {
+  width: 100%;
+}
+
+.para-bg {
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  margin: 0;
+  top:-20px;
+}
+
+#saskia-pic {
+  width: 25%;
+  left: 5%;
+  transform: translateX(-5%);
+  box-shadow: 4px 4px 4px black;
+  rotate: -2deg;
+}
+
+#sunn-pic {
+  width: 25%;
+  left: 90%;
+  transform: translateX(-85%);
+  box-shadow: 4px 4px 4px black;
+  rotate: 2deg;
+}
+
+#namm-pic {
+  width: 18%;
+  left: 18%;
+  transform: translateX(-85%);
+  box-shadow: 4px 4px 4px black;
+  rotate: -1deg;
+}
+/* ==========================================*/ 
+
+
+
+
+
+
+
+
+
+
 /* Enable this code to change how box size is caluclated: */
 /* html {
   box-sizing: border-box;
@@ -268,12 +459,3 @@ when the screen is reduced in width */
 *, *::before, *::after {
   box-sizing: inherit;
 } */
-
-
-/* Code that will make pictures in the carousel smaller: */
-/*
-.my-carousel-pic {
-  scale: 50%;
-  height: 25%;
-}
-*/
