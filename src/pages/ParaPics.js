@@ -96,6 +96,9 @@ export default function ParaPics() {
       <BallContainer />
     </ParallaxLayer>
 
+    <ParallaxLayer offset={3} speed={0.1} >
+      <Image className='parapics' id='flower-pic' src={require("../assets/images/flowers-1920.png")} />
+    </ParallaxLayer>
 
     {/* <ParallaxLayer offset={3} speed={.7} >
       <Image className='parapics' src={require("../assets/images/self2.jpg")} />

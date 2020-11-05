@@ -441,6 +441,9 @@ when the screen is reduced in width */
   box-shadow: 4px 4px 4px black;
   rotate: -1deg;
 }
+#flower-pic {
+  width: 100%;
+}
 /* ==========================================*/ 
 
 
