@@ -73,6 +73,10 @@ export default function ParaPics() {
       <ParallaxLayer offset={1} speed={.8} >
         <Image id='sunn-pic' className='parapics' src={require("../assets/images/guitar3.jpg")} />
       </ParallaxLayer>
+
+      <ParallaxLayer offset={1.95} speed={1.6} >
+        <Image id='namm-pic' className='parapics' src={require("../assets/images/namm.JPG")} />
+      </ParallaxLayer>
     </ParallaxLayer>
 
 
@@ -88,7 +92,9 @@ export default function ParaPics() {
       <BallContainer />
     </ParallaxLayer>
 
-
+    <ParallaxLayer offset={4} speed={.3} >
+      <BallContainer />
+    </ParallaxLayer>
 
 
     {/* <ParallaxLayer offset={3} speed={.7} >

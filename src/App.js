@@ -25,17 +25,14 @@ function App() {
         <Route exact path='/chemistry' component={Chemistry} />
         <Route exact path='/portfolio' component={Portfolio} />
         <Route exact path='/resume' component={Resume} />
-        <Route exact path='/pictures' component={Pictures} />
-        <Route exact path='/' component={Home} />
-
-        <Route exact path='/parapics' component={() => {
+        <Route exact path='/pictures' component={() => {
           return (<>
-            <Parallax pages={6} scrolling={true} className='parallax-container'>
+            <Parallax pages={4} scrolling={true} className='parallax-container'>
               <ParaPics />
             </Parallax>
-
           </>)
-        }} />
+        }}/>
+        <Route exact path='/' component={Home} />
 
       </Switch>
     </Router>
