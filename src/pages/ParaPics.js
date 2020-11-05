@@ -5,6 +5,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { useSpring, animated } from 'react-spring'
 import SeparatorBar from "../components/SeparatorBar";
 import BallContainer from "../components/BallContainer";
+import BallContainer2 from "../components/BallContainer2";
 
 export default function ParaPics() {
 
@@ -93,7 +94,7 @@ export default function ParaPics() {
     </ParallaxLayer>
 
     <ParallaxLayer offset={4} speed={.3} >
-      <BallContainer />
+      <BallContainer2 />
     </ParallaxLayer>
 
     <ParallaxLayer offset={3} speed={0.1} >
