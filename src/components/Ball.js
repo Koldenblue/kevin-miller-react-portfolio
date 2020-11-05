@@ -5,11 +5,16 @@ function Ball(props) {
 
   let styles = {
     ball: {
-      backgroundColor: props.backgroundColor,
-      // padding: `${props.padding + (toggle ? 50 : 0)}px`,
+      // backgroundColor: 'black',
+      // opacity: 'transparent',
+      background: 'rgb(255,255,255)',
+      background: 'radial-gradient(circle, rgba(255,255,255,.5) 60%, rgba(46,139,87,.5) 100%)',
+      borderColor: props.color,
+      borderWidth: '1px',
+      borderStyle: 'dashed',
       padding: `${props.padding}px`,
-      height: '50px',
-      width: `50px`,
+      height: '0px',
+      width: `0px`,
       borderRadius: '1000px',
 
     }

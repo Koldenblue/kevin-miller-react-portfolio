@@ -314,11 +314,12 @@ when the screen is reduced in width */
   padding: 2.2em;
   margin-top: 0px;
   /* border-bottom: 25px solid rgb(161, 236, 220); */
-  border-top: 25px solid rgb(180, 170, 255);
-  border-width: 10px;
+  border-top: 10px solid rgb(180, 170, 255);
   border-top-style: groove;
   position: relative;
   rotate: -1deg;
+  box-shadow: 0 -2px 2px black;
+  
   z-index: 9999;
 }
 .separator-purple {
@@ -339,11 +340,12 @@ when the screen is reduced in width */
   /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
   padding: 2.2em;
   margin-top: 0px;
-  border-bottom: 25px solid rgb(161, 236, 220);
-  border-width: 10px;
+  border-bottom: 10px solid rgb(161, 236, 220);
   border-bottom-style: groove;
   position: relative;
   z-index: 9999;
+  box-shadow: 0 3px 3px black;
+
   rotate: 1deg;
 }
 
@@ -355,11 +357,11 @@ when the screen is reduced in width */
   padding: 2.2em;
   margin-top: 0px;
   /* border-bottom: 25px solid rgb(161, 236, 220); */
-  border-top: 25px solid rgb(175, 255, 159);
-  border-width: 10px;
+  border-top: 10px solid rgb(175, 255, 159);
   border-top-style: groove;
   position: relative;
   rotate: 1deg;
+  box-shadow: 0 -2px 2px black;
   z-index: 9999;
 }
 .separator-green {
@@ -380,12 +382,13 @@ when the screen is reduced in width */
   /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
   padding: 2.2em;
   margin-top: 0px;
-  border-bottom: 25px solid rgb(161, 236, 220);
-  border-width: 10px;
+  border-bottom: 10px solid rgb(161, 236, 236);
+
   border-bottom-style: groove;
   position: relative;
   z-index: 9999;
   rotate: -1deg;
+  box-shadow: 0 3px 3px black;
 }
 #exploding-brain {
   width: 100%;

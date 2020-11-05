@@ -4,6 +4,7 @@ import Image from "react-bootstrap/Image";
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { useSpring, animated } from 'react-spring'
 import SeparatorBar from "../components/SeparatorBar";
+import BallContainer from "../components/BallContainer";
 
 export default function ParaPics() {
 
@@ -47,7 +48,7 @@ export default function ParaPics() {
     </ParallaxLayer>
     <ParallaxLayer className='photos-title titleS' offset={0} speed={.9} >
       <p>S</p>
-    </ParallaxLayer>\
+    </ParallaxLayer>
 
 
     {/* <ParallaxLayer offset={.9} speed={0} >
@@ -83,7 +84,9 @@ export default function ParaPics() {
       <Image className='parapics' id='saskia-pic' src={require("../assets/images/saskia2.JPG")} />
     </ParallaxLayer>
 
-
+    <ParallaxLayer offset={1.7} speed={.3} >
+      <BallContainer />
+    </ParallaxLayer>
 
 
 
