@@ -3,6 +3,7 @@ import Background from "../components/Background";
 import Image from "react-bootstrap/Image";
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { useSpring, animated } from 'react-spring'
+import SeparatorBar from "../components/SeparatorBar";
 
 export default function ParaPics() {
 
@@ -29,10 +30,10 @@ export default function ParaPics() {
     }
   }
   return (<>
-    <ParallaxLayer className='photos-title titleP' offset={0} speed={0} >
+    <ParallaxLayer className='photos-title titleP' offset={0} speed={0.2} >
       <p>P</p>
     </ParallaxLayer>
-    <ParallaxLayer className='photos-title titleH' offset={0} speed={.5} >
+    <ParallaxLayer className='photos-title titleH' offset={0} speed={.6} >
       <p>H</p>
     </ParallaxLayer>
     <ParallaxLayer className='photos-title titleO' offset={0} speed={1.7} >
@@ -48,23 +49,31 @@ export default function ParaPics() {
       <p>S</p>
     </ParallaxLayer>\
 
-    <ParallaxLayer offset={.9} speed={0} >
-      <Image  src={require('../assets/images/clouds-real.svg')} />
-    </ParallaxLayer>
 
     {/* <ParallaxLayer offset={.9} speed={0} >
       <Image  src={require('../assets/images/clouds-border.png')} />
     </ParallaxLayer> */}
+    {/* <ParallaxLayer offset={.9} speed={0} >
+      <Image  src={require('../assets/images/clouds-real.svg')} />
+    </ParallaxLayer> */}
+    <ParallaxLayer offset={.8} speed={.1} >
+      <Image id='exploding-brain' src={require('../assets/images/man-3591573.jpg')} />
+    </ParallaxLayer>
+
+
 
     <ParallaxLayer offset={0} speed={0} >
       <Background image='../assets/images/shore.jpg' />
     </ParallaxLayer>
 
-    <ParallaxLayer offset={2} speed={.7} >
-      <Image className='parapics' src={require("../assets/images/saskia2.JPG")} />
+    <ParallaxLayer offset={1.0} speed={.7} >
+      <Image className='parapics' id='saskia-pic' src={require("../assets/images/saskia2.JPG")} />
     </ParallaxLayer>
-    
-    <ParallaxLayer offset={1} speed={.5} >
+
+    <ParallaxLayer offset={1.9} speed={0.1} >
+      <SeparatorBar />
+    </ParallaxLayer>
+    {/* <ParallaxLayer offset={2} speed={.5} >
       <Image className='parapics' src={require("../assets/images/guitar3.jpg")} />
     </ParallaxLayer>
 
@@ -79,10 +88,17 @@ export default function ParaPics() {
 
     <ParallaxLayer offset={5} speed={.7} >
       <Image className='parapics' src={require("../assets/images/dissertation-page.png")} />
-    </ParallaxLayer>
+    </ParallaxLayer> */}
 
   </>)
 }
+
+
+
+
+
+
+
 
 
   // let styles = {
