@@ -53,15 +53,27 @@ export default function ParaPics() {
     {/* <ParallaxLayer offset={.9} speed={0} >
       <Image  src={require('../assets/images/clouds-border.png')} />
     </ParallaxLayer> */}
-    {/* <ParallaxLayer offset={.9} speed={0} >
-      <Image  src={require('../assets/images/clouds-real.svg')} />
-    </ParallaxLayer> */}
+
     <ParallaxLayer offset={.95} speed={.1} >
+      {/* note that subsequent images in the code will be placed more toward foreground */}
       <Image id='exploding-brain' src={require('../assets/images/man-3591573.jpg')} />
-      <ParallaxLayer offset={0.05} speed={0.1} >
-        <SeparatorBar />
+
+      <ParallaxLayer offset={0.01} speed={0} >
+        <Image className='para-bg' src={require('../assets/images/landscape-watercolor.jpg')} />
+        <ParallaxLayer offset={0.05} speed={0.05} >
+          <SeparatorBar type='green' />
+        </ParallaxLayer>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={0.03} speed={0.05} >
+        <SeparatorBar type='purple' />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1} speed={.8} >
+        <Image id='sunn-pic' className='parapics' src={require("../assets/images/guitar3.jpg")} />
       </ParallaxLayer>
     </ParallaxLayer>
+
 
     <ParallaxLayer offset={0} speed={0} >
       <Background image='../assets/images/shore.jpg' />
@@ -72,12 +84,11 @@ export default function ParaPics() {
     </ParallaxLayer>
 
 
-    {/* <ParallaxLayer offset={2} speed={.5} >
-      <Image className='parapics' src={require("../assets/images/guitar3.jpg")} />
-    </ParallaxLayer>
 
 
-    <ParallaxLayer offset={3} speed={.7} >
+
+
+    {/* <ParallaxLayer offset={3} speed={.7} >
       <Image className='parapics' src={require("../assets/images/self2.jpg")} />
     </ParallaxLayer>
 

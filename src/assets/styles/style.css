@@ -306,7 +306,7 @@ when the screen is reduced in width */
   position: relative;
 }
 
-.separator-bar-top {
+.separator-purple-top {
   display: block;
   width: 100%;
   background: rgba(221, 217, 253,1);
@@ -319,9 +319,9 @@ when the screen is reduced in width */
   border-top-style: groove;
   position: relative;
   rotate: -1deg;
-  /* z-index: 9999; */
+  z-index: 9999;
 }
-.separator-bar {
+.separator-purple {
   top: 30px;
   display: block;
   width: 100%;
@@ -330,9 +330,9 @@ when the screen is reduced in width */
   padding: 2.5em;
   margin-top: 0px;
   position: absolute;
-  /* z-index: 9999; */
+  z-index: 9999;
 }
-.separator-bar-bottom {
+.separator-purple-bottom {
   display: block;
   width: 100%;
   background: rgba(221, 217, 253,1);
@@ -343,11 +343,66 @@ when the screen is reduced in width */
   border-width: 10px;
   border-bottom-style: groove;
   position: relative;
-  /* z-index: 9999; */
+  z-index: 9999;
   rotate: 1deg;
 }
 
+.separator-green-top {
+  display: block;
+  width: 100%;
+  background: rgb(220, 255, 188);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.2em;
+  margin-top: 0px;
+  /* border-bottom: 25px solid rgb(161, 236, 220); */
+  border-top: 25px solid rgb(175, 255, 159);
+  border-width: 10px;
+  border-top-style: groove;
+  position: relative;
+  rotate: 1deg;
+  z-index: 9999;
+}
+.separator-green {
+  top: 30px;
+  display: block;
+  width: 100%;
+  background: rgba(220, 255, 188, 1);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.5em;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999;
+}
+.separator-green-bottom {
+  display: block;
+  width: 100%;
+  background: rgb(220, 255, 188);
+  /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
+  padding: 2.2em;
+  margin-top: 0px;
+  border-bottom: 25px solid rgb(161, 236, 220);
+  border-width: 10px;
+  border-bottom-style: groove;
+  position: relative;
+  z-index: 9999;
+  rotate: -1deg;
+}
+#exploding-brain {
+  width: 100%;
+}
 
+.para-bg {
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  margin: 0;
+  top:-20px;
+}
 
 #saskia-pic {
   width: 25%;
@@ -357,8 +412,12 @@ when the screen is reduced in width */
   rotate: -2deg;
 }
 
-#exploding-brain {
-  width: 100%;
+#sunn-pic {
+  width: 25%;
+  left: 85%;
+  transform: translateX(-85%);
+  box-shadow: 4px 4px 4px black;
+  rotate: 2deg;
 }
 /* ==========================================*/ 
 
@@ -378,12 +437,3 @@ when the screen is reduced in width */
 *, *::before, *::after {
   box-sizing: inherit;
 } */
-
-
-/* Code that will make pictures in the carousel smaller: */
-/*
-.my-carousel-pic {
-  scale: 50%;
-  height: 25%;
-}
-*/
