@@ -58,6 +58,9 @@ export default function ParaPics() {
     </ParallaxLayer> */}
     <ParallaxLayer offset={.95} speed={.1} >
       <Image id='exploding-brain' src={require('../assets/images/man-3591573.jpg')} />
+      <ParallaxLayer offset={0.05} speed={0.1} >
+        <SeparatorBar />
+      </ParallaxLayer>
     </ParallaxLayer>
 
     <ParallaxLayer offset={0} speed={0} >
@@ -68,9 +71,7 @@ export default function ParaPics() {
       <Image className='parapics' id='saskia-pic' src={require("../assets/images/saskia2.JPG")} />
     </ParallaxLayer>
 
-    <ParallaxLayer offset={1.9} speed={0.1} >
-      <SeparatorBar />
-    </ParallaxLayer>
+
     {/* <ParallaxLayer offset={2} speed={.5} >
       <Image className='parapics' src={require("../assets/images/guitar3.jpg")} />
     </ParallaxLayer>

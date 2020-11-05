@@ -311,10 +311,10 @@ when the screen is reduced in width */
   width: 100%;
   background: rgba(221, 217, 253,1);
   /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
-  padding: 35px;
+  padding: 2.2em;
   margin-top: 0px;
   /* border-bottom: 25px solid rgb(161, 236, 220); */
-  border-top: 25px solid rgba(221, 217, 253);
+  border-top: 25px solid rgb(180, 170, 255);
   border-width: 10px;
   border-top-style: groove;
   position: relative;
@@ -327,7 +327,7 @@ when the screen is reduced in width */
   width: 100%;
   background: rgba(221, 217, 253, 1);
   /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
-  padding: 40px;
+  padding: 2.5em;
   margin-top: 0px;
   position: absolute;
   /* z-index: 9999; */
@@ -337,7 +337,7 @@ when the screen is reduced in width */
   width: 100%;
   background: rgba(221, 217, 253,1);
   /* background: linear-gradient(0deg, rgba(221, 217, 253, 0.5) 20%, rgba(161, 236, 220, 0.5) 80%); */
-  padding: 35px;
+  padding: 2.2em;
   margin-top: 0px;
   border-bottom: 25px solid rgb(161, 236, 220);
   border-width: 10px;
