@@ -56,11 +56,9 @@ export default function ParaPics() {
     {/* <ParallaxLayer offset={.9} speed={0} >
       <Image  src={require('../assets/images/clouds-real.svg')} />
     </ParallaxLayer> */}
-    <ParallaxLayer offset={.8} speed={.1} >
+    <ParallaxLayer offset={.95} speed={.1} >
       <Image id='exploding-brain' src={require('../assets/images/man-3591573.jpg')} />
     </ParallaxLayer>
-
-
 
     <ParallaxLayer offset={0} speed={0} >
       <Background image='../assets/images/shore.jpg' />
