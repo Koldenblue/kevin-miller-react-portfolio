@@ -29,18 +29,33 @@ export default function BallContainer2() {
     />
     <Ball
       left='75%'
-      offset='.65'
-      speed='.3'
+      offset='.62'
+      speed='.33'
       padding='20'
+      color='#72e9ff'
+    />
+    <Ball
+      left='88%'
+      offset='.06'
+      speed='.33'
+      padding='44'
       color='#72e9ff'
     />
     <Ball
       left='95%'
       offset='.62'
       speed='.38'
-      padding='35'
+      padding='20'
       color='#72e9ff'
     />
+    <Ball
+      left='85%'
+      offset='.42'
+      speed='.4'
+      padding='32'
+      color='#fccbf4'
+    />
+
 
     {/* left side */}
     <Ball
@@ -62,14 +77,14 @@ export default function BallContainer2() {
       offset='.7'
       speed='.6'
       padding='48'
-      color='#72e9ff'
+      color='#fccbf4'
     />
     <Ball
       left='15%'
       offset='.64'
       speed='.33'
       padding='18'
-      color='#72e9ff'
+      color='#fccbf4'
     />
     <Ball
       left='9%'
@@ -78,7 +93,14 @@ export default function BallContainer2() {
       padding='39'
       color='#72e9ff'
     />
-        <Ball
+    <Ball
+      left='3%'
+      offset='.62'
+      speed='.4'
+      padding='29'
+      color='#fccbf4'
+    />
+    <Ball
       left='24%'
       offset='.55'
       speed='.2'
