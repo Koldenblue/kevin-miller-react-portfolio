@@ -219,13 +219,9 @@ when the screen is reduced in width */
   color : rgb(0, 0, 130)
 }
 
-
-
 .project-list li {
   color:rgb(48, 40, 99)
 }
-
-
 
 .psychic-link, .card-link {
   color: #975BD7;
@@ -242,8 +238,27 @@ when the screen is reduced in width */
   color: #117E66;
 }
 
-/* CAROUSEL */
+/* table of contents */
+.project-nav {
+  position: fixed;
+  top: 3em;
+  bottom: 0;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  width: auto;
+}
+.table-contents {
+  position: fixed;
+}
 
+.top-link {
+  margin-top: 3em;
+}
+/* =========================================*/ 
+
+
+
+/*====== CAROUSEL (no longer in use)========== */
 .carousel-inner {
   box-shadow: 2px 10px 18px;
 }
@@ -251,8 +266,11 @@ when the screen is reduced in width */
 .carousel-image {
   overflow-y: hidden;
 }
+/* ==========================================*/ 
 
-/* RESUME */
+
+
+/* ================= RESUME=================  */
 #resume-pdf {
   height: 100%;
   width: 100%;
@@ -262,6 +280,8 @@ when the screen is reduced in width */
   height: 100vh;
   width: auto;
 }
+/* ==========================================*/ 
+
 
 
 

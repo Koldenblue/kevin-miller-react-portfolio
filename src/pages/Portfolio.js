@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Background from "../components/Background";
-// import ProjectTableOfContents from "../components/ProjectTableOfContents";
+import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
 import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 
@@ -44,13 +44,14 @@ function Portfolio() {
       <ZoomFadeContext.Provider value={{ currentlyZoomed, setCurrentlyZoomed }}>
 
         <Background image='../assets/images/koi.jpg' />
-        {/* <container>
-        <ProjectTableOfContents />
-      </container> */}
 
         {/* Main project card container */}
-        <main className='container nav-avoid bottom-space'>
-
+        <main className='container-fluid nav-avoid bottom-space'>
+        <div className='row'>
+          <div className='col-md-2'>
+        <ProjectTableOfContents />
+          </div>
+        <div className='col-md-8'>
           <section className='row card-gutters'>
             <div className='col-md-12'>
               <div className='box-all box'>
@@ -539,7 +540,7 @@ function Portfolio() {
           </section>
 
 
-          <section className='row card-gutters bottom-card-gutter'>
+          <section id='connect4' className='row card-gutters bottom-card-gutter'>
             <div className='col-md-12'>
               <div className='box-all box'>
                 <div className="card" >
@@ -556,6 +557,9 @@ function Portfolio() {
               </div>
             </div>
           </section>
+          </div>
+          </div>
+          <div className='col-md-2'></div>
         </main>
       </ZoomFadeContext.Provider>
     </>
