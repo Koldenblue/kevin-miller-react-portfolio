@@ -1,5 +1,6 @@
 body{
   font-family: 'PT Serif', serif;
+  background-color: azure;
 }
 
 /* ============= For SummaryTabs.js =============== */
@@ -443,6 +444,28 @@ when the screen is reduced in width */
 }
 #flower-pic {
   width: 100%;
+}
+
+#diploma {
+  width: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 4px 4px 4px black;
+  border-width: 5px;
+  border-color: black;
+  border-style: outset;
+}
+
+@media screen and (max-height: 520px) {
+  #diploma {
+   width: 30%;
+  }
+}
+
+@media screen and (max-height: 280px) {
+  #diploma {
+   width: 20%;
+  }
 }
 /* ==========================================*/ 
 

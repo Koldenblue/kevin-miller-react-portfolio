@@ -97,6 +97,10 @@ export default function ParaPics() {
       <BallContainer2 />
     </ParallaxLayer>
 
+    <ParallaxLayer offset={3.3} speed={0} >
+      <Image className='parapics' id='diploma' src={require("../assets/images/diploma.png")} />
+    </ParallaxLayer>
+
     <ParallaxLayer offset={3} speed={0.1} >
       <Image className='parapics' id='flower-pic' src={require("../assets/images/flowers-1920.png")} />
     </ParallaxLayer>
@@ -105,9 +109,7 @@ export default function ParaPics() {
       <Image className='parapics' src={require("../assets/images/self2.jpg")} />
     </ParallaxLayer>
 
-    <ParallaxLayer offset={4} speed={.7} >
-      <Image className='parapics' src={require("../assets/images/diploma.png")} />
-    </ParallaxLayer>
+
 
     <ParallaxLayer offset={5} speed={.7} >
       <Image className='parapics' src={require("../assets/images/dissertation-page.png")} />
