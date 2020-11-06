@@ -66,13 +66,13 @@ function Chemistry() {
         </p>
 
           <p>
-            <b>Dearomatization reactions of N-heterocycles mediated by highly electrophilic group III complexes.</b> 
-          Presented at the Southern California Organometallics Conference Fall 2009.
+            <b>Dearomatization reactions of N-heterocycles mediated by 
+              highly electrophilic group III complexes.</b> Presented at the Southern California Organometallics Conference Fall 2009.
         </p>
 
           <p>
-            <b>Use of highly reactive metal centers to effect the dearomatization and ring-opening of N-heterocycles.</b> 
-          Presented at the 239th American Chemical Society Conference at San Francisco, 2010.
+            <b>Use of highly reactive metal centers to effect the dearomatization 
+              and ring-opening of N-heterocycles.</b> Presented at the 239th American Chemical Society Conference at San Francisco, 2010.
         </p>
 
           <p>
@@ -81,8 +81,8 @@ function Chemistry() {
         </p>
 
           <p>
-            <b>Electronic communication between bridged ferrocene centers, mediated by group III and group IV metals.</b> 
-          Presented at the Southern California Organometallics Conference Winter 2012.
+            <b>Electronic communication between bridged ferrocene centers, 
+              mediated by group III and group IV metals.</b> Presented at the Southern California Organometallics Conference Winter 2012.
         </p>
 
           <p>
