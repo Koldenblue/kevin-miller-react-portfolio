@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import ListGroup from "react-bootstrap/ListGroup";
 import Nav from "react-bootstrap/Nav";
 
-
 export default function ProjectTableOfContents() {
   let styles = {
     tableOfContents: {
@@ -20,13 +19,20 @@ export default function ProjectTableOfContents() {
   // </div>
   return (<>
     <Nav defaultActiveKey="/home" className="project-nav flex-column">
-      <br />
-      <br />
-
       <Nav.Link className='top-link' href="#connect4">Active</Nav.Link>
-      <Nav.Link eventKey="link-1">Link</Nav.Link>
-      <Nav.Link eventKey="link-2">Link</Nav.Link>
-      <Nav.Link eventKey="disabled" href='#connect4'>Connect 4</Nav.Link>
+      <Nav.Link href=''>Quick Readme Generator</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Node Python SQL Database Manager</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href=''>Link</Nav.Link>
+      <Nav.Link href='#connect4'>Connect 4</Nav.Link>
     </Nav>
     {/* <ListGroup className='table-contents'>
       <ListGroup.Item>Cras justo odio</ListGroup.Item>

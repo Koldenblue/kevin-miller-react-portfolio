@@ -240,13 +240,15 @@ when the screen is reduced in width */
 
 /* table of contents */
 .project-nav {
-  position: fixed;
+  /* position: fixed; */
   top: 3em;
   bottom: 0;
-  background-color: blanchedalmond;
+  background-color: #ff9b6b;
   border-radius: 10px;
   width: auto;
+  overflow: auto;
 }
+
 .table-contents {
   position: fixed;
 }
