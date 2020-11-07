@@ -58,10 +58,10 @@ export default function ParaPics() {
 
     <ParallaxLayer offset={.95} speed={.1} >
       {/* note that subsequent images in the code will be placed more toward foreground */}
-      <Image id='exploding-brain' src={require('../assets/images/man-3591573.jpg')} />
+      <Image id='exploding-brain' src={require('../assets/images/man-1920.jpg')} />
 
       <ParallaxLayer offset={0.01} speed={0} >
-        <Image className='para-bg' src={require('../assets/images/landscape-watercolor.jpg')} />
+        <Image className='para-bg' src={require('../assets/images/landscape-1920.jpg')} />
         <ParallaxLayer offset={0.05} speed={0.05} >
           <SeparatorBar type='green' />
         </ParallaxLayer>
