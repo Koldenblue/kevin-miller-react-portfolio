@@ -10,7 +10,7 @@ function Portfolio() {
   const styles = {
     // the card style can be removed to set the card size equal to the column size on the grid
     card: {
-      'width': '30rem'
+      'width': 'auto'
     },
   }
 

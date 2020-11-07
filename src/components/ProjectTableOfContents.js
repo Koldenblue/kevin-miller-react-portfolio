@@ -14,8 +14,25 @@ export default function ProjectTableOfContents() {
   }
 
   return (<>
-    <div className='nav-bg'></div>
-    <Nav fill defaultActiveKey="/home" className="project-nav flex-column">
+    <ul className='list-nav'>
+  <h3 className='top-link'>Projects</h3>
+
+      <li  href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+      <li href='#'><a href='#'>Link</a></li>
+
+    </ul>
+    {/* <Nav fill defaultActiveKey="/home" className="project-nav flex-column">
       <Nav.Link className='top-link' href="#connect4">Active</Nav.Link>
       <Nav.Link href=''>Quick Readme Generator</Nav.Link>
       <Nav.Link href=''>Link</Nav.Link>
@@ -30,7 +47,7 @@ export default function ProjectTableOfContents() {
       <Nav.Link href=''>Link</Nav.Link>
       <Nav.Link href=''>Link</Nav.Link>
       <Nav.Link href='#connect4'>Connect 4</Nav.Link>
-    </Nav>
+    </Nav> */}
 
 
     {/* <ListGroup className='table-contents'>

@@ -129,10 +129,7 @@ pre {
 
 
 
-.card {
-  margin: 2em;
-  background-color: rgba(217, 191, 238, .7);
-}
+
 
 /* top margin added to keep from overlap with navbar */
 .nav-avoid {
@@ -196,6 +193,11 @@ when the screen is reduced in width */
   flex-wrap: wrap;
 }
 
+.card {
+  margin: 2em;
+  background-color: rgba(217, 191, 238, .7);
+}
+
 .card-gutters {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -243,23 +245,37 @@ when the screen is reduced in width */
   position: fixed;
   top: 3em;
   bottom: 0;
-  background-color: #ff9b6b;
+  background-color: #c7fcf9;
+  
   /* border-radius: 10px; */
   /* width: auto;
   overflow: auto; */
 }
-
-.nav-bg {
-  background-color: red;
-  width: 15em;
+.list-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #c7fcf9;
+  width: 18em;
   height: 100%;
+  list-style: none;
+  box-shadow: 0 2px 2px black;
+  border-right: 0.5px solid black;
+  overflow-y: auto;
+  scrollbar-width: thin;
+
+
 }
 
+
+.list-nav li {
+  margin: 1.5em;
+}
 .project-container {
-  left: 15em;
+  left: 13.5em;
   position: relative;
   margin-right: 15em;
-  max-width: calc(100% - 20em);
+  max-width: calc(100% - 22em);
 }
 /* .table-contents {
   position: fixed;
