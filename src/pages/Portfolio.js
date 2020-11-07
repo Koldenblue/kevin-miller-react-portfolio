@@ -10,7 +10,6 @@ function Portfolio() {
   const styles = {
     // the card style can be removed to set the card size equal to the column size on the grid
     card: {
-      'width': 'auto'
     },
   }
 
@@ -46,14 +45,14 @@ function Portfolio() {
         <Background image='../assets/images/koi.jpg' />
 
         {/* Main project card container */}
-          <ProjectTableOfContents />
+        <ProjectTableOfContents />
         <main className='container-fluid nav-avoid bottom-space project-container'>
-        {/* <div className='row'>
+          {/* <div className='row'>
           <div className='col-md-2'> */}
           {/* </div> */}
-        {/* <div className='col-md-8'> */}
+          {/* <div className='col-md-8'> */}
           <section className='row card-gutters'>
-            <div className='col-md-12'>
+            <div className='col-md-12' id='color-rippler'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
@@ -97,7 +96,7 @@ function Portfolio() {
 
             <div className='col-md-6' id='bartender'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
                     <img
                       id='bar-img'
@@ -130,9 +129,9 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='inform-react'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/inform.png")} alt="Inform and React app" />
                   </ZoomFadeIn>
@@ -157,7 +156,7 @@ function Portfolio() {
           </ section>
 
           <section className='row card-gutters'>
-            <div className='col-md-12'>
+            <div className='col-md-12' id='para-bub'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
@@ -175,19 +174,14 @@ function Portfolio() {
                       </ZoomFadeIn>
                     </div>
                     <div className='col-md-7'>
-                      <div className="card-body ">
+                      <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Para-bubbles</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Parallaxed Background Bubbles</h6>
                         <p className="card-text">A colorful background of bubbles that all scroll at different rates, for a neat parallax effect!
                         This app uses the react-spring package to demonstrate how a basic menu can be made much more interesting with a bit of simple animation. React also offers the advantage of easy component mapping and quick updating of the DOM.
                         Although similar animation effects are achievable with CSS, the react-spring package uses JavaScript for physics based, intuitive animation coding. As a bonus, simple API calls for searchable GIFs are possible!
                         </p>
-                      </div>
-                    </div>
-                    <div className='row'>
-                        <div className='col-md-2'></div>
-                        <div className='col-md-8'>
-                      <ul className='project-list'>
+                        <ul className='project-list'>
                           <li>
                             See the source code on<a href="https://github.com/Koldenblue/para-bubbles" className="card-link"> GitHub</a>
                           </li>
@@ -195,8 +189,7 @@ function Portfolio() {
                             Check out the <a href="https://para-bubbles.herokuapp.com" className="card-link">para-bubbles</a> demo! Scroll the page for animation, and perform simple customization with the options menu.
                         </li>
                         </ul>
-                        </div>
-                      <div className='col-md-2'></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -206,9 +199,9 @@ function Portfolio() {
 
 
           <section className='row card-gutters'>
-            <div className='col-md-6'>
+            <div className='col-md-6' id='hamburger-handlebars'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/hamburger.PNG")} alt="Hamburger Website" />
                   </ZoomFadeIn>
@@ -231,9 +224,9 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='readme-gen'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
                     <img src={require("../assets/images/readme-gen.PNG")} alt="A sample readme" smimg='true' />
                     <img src={require("../assets/images/readme-zoom.png")} alt="A sample readme" lgimg='true' />
@@ -260,7 +253,7 @@ function Portfolio() {
           </section>
 
           <section className='row card-gutters'>
-            <div className='col-md-12'>
+            <div className='col-md-12' id='chess'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
@@ -270,7 +263,7 @@ function Portfolio() {
                       </ZoomFadeIn>
                     </div>
                     <div className='col-md-7'>
-                      <div className="card-body">
+                      <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Chess</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
                         <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python.
@@ -289,10 +282,10 @@ function Portfolio() {
             </div>
           </section>
 
-          <section className='row card-gutters'>
-            <div className='col-md-6'>
+          <section className='row card-gutters' >
+            <div className='col-md-6' id='emp-dir'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/emp-finder.png")} alt="Mock Employee Directory" />
                   </ZoomFadeIn>
@@ -315,9 +308,9 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='database-manager'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/database-manager.png")} alt="Database Manager" />
                   </ZoomFadeIn>
@@ -344,7 +337,7 @@ function Portfolio() {
 
           <section className='row card-gutters'>
 
-            <div className='col-md-12'>
+            <div className='col-md-12' id='trek-app'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
@@ -378,9 +371,9 @@ function Portfolio() {
 
           <section className='row card-gutters'>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='quiz-template'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/quiz.png")} alt="Quiz" />
                   </ZoomFadeIn>
@@ -403,9 +396,9 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='weather-forecaster'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/weather-forecaster.png")} alt="Weather forecast app" />
                   </ZoomFadeIn>
@@ -413,15 +406,15 @@ function Portfolio() {
                     <h5 className="card-title">Weather Forecasting app</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Find the weather in your city</h6>
                     <p className="card-text">Searches a weather database for the 5-day forecast of the weather in any city. Your previous searches are stored as well!
-                    This app utilizes AJAX calls to the OpenWeather API in order to retrieve weather data, and local storage to store previous sessions.
-            </p>
+                      This app utilizes AJAX calls to the OpenWeather API in order to retrieve weather data, and local storage to store previous sessions.
+                    </p>
                     <ul className='project-list'>
                       <li>
                         <a href="https://github.com/Koldenblue/weather-forecaster" className="card-link">GitHub </a>repository and project summary
-                  </li>
+                      </li>
                       <li>
                         <a href="https://koldenblue.github.io/weather-forecaster/" className="card-link">Find the weather </a>in your city!
-                  </li>
+                      </li>
                     </ul>
 
                   </div>
@@ -434,9 +427,9 @@ function Portfolio() {
 
           <section className='row card-gutters'>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='template-engine'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/template-engine.png")} alt="Templated Object Engine in Browser" />
                   </ZoomFadeIn>
@@ -461,9 +454,9 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6' id='workday-scheduler'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/work-day-scheduler.png")} alt="WorkDay Scheduler" />
                   </ZoomFadeIn>
@@ -489,10 +482,10 @@ function Portfolio() {
 
           </section>
 
-          <section className='row card-gutters' >
+          <section className='row card-gutters' id='balance-sheet'>
             <div className='col-md-6'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/bal_sheet.jpg")} alt="Balance Sheet" />
                   </ZoomFadeIn>
@@ -513,7 +506,7 @@ function Portfolio() {
 
             <div className='col-md-6' id='connect'>
               <div className='box-all box'>
-                <div className="card" style={styles.card}>
+                <div className="card" >
                   <ZoomFadeIn>
                     <img src={require("../assets/images/connect-4-react.PNG")} alt="Connect 4" />
                   </ZoomFadeIn>
@@ -540,7 +533,7 @@ function Portfolio() {
           </section>
 
 
-          <section id='connect4' className='row card-gutters bottom-card-gutter'>
+          <section className='row card-gutters bottom-card-gutter'>
             <div className='col-md-12'>
               <div className='box-all box'>
                 <div className="card" >

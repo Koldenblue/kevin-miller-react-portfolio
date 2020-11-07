@@ -162,6 +162,7 @@ when the screen is reduced in width */
 /* =============== portfolio section  =============== */
 .horizontal-card-body {
   padding-bottom: 0px;
+  margin-left: 1.5em;
 }
 .horizontal-description, .horizontal-list {
   margin-bottom: 4px;
@@ -196,6 +197,7 @@ when the screen is reduced in width */
 .card {
   margin: 2em;
   background-color: rgba(217, 191, 238, .7);
+  width: auto
 }
 
 .card-gutters {
@@ -240,17 +242,17 @@ when the screen is reduced in width */
   color: #117E66;
 }
 
-/* table of contents */
-.project-nav {
-  position: fixed;
-  top: 3em;
-  bottom: 0;
-  background-color: #c7fcf9;
-  
-  /* border-radius: 10px; */
-  /* width: auto;
-  overflow: auto; */
+.project-container {
+  left: 13.5em;
+  position: relative;
+  margin-right: 15em;
+  max-width: calc(100% - 22em);
 }
+/* =========================================*/ 
+
+
+/*====== SIDE NAV========== */
+
 .list-nav {
   position: fixed;
   top: 0;
@@ -263,29 +265,24 @@ when the screen is reduced in width */
   border-right: 0.5px solid black;
   overflow-y: auto;
   scrollbar-width: thin;
-
-
 }
-
 
 .list-nav li {
   margin: 1.5em;
 }
-.project-container {
-  left: 13.5em;
-  position: relative;
-  margin-right: 15em;
-  max-width: calc(100% - 22em);
-}
-/* .table-contents {
-  position: fixed;
-} */
 
+.list-nav li a {
+  color: #000;
+}
+
+.list-nav li a:hover {
+  color: #666;
+  text-decoration: none;
+}
 .top-link {
   margin-top: 3em;
 }
 /* =========================================*/ 
-
 
 
 /*====== CAROUSEL (no longer in use)========== */
