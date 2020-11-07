@@ -13,12 +13,9 @@ export default function ProjectTableOfContents() {
     }
   }
 
-  // <div style={styles.tableOfContents}>
-  //   <a href='#bartender'>Express Bartender</a>
-  //   <a href='#connect'>Connect 4</a>
-  // </div>
   return (<>
-    <Nav defaultActiveKey="/home" className="project-nav flex-column">
+    <div className='nav-bg'></div>
+    <Nav fill defaultActiveKey="/home" className="project-nav flex-column">
       <Nav.Link className='top-link' href="#connect4">Active</Nav.Link>
       <Nav.Link href=''>Quick Readme Generator</Nav.Link>
       <Nav.Link href=''>Link</Nav.Link>
@@ -34,6 +31,8 @@ export default function ProjectTableOfContents() {
       <Nav.Link href=''>Link</Nav.Link>
       <Nav.Link href='#connect4'>Connect 4</Nav.Link>
     </Nav>
+
+
     {/* <ListGroup className='table-contents'>
       <ListGroup.Item>Cras justo odio</ListGroup.Item>
       <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>

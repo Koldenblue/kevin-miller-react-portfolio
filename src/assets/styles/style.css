@@ -240,18 +240,30 @@ when the screen is reduced in width */
 
 /* table of contents */
 .project-nav {
-  /* position: fixed; */
+  position: fixed;
   top: 3em;
   bottom: 0;
   background-color: #ff9b6b;
-  border-radius: 10px;
-  width: auto;
-  overflow: auto;
+  /* border-radius: 10px; */
+  /* width: auto;
+  overflow: auto; */
 }
 
-.table-contents {
-  position: fixed;
+.nav-bg {
+  background-color: red;
+  width: 15em;
+  height: 100%;
 }
+
+.project-container {
+  left: 15em;
+  position: relative;
+  margin-right: 15em;
+  max-width: calc(100% - 20em);
+}
+/* .table-contents {
+  position: fixed;
+} */
 
 .top-link {
   margin-top: 3em;

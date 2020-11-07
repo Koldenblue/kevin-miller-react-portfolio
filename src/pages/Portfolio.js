@@ -46,12 +46,12 @@ function Portfolio() {
         <Background image='../assets/images/koi.jpg' />
 
         {/* Main project card container */}
-        <main className='container-fluid nav-avoid bottom-space'>
-        <div className='row'>
-          <div className='col-md-2'>
-        <ProjectTableOfContents />
-          </div>
-        <div className='col-md-8'>
+          <ProjectTableOfContents />
+        <main className='container-fluid nav-avoid bottom-space project-container'>
+        {/* <div className='row'>
+          <div className='col-md-2'> */}
+          {/* </div> */}
+        {/* <div className='col-md-8'> */}
           <section className='row card-gutters'>
             <div className='col-md-12'>
               <div className='box-all box'>
@@ -557,9 +557,9 @@ function Portfolio() {
               </div>
             </div>
           </section>
-          </div>
-          </div>
-          <div className='col-md-2'></div>
+          {/* </div> */}
+          {/* </div> */}
+          {/* <div className='col-md-2'></div> */}
         </main>
       </ZoomFadeContext.Provider>
     </>
