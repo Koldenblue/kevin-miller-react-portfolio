@@ -129,10 +129,7 @@ pre {
 
 
 
-.card {
-  margin: 2em;
-  background-color: rgba(217, 191, 238, .7);
-}
+
 
 /* top margin added to keep from overlap with navbar */
 .nav-avoid {
@@ -165,6 +162,7 @@ when the screen is reduced in width */
 /* =============== portfolio section  =============== */
 .horizontal-card-body {
   padding-bottom: 0px;
+  margin-left: 1.5em;
 }
 .horizontal-description, .horizontal-list {
   margin-bottom: 4px;
@@ -196,6 +194,12 @@ when the screen is reduced in width */
   flex-wrap: wrap;
 }
 
+.card {
+  margin: 2em;
+  background-color: rgba(217, 191, 238, .7);
+  width: auto
+}
+
 .card-gutters {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -219,13 +223,9 @@ when the screen is reduced in width */
   color : rgb(0, 0, 130)
 }
 
-
-
 .project-list li {
   color:rgb(48, 40, 99)
 }
-
-
 
 .psychic-link, .card-link {
   color: #975BD7;
@@ -242,8 +242,50 @@ when the screen is reduced in width */
   color: #117E66;
 }
 
-/* CAROUSEL */
+.project-container {
+  left: 13.5em;
+  position: relative;
+  margin-right: 15em;
+  max-width: calc(100% - 22em);
+}
+/* =========================================*/ 
 
+
+/*====== SIDE NAV========== */
+
+.list-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #c7fcf9;
+  width: 18em;
+  height: 100%;
+  list-style: none;
+  box-shadow: 0 2px 2px black;
+  border-right: 0.5px solid black;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.list-nav li {
+  margin: 1.5em;
+}
+
+.list-nav li a {
+  color: #000;
+}
+
+.list-nav li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.top-link {
+  margin-top: 3em;
+}
+/* =========================================*/ 
+
+
+/*====== CAROUSEL (no longer in use)========== */
 .carousel-inner {
   box-shadow: 2px 10px 18px;
 }
@@ -251,8 +293,11 @@ when the screen is reduced in width */
 .carousel-image {
   overflow-y: hidden;
 }
+/* ==========================================*/ 
 
-/* RESUME */
+
+
+/* ================= RESUME=================  */
 #resume-pdf {
   height: 100%;
   width: 100%;
@@ -262,6 +307,8 @@ when the screen is reduced in width */
   height: 100vh;
   width: auto;
 }
+/* ==========================================*/ 
+
 
 
 
