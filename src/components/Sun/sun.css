@@ -1,0 +1,152 @@
+.anim-horizon {
+  position: fixed;
+  z-index: -1;
+  margin: 0;
+  background-repeat: no-repeat;
+  height: 34%;
+  width: 100%;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.anim-sun {
+  padding: 80px;
+  border-width: 1px;
+  border-style: dashed;
+  height: 0px;
+  width: 0px;
+  border-radius: 1000px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  z-index: -2;
+  transform: translateY(-50%);
+  overflow: hidden;
+  opacity: 0.3;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .anim-sun {
+    /* animation: anim-sun infinite 10s ease-in-out; */
+    animation-name: anim-sun;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+  }
+}
+@keyframes anim-sun {
+  0% {
+    background-color: rgb(255, 98, 98);
+    transform: translateX(-50%);
+    left: 21%;
+    top: 71%;
+    
+  }
+  5% {
+    background-color: rgb(255, 98, 98);
+    transform: translateX(-50%);
+    left: 24%;
+    top: 60%;
+  }
+  10% {
+    transform: translateX(-50%);
+    left: 27%;
+    top: 51%;
+  }
+  15% {
+    transform: translateX(-50%);
+    left: 30%;
+    top: 43%;
+  }
+  20% {
+    transform: translateX(-50%);
+    left: 33%;
+    top: 36%;
+  }
+  25% {
+    background-color: orange;
+    transform: translateX(-50%);
+    left: 36%;
+    top: 30%;
+  }
+  30% {
+    transform: translateX(-50%);
+    left: 39%;
+    top: 25%;
+  }
+  35% {
+    transform: translateX(-50%);
+    left: 42%;
+    top: 21%;
+  }
+  40% {
+    transform: translateX(-50%);
+    left: 45%;
+    top: 18%;
+  }
+  45% {
+    left: 48%;
+    top: 16%;
+    transform: translateX(-50%);
+  }
+  50% {
+    background-color: yellow;
+    left: 51%;
+    top: 15%;
+    transform: translateX(-50%);
+    padding: 120px
+  }
+  55% {
+    left: 54%;
+    top: 16%;
+    transform: translateX(-50%);
+  }
+  60% {
+    transform: translateX(-50%);
+    left: 57%;
+    top: 18%;
+  }
+  65% {
+    transform: translateX(-50%);
+    left: 60%;
+    top: 21%;
+  }
+  70% {
+    transform: translateX(-50%);
+    left: 63%;
+    top: 25%;
+  }
+  75% {
+    background-color: orange;
+
+    transform: translateX(-50%);
+    left: 66%;
+    top: 30%;
+  }
+  80% {
+    transform: translateX(-50%);
+    left: 69%;
+    top: 36%;
+  }
+  85% {
+    transform: translateX(-50%);
+    left: 72%;
+    top: 43%;
+  }
+  90% {
+    transform: translateX(-50%);
+    left: 75%;
+    top: 51%;
+  }
+  95% {
+    transform: translateX(-50%);
+    left: 78%;
+    top: 60%;
+  }
+  100% {
+    background-color: rgb(255, 98, 98);
+    transform: translateX(-50%);
+    left: 81%;
+    top: 71%;
+  }
+}
