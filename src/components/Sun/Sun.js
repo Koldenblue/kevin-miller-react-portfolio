@@ -5,6 +5,6 @@ export default function Sun() {
 
   return (<>
     <div className='anim-sun'></div>
-    <div className='sun-rays'></div>
+    <div className='night'></div>
   </>)
 }
