@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "../components/Background";
 import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
 import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
 
 function Portfolio() {
+  // this state is provided, through the provider, to the zoom image components
+  // in this way, currentlyZoomed is like a global variable shared among every zoomImage component,
+  // and each of them has access to the set function.
+  // the alternative would be to pass down this state thru props.
+  // second alternative would be to store global state in a redux store
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
   const styles = {
@@ -12,6 +17,7 @@ function Portfolio() {
     card: {
     },
   }
+
 
   // ==========================================================================================================================
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
