@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Sun/sun.css';
 function Background(props) {
     let styles = {
         image: {
@@ -12,7 +12,8 @@ function Background(props) {
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            position: 'fixed'
+            position: 'fixed',
+            zIndex: '-3'
         }
     }
 
@@ -21,6 +22,7 @@ function Background(props) {
             return (
                 <div>
                     <img src={require('../assets/images/beach.jpg')}  style={styles.image} alt=''/>
+                    <img className='anim-horizon' src={require('../assets/images/beach-cropped.jpg')} alt=''/>
                 </div>
             )
         case '../assets/images/beach2.jpg':

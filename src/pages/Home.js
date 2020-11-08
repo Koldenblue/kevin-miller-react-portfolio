@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Animated } from "react-animated-css";
 import Background from '../components/Background';
 import SummaryTabs from '../components/SummaryTabs';
-
+import Sun from '../components/Sun/Sun';
 
 function Home() {
   const [opacity, setOpacity] = useState(0)
@@ -33,7 +33,7 @@ function Home() {
   return (
     <>
       <Background image='../assets/images/beach.jpg' />
-
+      <Sun />
       <section className="jumbotron-fluid">
         <div className='row'>
           <div className='col-md-2'></div>
@@ -69,13 +69,13 @@ function Home() {
       </section>
       <main className='container-fluid bottom-space' id='home-container'>
         <div className='row'>
-        <div className='col-md-2'></div>
+          <div className='col-md-2'></div>
 
 
-        <div className='col-md-8'>
-        <SummaryTabs contact={contact} />
-        </div>
-        <div className='col-md-2'></div>
+          <div className='col-md-8'>
+            <SummaryTabs contact={contact} />
+          </div>
+          <div className='col-md-2'></div>
         </div>
       </main>
     </>

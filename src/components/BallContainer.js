@@ -1,5 +1,4 @@
 import React from "react";
-import { ParallaxLayer } from 'react-spring/renderprops-addons';
 import Ball from "../components/Ball";
 
 export default function BallContainer() {
