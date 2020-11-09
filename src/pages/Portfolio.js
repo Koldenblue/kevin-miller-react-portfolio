@@ -85,10 +85,10 @@ function Portfolio() {
                     </p>
                         <ul className='project-list horizontal-list'>
                           <li>
-                            Get the source code on<a href="https://github.com/Koldenblue/color-rippler" className="card-link"> GitHub</a>
+                            Get the source code on<a target='_blank' href="https://github.com/Koldenblue/color-rippler" className="card-link"> GitHub</a>
                           </li>
                           <li>
-                            <a href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid.
+                            <a target='_blank' href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid.
                       </li>
                         </ul>
                       </div>
@@ -124,10 +124,10 @@ function Portfolio() {
                   </p>
                     <ul className='project-list'>
                       <li>
-                        Check out the <a href="https://github.com/Koldenblue/Express-Bartender" className="card-link">GitHub </a>repository for a project summary
+                        Check out the <a target='_blank' href="https://github.com/Koldenblue/Express-Bartender" className="card-link">GitHub </a>repository for a project summary
                     </li>
                       <li>
-                        Express yourself on the <a href="https://team-express-bartender.herokuapp.com/" className="card-link">website</a>! The username 'kevin@kevin.com' and password '10Characters!' may be used in leiu of signing up.
+                        Express yourself on the <a target='_blank' href="https://team-express-bartender.herokuapp.com/" className="card-link">website</a>! The username 'kevin@kevin.com' and password '10Characters!' may be used in leiu of signing up.
                     </li>
                     </ul>
                   </div>
@@ -149,10 +149,10 @@ function Portfolio() {
                 </p>
                     <ul className='project-list'>
                       <li>
-                        See the <a href="https://github.com/Koldenblue/Inform-and-React" className="card-link">GitHub </a>repository and project summary
+                        See the <a target='_blank' href="https://github.com/Koldenblue/Inform-and-React" className="card-link">GitHub </a>repository and project summary
                     </li>
                       <li>
-                        See the<a href="https://inform-react.herokuapp.com/" className="card-link"> deployed app</a>! The username 'vote' with password 'america' may be used in leiu of signing up.
+                        See the<a target='_blank' href="https://inform-react.herokuapp.com/" className="card-link"> deployed app</a>! The username 'vote' with password 'america' may be used in leiu of signing up.
                     </li>
                     </ul>
                   </div>
@@ -189,10 +189,10 @@ function Portfolio() {
                         </p>
                         <ul className='project-list'>
                           <li>
-                            See the source code on<a href="https://github.com/Koldenblue/para-bubbles" className="card-link"> GitHub</a>
+                            See the source code on<a target='_blank' href="https://github.com/Koldenblue/para-bubbles" className="card-link"> GitHub</a>
                           </li>
                           <li>
-                            Check out the <a href="https://para-bubbles.herokuapp.com" className="card-link">para-bubbles</a> demo! Scroll the page for animation, and perform simple customization with the options menu.
+                            Check out the <a target='_blank' href="https://para-bubbles.herokuapp.com" className="card-link">para-bubbles</a> demo! Scroll the page for animation, and perform simple customization with the options menu.
                         </li>
                         </ul>
                       </div>
@@ -218,10 +218,10 @@ function Portfolio() {
                   </p>
                     <ul className='project-list'>
                       <li>
-                        Read a detailed code discussion on <a href="https://github.com/Koldenblue/redux-journal" className="card-link">GitHub</a>
+                        Read a detailed code discussion on <a target='_blank' href="https://github.com/Koldenblue/redux-journal" className="card-link">GitHub</a>
                       </li>
                       <li>
-                        Make a journal entry on the <a href="https://redux-journal.herokuapp.com/" className="card-link">website</a>!
+                        Make a journal entry on the <a target='_blank' href="https://redux-journal.herokuapp.com/" className="card-link">website</a>!
                       </li>
                     </ul>
                   </div>
@@ -245,10 +245,10 @@ function Portfolio() {
                 </p>
                     <ul className='project-list'>
                       <li>
-                        Download the program and see sample readmes on<a href="https://github.com/Koldenblue/readme-generator" className="card-link"> GitHub</a>
+                        Download the program and see sample readmes on<a target='_blank' href="https://github.com/Koldenblue/readme-generator" className="card-link"> GitHub</a>
                       </li>
                       <li>
-                        Quick<a href="https://youtu.be/G-kk2_u-25k" className="card-link"> YouTube</a> demonstration
+                        Quick<a target='_blank' href="https://youtu.be/G-kk2_u-25k" className="card-link"> YouTube</a> demonstration
                   </li>
                     </ul>
                   </div>
@@ -273,10 +273,10 @@ function Portfolio() {
                   </p>
                     <ul className='project-list'>
                       <li>
-                        Ham it up on <a href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
+                        Ham it up on <a target='_blank' href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
                       </li>
                       <li>
-                        Serve up some hamburgers on the <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website</a>!
+                        Serve up some hamburgers on the <a target='_blank' href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website</a>!
                       </li>
                     </ul>
                   </div>
@@ -297,10 +297,10 @@ function Portfolio() {
                     Users may input password specifications, such as desired length and desired special characters.</p>
                     <ul className='project-list'>
                       <li>
-                        See the webpage source code and discussion on<a href="https://github.com/Koldenblue/password-generator" className="card-link"> GitHub</a>
+                        See the webpage source code and discussion on<a target='_blank' href="https://github.com/Koldenblue/password-generator" className="card-link"> GitHub</a>
                       </li>
                       <li>
-                        Generate a password at the <a href="https://koldenblue.github.io/password-generator/" className="card-link">deployed website</a>
+                        Generate a password at the <a target='_blank' href="https://koldenblue.github.io/password-generator/" className="card-link">deployed website</a>
                       </li>
                     </ul>
                   </div>
@@ -328,7 +328,7 @@ function Portfolio() {
                       </p>
                         <ul className='project-list'>
                           <li>
-                            <a href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! </a>Requires Python to function.
+                            <a target='_blank' href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! </a>Requires Python to function.
                         </li>
                         </ul>
                       </div>
@@ -354,10 +354,10 @@ function Portfolio() {
                   in which the functionality would result in a reload of the DOM. This app demonstrates how the component-based React framework, utilizing a virtual DOM, can be used for performance, efficiency, and code organization advantages. </p>
                     <ul className='project-list'>
                       <li>
-                        View an in-depth explanation on<a href="https://github.com/Koldenblue/employee-directory" className="card-link"> GitHub</a>
+                        View an in-depth explanation on<a target='_blank' href="https://github.com/Koldenblue/employee-directory" className="card-link"> GitHub</a>
                       </li>
                       <li>
-                        Hire some new employees and sort them on the <a href="https://koldenblue.github.io/employee-directory/" className="card-link">website!</a>
+                        Hire some new employees and sort them on the <a target='_blank' href="https://koldenblue.github.io/employee-directory/" className="card-link">website!</a>
                       </li>
                     </ul>
                   </div>
@@ -380,10 +380,10 @@ function Portfolio() {
                   </p>
                     <ul className='project-list'>
                       <li>
-                        View an in-depth explanation on<a href="https://github.com/Koldenblue/Node-Python-SQL-Database-Manager" className="card-link"> GitHub</a>
+                        View an in-depth explanation on<a target='_blank' href="https://github.com/Koldenblue/Node-Python-SQL-Database-Manager" className="card-link"> GitHub</a>
                       </li>
                       <li>
-                        <a href="https://youtu.be/ZgNN19BSUyg" className="card-link">YouTube</a> Demonstration
+                        <a target='_blank' href="https://youtu.be/ZgNN19BSUyg" className="card-link">YouTube</a> Demonstration
                   </li>
                     </ul>
                   </div>
@@ -412,10 +412,10 @@ function Portfolio() {
                 This app is designed to map out a days journey, from hiking to eating to home again.</p>
                         <ul className='project-list horizontal-list'>
                           <li>
-                            See the code and project summary on <a href="https://github.com/Koldenblue/Trek" className="card-link">GitHub</a>
+                            See the code and project summary on <a target='_blank' href="https://github.com/Koldenblue/Trek" className="card-link">GitHub</a>
                           </li>
                           <li>
-                            Use the <a href="koldenblue.github.io/trek/" className="card-link">TREK app </a>to plan a day
+                            Use the <a target='_blank' href="koldenblue.github.io/trek/" className="card-link">TREK app </a>to plan a day
                       </li>
                         </ul>
                       </div>
@@ -442,10 +442,10 @@ function Portfolio() {
             </p>
                     <ul className='project-list'>
                       <li>
-                        <a href="https://github.com/Koldenblue/quiz-template" className="card-link">GitHub </a>repository and project summary
+                        <a target='_blank' href="https://github.com/Koldenblue/quiz-template" className="card-link">GitHub </a>repository and project summary
                   </li>
                       <li>
-                        Take a short <a href="https://koldenblue.github.io/quiz-template/" className="card-link">JavaScript Quiz!</a>
+                        Take a short <a target='_blank' href="https://koldenblue.github.io/quiz-template/" className="card-link">JavaScript Quiz!</a>
                       </li>
                     </ul>
                   </div>
@@ -467,10 +467,10 @@ function Portfolio() {
                     </p>
                     <ul className='project-list'>
                       <li>
-                        <a href="https://github.com/Koldenblue/weather-forecaster" className="card-link">GitHub </a>repository and project summary
+                        <a target='_blank' href="https://github.com/Koldenblue/weather-forecaster" className="card-link">GitHub </a>repository and project summary
                       </li>
                       <li>
-                        <a href="https://koldenblue.github.io/weather-forecaster/" className="card-link">Find the weather </a>in your city!
+                        <a target='_blank' href="https://koldenblue.github.io/weather-forecaster/" className="card-link">Find the weather </a>in your city!
                       </li>
                     </ul>
 
@@ -500,10 +500,10 @@ function Portfolio() {
               to generate an HTML template about anything - students, or books, or video games, for example.</p>
                     <ul className='project-list'>
                       <li>
-                        <a href='https://github.com/Koldenblue/template-engine' className="card-link">GitHub </a>source code, runnable in a terminal
+                        <a target='_blank' href='https://github.com/Koldenblue/template-engine' className="card-link">GitHub </a>source code, runnable in a terminal
                     </li>
                       <li>
-                        View a <a href='https://youtu.be/SdOaaAi9A-Q' className="card-link">YouTube</a> demonstration
+                        View a <a target='_blank' href='https://youtu.be/SdOaaAi9A-Q' className="card-link">YouTube</a> demonstration
                     </li>
                     </ul>
                   </div>
@@ -526,10 +526,10 @@ function Portfolio() {
                   </p>
                     <ul className='project-list'>
                       <li>
-                        Workday scheduler and project summary on <a href="https://github.com/Koldenblue/work-day-scheduler" className="card-link">GitHub</a>
+                        Workday scheduler and project summary on <a target='_blank' href="https://github.com/Koldenblue/work-day-scheduler" className="card-link">GitHub</a>
                       </li>
                       <li>
-                        Save notes for a scheduled workday with the <a href="https://koldenblue.github.io/work-day-scheduler/" className="card-link">scheduler app</a>!
+                        Save notes for a scheduled workday with the <a target='_blank' href="https://koldenblue.github.io/work-day-scheduler/" className="card-link">scheduler app</a>!
                     </li>
                     </ul>
                   </div>
@@ -552,7 +552,7 @@ function Portfolio() {
                     <p className="card-text">A balance sheet reader, programmed to help company efficiency in reading large amounts of excel files.</p>
                     <ul className='project-list'>
                       <li>
-                        Balance sheet reader on <a href="https://github.com/Koldenblue/balance-sheet-reader" className="card-link">GitHub!</a>
+                        Balance sheet reader on <a target='_blank' href="https://github.com/Koldenblue/balance-sheet-reader" className="card-link">GitHub!</a>
                       </li>
                     </ul>
                   </div>
@@ -572,15 +572,15 @@ function Portfolio() {
                     <h6 className="card-subtitle mb-2 text-muted">Simple React Browser Game</h6>
                     <p className="card-text">The classic game of Connect 4 in a browser. I'd look forward to programming more complicated games as well, such as adventure games or strategy games.
                     This project focuses on using React components and algorithmic logic to present a simple interactive game.
-                      This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a href='"https://github.com/Koldenblue/games-websites"' className='psychic-link'> GitHub</a>.
-                      The orginal page was <a href="https://koldenblue.github.io/games-websites/" className='psychic-link'>deployed using GitHub pages</a>.
+                      This code is based on a program also written by me, originally written using vanilla JavaScript / jQuery and uploaded to<a target='_blank' href='"https://github.com/Koldenblue/games-websites"' className='psychic-link'> GitHub</a>.
+                      The orginal page was <a target='_blank' href="https://koldenblue.github.io/games-websites/" className='psychic-link'>deployed using GitHub pages</a>.
                     </p>
                     <ul className='project-list'>
                       <li>
-                        <a href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub </a>Source Code
+                        <a target='_blank' href="https://github.com/Koldenblue/connect-4-react" className="card-link">GitHub </a>Source Code
                   </li>
                       <li>
-                        Play <a href="https://connect-4-react.herokuapp.com/" className="card-link">Connect 4!</a>
+                        Play <a target='_blank' href="https://connect-4-react.herokuapp.com/" className="card-link">Connect 4!</a>
                       </li>
                     </ul>
                   </div>
