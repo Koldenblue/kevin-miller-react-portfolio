@@ -1,7 +1,7 @@
 # kevin-miller-react-portfolio
 My portfolio of projects.
 
-Check out the <a href='https://kevin-miller-react-portfolio.herokuapp.com/'>deployed website on Heroku servers!</a>! The server is a provided for free by Heroku, and may take a short time to spin up if it has been idle for a while.
+Check out the <a href='https://kevin-miller-react-portfolio.herokuapp.com/'>deployed website on Heroku servers</a>! The server is a provided for free by Heroku, and may take a short time to spin up if it has been idle for a while.
 
 For a list of my various projects, go to the projects page in the portfolio, or check out <a href='https://github.com/Koldenblue'>my profile</a> here on GitHub.
 

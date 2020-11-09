@@ -203,26 +203,25 @@ function Portfolio() {
             </div>
           </section>
 
-
           <section className='row card-gutters'>
-            <div className='col-md-6' id='hamburger-handlebars'>
+            <div className='col-md-6' id='redux-journal'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
-                    <img src={require("../assets/images/hamburger.PNG")} alt="Hamburger Website" />
+                    <img src={require("../assets/images/redux-journal.jpeg")} alt="Redux Journal" />
                   </ZoomFadeIn>
                   <div className="card-body">
-                    <h5 className="card-title">Hamburger Handling</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
-                    <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
-                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
+                    <h5 className="card-title">Redux Journal</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">MERN stack journal - MongoDB, Express.js, React, Redux, and Node.js</h6>
+                    <p className="card-text">An app that tracks user journal entries and moods. Features a light/dark theme toggle. This app utilizes React for front-end component design, and MongoDB to keep track of user journal entries.
+                    The Redux library is used to keep track of front-end UI state changes, such as whether components should be light or dark themed.
                   </p>
                     <ul className='project-list'>
                       <li>
-                        Ham it up on <a href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
+                        Read a detailed code discussion on <a href="https://github.com/Koldenblue/redux-journal" className="card-link">GitHub</a>
                       </li>
                       <li>
-                        Serve up some hamburgers on the <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website!</a>
+                        Make a journal entry on the <a href="https://redux-journal.herokuapp.com/" className="card-link">website</a>!
                       </li>
                     </ul>
                   </div>
@@ -251,6 +250,58 @@ function Portfolio() {
                       <li>
                         Quick<a href="https://youtu.be/G-kk2_u-25k" className="card-link"> YouTube</a> demonstration
                   </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section className='row card-gutters'>
+            <div className='col-md-6' id='hamburger-handlebars'>
+              <div className='box-all box'>
+                <div className="card" >
+                  <ZoomFadeIn>
+                    <img src={require("../assets/images/hamburger.PNG")} alt="Hamburger Website" />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">Hamburger Handling</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
+                    <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
+                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
+                  </p>
+                    <ul className='project-list'>
+                      <li>
+                        Ham it up on <a href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
+                      </li>
+                      <li>
+                        Serve up some hamburgers on the <a href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website</a>!
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-md-6' id='pass-gen'>
+              <div className='box-all box'>
+                <div className="card" >
+                  <ZoomFadeIn>
+                    <img src={require("../assets/images/pass-gen.jpeg")} alt="password generator" />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">Password Generator</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Generates random passwords</h6>
+                    <p className="card-text">A simple JavaScript program that generates a random password. The app has a front-end programmed in basic HTML and CSS.
+                    Users may input password specifications, such as desired length and desired special characters.</p>
+                    <ul className='project-list'>
+                      <li>
+                        See the webpage source code and discussion on<a href="https://github.com/Koldenblue/password-generator" className="card-link"> GitHub</a>
+                      </li>
+                      <li>
+                        Generate a password at the <a href="https://koldenblue.github.io/password-generator/" className="card-link">deployed website</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -412,7 +463,7 @@ function Portfolio() {
                     <h5 className="card-title">Weather Forecasting app</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Find the weather in your city</h6>
                     <p className="card-text">Searches a weather database for the 5-day forecast of the weather in any city. Your previous searches are stored as well!
-                      This app utilizes AJAX calls to the OpenWeather API in order to retrieve weather data, and local storage to store previous sessions.
+                    This app utilizes AJAX calls to the OpenWeather API in order to retrieve weather data, and local storage to store previous sessions.
                     </p>
                     <ul className='project-list'>
                       <li>
