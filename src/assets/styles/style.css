@@ -282,6 +282,32 @@ when the screen is reduced in width */
 .top-link {
   margin-top: 3em;
 }
+
+@media screen and (max-width: 730px) {
+  .list-nav {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    top: 3em;
+  }
+  .project-container {
+    left: 0;
+    position: relative;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .top-link {
+    margin-top: 1em;
+  }
+  #last-link {
+    padding-right: 2em;
+  }
+}
+@media screen and (max-width: 413px) {
+  .list-nav {
+    top: 5em;
+  }
+}
 /* =========================================*/ 
 
 

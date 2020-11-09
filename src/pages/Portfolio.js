@@ -54,15 +54,15 @@ function Portfolio() {
         <ProjectTableOfContents />
         <main className='container-fluid nav-avoid bottom-space project-container'>
           {/* <div className='row'>
-          <div className='col-md-2'> */}
+          <div className='col-lg-2'> */}
           {/* </div> */}
-          {/* <div className='col-md-8'> */}
+          {/* <div className='col-lg-8'> */}
           <section className='row card-gutters'>
-            <div className='col-md-12' id='color-rippler'>
+            <div className='col-lg-12' id='color-rippler'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
-                    <div className='col-md-6'>
+                    <div className='col-lg-6'>
                       <ZoomFadeIn diffZoomedImage={true}>
                         <img
                           id='rippler-img'
@@ -74,7 +74,7 @@ function Portfolio() {
                         <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
                       </ZoomFadeIn>
                     </div>
-                    <div className='col-md-6'>
+                    <div className='col-lg-6'>
                       <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Color Rippler</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
@@ -100,7 +100,7 @@ function Portfolio() {
           </section>
           <section className='row'>
 
-            <div className='col-md-6' id='bartender'>
+            <div className='col-lg-6' id='bartender'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
@@ -135,7 +135,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6' id='inform-react'>
+            <div className='col-lg-6' id='inform-react'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -162,11 +162,11 @@ function Portfolio() {
           </ section>
 
           <section className='row card-gutters'>
-            <div className='col-md-12' id='para-bub'>
+            <div className='col-lg-12' id='para-bub'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
-                    <div className='col-md-5'>
+                    <div className='col-lg-5'>
                       <ZoomFadeIn diffZoomedImage={true}>
                         <img
                           id='para-img'
@@ -179,7 +179,7 @@ function Portfolio() {
                         <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' alt='Parallaxed Bubbles app' />
                       </ZoomFadeIn>
                     </div>
-                    <div className='col-md-7'>
+                    <div className='col-lg-7'>
                       <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Para-bubbles</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Parallaxed Background Bubbles</h6>
@@ -204,7 +204,7 @@ function Portfolio() {
           </section>
 
           <section className='row card-gutters'>
-            <div className='col-md-6' id='redux-journal'>
+            <div className='col-lg-6' id='redux-journal'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -229,7 +229,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6' id='readme-gen'>
+            <div className='col-lg-6' id='readme-gen'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
@@ -259,7 +259,7 @@ function Portfolio() {
 
 
           <section className='row card-gutters'>
-            <div className='col-md-6' id='hamburger-handlebars'>
+            <div className='col-lg-6' id='hamburger-handlebars'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -284,7 +284,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6' id='pass-gen'>
+            <div className='col-lg-6' id='pass-gen'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -310,16 +310,16 @@ function Portfolio() {
           </section>
 
           <section className='row card-gutters'>
-            <div className='col-md-12' id='chess'>
+            <div className='col-lg-12' id='chess'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
-                    <div className='col-md-5'>
+                    <div className='col-lg-5'>
                       <ZoomFadeIn>
                         <img src={require("../assets/images/chess.PNG")} alt="Chess in a Python Terminal" />
                       </ZoomFadeIn>
                     </div>
-                    <div className='col-md-7'>
+                    <div className='col-lg-7'>
                       <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Chess</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
@@ -340,7 +340,7 @@ function Portfolio() {
           </section>
 
           <section className='row card-gutters' >
-            <div className='col-md-6' id='emp-dir'>
+            <div className='col-lg-6' id='emp-dir'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -365,7 +365,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6' id='database-manager'>
+            <div className='col-lg-6' id='database-manager'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -394,16 +394,16 @@ function Portfolio() {
 
           <section className='row card-gutters'>
 
-            <div className='col-md-12' id='trek-app'>
+            <div className='col-lg-12' id='trek-app'>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
-                    <div className='col-md-5'>
+                    <div className='col-lg-5'>
                       <ZoomFadeIn>
                         <img src={require("../assets/images/trek.png")} alt="TREK app" />
                       </ZoomFadeIn>
                     </div>
-                    <div className='col-md-7'>
+                    <div className='col-lg-7'>
                       <div className="card-body horizontal-card-body">
                         <h5 className="card-title">TREK</h5>
                         <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
@@ -428,7 +428,7 @@ function Portfolio() {
 
           <section className='row card-gutters'>
 
-            <div className='col-md-6' id='quiz-template'>
+            <div className='col-lg-6' id='quiz-template'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -453,7 +453,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6' id='weather-forecaster'>
+            <div className='col-lg-6' id='weather-forecaster'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -484,7 +484,7 @@ function Portfolio() {
 
           <section className='row card-gutters'>
 
-            <div className='col-md-6' id='template-engine'>
+            <div className='col-lg-6' id='template-engine'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -511,7 +511,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-md-6' id='workday-scheduler'>
+            <div className='col-lg-6' id='workday-scheduler'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -540,7 +540,7 @@ function Portfolio() {
           </section>
 
           <section className='row card-gutters' id='balance-sheet'>
-            <div className='col-md-6'>
+            <div className='col-lg-6'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -561,7 +561,7 @@ function Portfolio() {
             </div>
 
 
-            <div className='col-md-6' id='connect'>
+            <div className='col-lg-6' id='connect'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -591,7 +591,7 @@ function Portfolio() {
 
 
           <section className='row card-gutters bottom-card-gutter'>
-            <div className='col-md-12'>
+            <div className='col-lg-12'>
               <div className='box-all box'>
                 <div className="card" >
                   <div className="card-body">
@@ -609,7 +609,7 @@ function Portfolio() {
           </section>
           {/* </div> */}
           {/* </div> */}
-          {/* <div className='col-md-2'></div> */}
+          {/* <div className='col-lg-2'></div> */}
         </main>
       </ZoomFadeContext.Provider>
     </>

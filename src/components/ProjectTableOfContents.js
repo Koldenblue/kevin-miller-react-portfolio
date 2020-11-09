@@ -22,7 +22,7 @@ export default function ProjectTableOfContents() {
       <li><a href='#template-engine'>Template Engine</a></li>
       <li><a href='#workday-scheduler'>Workday Scheduler</a></li>
       <li><a href='#balance-sheet'>Balance Sheet Reader</a></li>
-      <li><a href='#connect'>Connect 4</a></li>
+      <li id='last-link'><a href='#connect'>Connect 4</a></li>
 
     </ul>
 
