@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Background from "../components/Background";
 import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
@@ -11,12 +11,6 @@ function Portfolio() {
   // the alternative would be to pass down this state thru props.
   // second alternative would be to store global state in a redux store
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
-
-  const styles = {
-    // the card style can be removed to set the card size equal to the column size on the grid
-    card: {
-    },
-  }
 
 
   // ==========================================================================================================================
@@ -53,10 +47,7 @@ function Portfolio() {
         {/* Main project card container */}
         <ProjectTableOfContents />
         <main className='container-fluid nav-avoid bottom-space project-container'>
-          {/* <div className='row'>
-          <div className='col-lg-2'> */}
-          {/* </div> */}
-          {/* <div className='col-lg-8'> */}
+
           <section className='row card-gutters'>
             <div className='col-lg-12' id='color-rippler'>
               <div className='box-all box'>
@@ -483,6 +474,40 @@ function Portfolio() {
 
 
           <section className='row card-gutters'>
+            <div className='col-lg-12' id='notetaker'>
+              <div className='box-all box'>
+                <div className="card">
+                  <div className='row no-gutters'>
+                    <div className='col-lg-5'>
+                      <ZoomFadeIn>
+                        <img src={require("../assets/images/notetaker.PNG")} alt="Note Taker App" />
+                      </ZoomFadeIn>
+                    </div>
+                    <div className='col-lg-7'>
+                      <div className="card-body horizontal-card-body">
+                        <h5 className="card-title">Express Note Taker</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">Store and Retrieve Notes with an Express.js Server</h6>
+                        <p className="card-text horizontal-description">An app designed to store and retrieve notes. Routing is performed using Express.js.
+                         API functionality for storing and retrieving notes is also accomplished through Express routing. Notes are stored and read from a simple JSON file.
+                         Since notes are stored and read from a single JSON file without user login functionality, any user can see all notes.</p>
+                        <ul className='project-list horizontal-list'>
+                          <li>
+                            See the code and project summary on <a target='_blank' href="https://github.com/Koldenblue/note-server" className="card-link">GitHub</a>
+                          </li>
+                          <li>
+                            Write some notes on the <a target='_blank' href="https://fast-brook-96701.herokuapp.com/" className="card-link">website</a>
+                      </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section className='row card-gutters'>
 
             <div className='col-lg-6' id='template-engine'>
               <div className='box-all box'>
@@ -607,9 +632,7 @@ function Portfolio() {
               </div>
             </div>
           </section>
-          {/* </div> */}
-          {/* </div> */}
-          {/* <div className='col-lg-2'></div> */}
+
         </main>
       </ZoomFadeContext.Provider>
     </>
