@@ -18,18 +18,18 @@ function SummaryTabs(props) {
 
       <Tab eventKey="summary" title="Summary">
         <div className='tab-para'>
-          <h5>Check out my <a href='/portfolio' className='psychic-link'>project portfolio</a>!</h5>
+          <h5>Continually working on projects - be sure to check out my <a href='/portfolio' className='psychic-link'>project portfolio</a> or my <a href='/resume' className='psychic-link'>resume</a>!</h5>
           <hr />
           <p>
             Full-stack web developer with a PhD in chemistry from the University of California, Los Angeles (UCLA).
-            Education in full-stack development from UCLA.
-            Experienced problem-solver and scientific researcher with seven major <a href='/chemistry' className='psychic-link'>scientific publications</a>.
-            Values ethics, integrity, and good business sense, having spent years as a business manager and scientist.
-            Extensive teaching experience stems from being both a classroom teacher and a group fitness leader, which lend themselves to public speaking and teamwork skills.
-            Programming certifications include the UCLA extension coding bootcamp course and the Harvard edX online CS50 course.
+            Education in full-stack development from UCLA. Programming certifications include continuing education, as well the UCLA extension coding bootcamp course and the Harvard edX online CS50 course.
+            Experienced problem-solver and scientific researcher with seven major <a href='/chemistry' className='psychic-link'>scientific publications</a>.</p>
+            <p>Values ethics, integrity, and good business sense, having spent years as a business manager and scientist.
+            Extensive teaching experience stems from being both a classroom teacher and a group fitness leader, which lend themselves to public speaking and teamwork skills.</p>
+            <p>
             Top aim is to contribute to a team while continuously improving coding skills.
-            Seeks to improve the lives of both teammates and clients, whether that be in the real world or the digital world.
-          </p>
+            Seeks to improve the lives of both teammates and clients, whether that be in the real world or the digital world.</p>
+
         </div>
       </Tab>
 
