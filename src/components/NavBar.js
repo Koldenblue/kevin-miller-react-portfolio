@@ -36,8 +36,8 @@ function NavBar() {
         <Nav className="mr-auto">
           <Nav.Link id='portfolio-link' href="portfolio">Portfolio</Nav.Link>
           <Nav.Link id='resume-link' href="resume">Resume</Nav.Link>
-          <Nav.Link id='chem-link' href="chemistry">Chemistry</Nav.Link>
           <Nav.Link id='pic-link' href="pictures">Pictures</Nav.Link>
+          <Nav.Link id='chem-link' href="chemistry">Chemistry</Nav.Link>
           <Nav.Link id='about-link' href="aboutme">About Me</Nav.Link>
         </Nav>
       <HubLink />
