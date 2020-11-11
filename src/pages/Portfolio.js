@@ -48,7 +48,20 @@ function Portfolio() {
         {/* Main project card container */}
         <ProjectTableOfContents />
         <main className='container-fluid nav-avoid bottom-space project-container'>
-          <Contributions />
+
+        <section className='row card-gutters'>
+            <div className='col-lg-12' id='color-rippler'>
+              <div className='box-all box'>
+                <div className="card">
+                  <div className='row no-gutters'>
+            <Contributions />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
           <section className='row card-gutters'>
             <div className='col-lg-12' id='color-rippler'>
               <div className='box-all box'>
@@ -90,7 +103,8 @@ function Portfolio() {
               </div>
             </div>
           </section>
-          <section className='row'>
+
+          <section className='row card-gutters'>
 
             <div className='col-lg-6' id='bartender'>
               <div className='box-all box'>
@@ -127,7 +141,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6' id='inform-react'>
+            <div className='col-lg-6 card-gutters' id='inform-react'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -221,7 +235,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6' id='readme-gen'>
+            <div className='col-lg-6 card-gutters' id='readme-gen'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
@@ -276,7 +290,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6' id='pass-gen'>
+            <div className='col-lg-6 card-gutters' id='pass-gen'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -357,7 +371,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6' id='database-manager'>
+            <div className='col-lg-6 card-gutters' id='database-manager'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -445,7 +459,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6' id='weather-forecaster'>
+            <div className='col-lg-6 card-gutters' id='weather-forecaster'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -537,7 +551,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6' id='workday-scheduler'>
+            <div className='col-lg-6 card-gutters' id='workday-scheduler'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -587,7 +601,7 @@ function Portfolio() {
             </div>
 
 
-            <div className='col-lg-6' id='connect'>
+            <div className='col-lg-6 card-gutters' id='connect'>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
