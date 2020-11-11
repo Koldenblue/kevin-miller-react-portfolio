@@ -47,20 +47,12 @@ function Portfolio() {
 
         {/* Main project card container */}
         <ProjectTableOfContents />
-        <main className='container-fluid  bottom-space project-container'>
-{/* 
-        <section className='row card-gutters'>
-            <div className='col-lg-12' id='color-rippler'>
-              <div className='box-all box'>
-                <div className="card">
-                  <div className='row no-gutters'>
+        <main className='container-fluid bottom-space project-container'>
+
+          <section className='cont-row row card-gutters'>
             <Contributions />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-          
+          </section>
+
 
           <section className='row'>
             <div className='col-lg-12 card-gutters' id='color-rippler'>
@@ -503,7 +495,7 @@ function Portfolio() {
                         <h5 className="card-title">Express Note Taker</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Store and Retrieve Notes with an Express.js Server</h6>
                         <p className="card-text horizontal-description">An app designed to store and retrieve notes. Routing is performed using Express.js.
-                         API functionality for storing and retrieving notes is also accomplished through Express routing. Notes are stored and read from a simple JSON file.
+                        API functionality for storing and retrieving notes is also accomplished through Express routing. Notes are stored and read from a simple JSON file.
                          Since notes are stored and read from a single JSON file without user login functionality, any user can see all notes.</p>
                         <ul className='project-list horizontal-list'>
                           <li>
@@ -511,7 +503,7 @@ function Portfolio() {
                           </li>
                           <li>
                             Write some notes on the <a target='_blank' rel="noopener noreferrer" href="https://fast-brook-96701.herokuapp.com/" className="card-link">website</a>
-                      </li>
+                          </li>
                         </ul>
                       </div>
                     </div>

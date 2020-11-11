@@ -160,8 +160,38 @@ when the screen is reduced in width */
 
 
 /* =============== portfolio section  =============== */
+.cont-row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .contributions {
-  margin-top: 4em;
+  margin-top: 2em;
+  width: 100%;
+  background-color: rgb(201, 250, 217);
+  border-radius: 15px;
+  border-width: 1px;
+  border-color: rgb(22, 65, 17);
+  border-style: groove;
+}
+
+.cont-text {
+  font-size: x-large;
+}
+
+.spring-bg {
+  background-color: rgb(194, 233, 243);
+  width: 7em;
+  height: 7em;
+  border-radius: 1000px;
+  box-shadow: 1px 1px 3px black;
+  display: inline-block;
+}
+.spring-numbers {
+  font-size: 3em;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .horizontal-card-body {
@@ -196,6 +226,9 @@ when the screen is reduced in width */
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  border-width: 1px;
+  border-style: groove;
+  border-color: rgb(44, 10, 82);
 }
 
 .card {
