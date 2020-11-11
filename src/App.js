@@ -13,6 +13,7 @@ import Resume from "./pages/Resume";
 import Pictures from './pages/Pictures';
 import ParaPics from './pages/ParaPics';
 import { Parallax } from 'react-spring/renderprops-addons';
+import Contributions from './components/Contributions';
 
 
 
@@ -33,6 +34,8 @@ function App() {
           </>)
         }}/>
         <Route exact path='/' component={Home} />
+
+        {/* <Route exact path='/contributions' component={Contributions} /> */}
 
       </Switch>
     </Router>

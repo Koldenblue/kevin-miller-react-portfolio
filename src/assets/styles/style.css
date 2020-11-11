@@ -160,6 +160,10 @@ when the screen is reduced in width */
 
 
 /* =============== portfolio section  =============== */
+.contributions {
+  margin-top: 4em;
+}
+
 .horizontal-card-body {
   padding-bottom: 0px;
   margin-left: 1.5em;

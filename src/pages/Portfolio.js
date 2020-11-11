@@ -3,6 +3,7 @@ import Background from "../components/Background";
 import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
 import ZoomFadeContext from '../components/ZoomFadeIn/ZoomFadeContext';
+import Contributions from "../components/Contributions";
 
 function Portfolio() {
   // this state is provided, through the provider, to the zoom image components
@@ -47,7 +48,7 @@ function Portfolio() {
         {/* Main project card container */}
         <ProjectTableOfContents />
         <main className='container-fluid nav-avoid bottom-space project-container'>
-
+          <Contributions />
           <section className='row card-gutters'>
             <div className='col-lg-12' id='color-rippler'>
               <div className='box-all box'>
