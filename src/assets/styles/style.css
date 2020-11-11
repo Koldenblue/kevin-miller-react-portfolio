@@ -159,7 +159,7 @@ when the screen is reduced in width */
 /* background-attachment:fixed makes for no top or bottom box edges on a small screen */
 
 
-/* =============== portfolio section  =============== */
+/* =============== contributions.js (part of portfolio section) =============== */
 .cont-row {
   margin-right: 0px;
   margin-left: 0px;
@@ -193,6 +193,8 @@ when the screen is reduced in width */
   left: 50%;
   transform: translateX(-50%);
 }
+/* =========================================*/ 
+/* =============== portfolio section =============== */
 
 .horizontal-card-body {
   padding-bottom: 0px;

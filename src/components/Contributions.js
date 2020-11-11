@@ -2,7 +2,6 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 
 
 export default function Contributions() {
