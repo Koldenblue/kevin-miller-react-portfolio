@@ -2,6 +2,51 @@ body{
   font-family: 'PT Serif', serif;
   background-color: azure;
 }
+/* ============= Navbar and hublink.js =============== */
+#nav {
+  position: fixed;
+  background-color: #81EED6;
+  width: 100vw;
+  z-index: 10;
+  top: 0;
+  box-shadow: 4px 0 4px black;
+}
+
+#dropdown-contact {
+  padding: .2rem .75rem
+}
+.dropdown {
+  padding: 0 1rem 0 0;
+}
+.dropdown-item.disabled {
+  color: black ;
+}
+
+.dropdown-menu {
+  background-color: honeydew;
+}
+.btn-info {
+  background-color: #0bc6cc;
+  border-color: #0bc6cc;
+}
+.btn-info:hover {
+  background-color: #08abc4;
+  border-color: #08abc4;
+}
+.btn-info:active {
+  background-color: #08abc4;
+  border-color: #08abc4;
+}
+.btn-info:focus {
+  background-color: #08abc4;
+  border-color: #08abc4;
+}
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show > .btn-info.dropdown-toggle {
+  background-color: #08abc4;
+  border-color: #08abc4;
+}
+/*===================================================*/
+
 
 /* ============= For SummaryTabs.js =============== */
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -17,6 +62,7 @@ body{
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
   border-color: rgb(81, 0, 97);
 }
+
 .nav-item {
   color: black;
 }
@@ -26,15 +72,6 @@ body{
   background: -webkit-linear-gradient(#b63db6, #0b00a5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-#nav {
-  position: fixed;
-  background-color: #81EED6;
-  width: 100vw;
-  z-index: 10;
-  top: 0;
-  box-shadow: 4px 0 4px black;
 }
 
 .tab-para {
@@ -49,6 +86,7 @@ body{
   border-bottom-right-radius: 10px;
 }
 /*===================================================*/
+
 
 /* ======== HOME PAGE ==============================*/
 .jumbotron-fluid {
