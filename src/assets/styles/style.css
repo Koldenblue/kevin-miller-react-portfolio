@@ -45,6 +45,11 @@ body{
   background-color: #08abc4;
   border-color: #08abc4;
 }
+@media screen and (max-width: 991px) {
+  .dropdown {
+    margin-bottom: 0.5em;
+  }
+}
 /*===================================================*/
 
 
