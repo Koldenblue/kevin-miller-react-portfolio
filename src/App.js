@@ -12,7 +12,7 @@ import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import ParaPics from './pages/ParaPics';
 import { Parallax } from 'react-spring/renderprops-addons';
-import StarBg from './components/Stars/StarBg';
+// import StarBg from './components/Stars/StarBg';
 
 
 
@@ -34,7 +34,7 @@ function App() {
         }}/>
         <Route exact path='/' component={Home} />
 
-        <Route exact path='/experiments' component={StarBg} />
+        {/* <Route exact path='/experiments' component={StarBg} /> */}
 
       </Switch>
     </Router>

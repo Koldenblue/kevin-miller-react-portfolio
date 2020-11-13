@@ -1,36 +1,14 @@
 import React from "react";
 import Background from "../components/Background";
 import Image from "react-bootstrap/Image";
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import { useSpring, animated } from 'react-spring'
+import { ParallaxLayer } from 'react-spring/renderprops-addons';
+// import { useSpring, animated } from 'react-spring'
 import SeparatorBar from "../components/SeparatorBar";
 import BallContainer from "../components/BallContainer";
 import BallContainer2 from "../components/BallContainer2";
 
 export default function ParaPics() {
 
-  let styles = {
-    titleP: {
-      marginTop: '8rem',
-      left: '5rem'
-    },
-    titleH: {
-      marginTop: '8rem',
-      left: '10rem'
-    },
-    titleO: {
-      marginTop: '8rem',
-    },
-    titleT: {
-      marginTop: '8rem',
-    },
-    titleO2: {
-      marginTop: '8rem',
-    },
-    titleS: {
-      marginTop: '8rem',
-    }
-  }
   return (<>
     <ParallaxLayer className='photos-title titleP' offset={0} speed={0.2} >
       <p>P</p>

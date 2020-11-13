@@ -4,8 +4,8 @@ import range from 'lodash-es/range'
 import './styles.css'
 import Background from "../Background";
 
-const items = range(15)
-const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0`
+const items = range(1)
+const interp = i => r => `translate3d(0, ${3 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0`
 
 export default function StarBg() {
 
@@ -14,7 +14,7 @@ export default function StarBg() {
       while (1) await next({ radians: 2 * Math.PI })
     },
     from: { radians: 0 },
-    config: { duration: 7000 },
+    config: { duration: 15000 },
     reset: true,
   })
 
@@ -23,18 +23,10 @@ export default function StarBg() {
 
     <div id='star-bars'>
       {items.map(i => {
-        // if (i % 3 === 0) {
-          return(<>
-            <animated.div key={i} className="script-bf-box" style={{ transform: radians.interpolate(interp(i)) }} />
-            <animated.div key={-i} className="script-bf-box-2" style={{ transform: radians.interpolate(interp(i)) }} />
-
-          </>)
-        // } 
-        // else {
-        //   return (<>
-        //     <div key={i} className="script-bf-none"/>
-        //   </>)
-        // }
+        return (<>
+          <animated.div key={i} className="script-bf-box" style={{ transform: radians.interpolate(interp(i)) }} />
+          <animated.div key={-i} className="script-bf-box-2" style={{ transform: radians.interpolate(interp(i)) }} />
+        </>)
       })}
 
     </div>
