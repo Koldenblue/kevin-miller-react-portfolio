@@ -13,41 +13,53 @@ function Portfolio() {
   // second alternative would be to store global state in a redux store
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
+  const ripplerRef = React.createRef();
+  const bartenderRef = React.createRef();
+  const informRef = React.createRef();
+  const parabubRef = React.createRef();
+  const readmeRef = React.createRef();
+  const mernTemplateRef = React.createRef();
+  const hamRef = React.createRef();
+  const journalRef = React.createRef();
   const chessRef = React.createRef();
+  const empFinderRef = React.createRef();
+  const managerRef = React.createRef();
+  const trekRef = React.createRef();
+  const quizRef = React.createRef();
+  const weatherRef = React.createRef();
+  const noteRef = React.createRef();
+  const passRef = React.createRef();
+  const templateRef = React.createRef();
+  const workdayRef = React.createRef();
+  const balanceRef = React.createRef();
+  const connectRef = React.createRef();
 
-  
   // ==========================================================================================================================
   // img refs for gifs
   const ripplerImgRef = React.createRef();
   const paraImgRef = React.createRef();
   const barImgRef = React.createRef();
-  
+
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
-    // document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.gif'));
     ripplerImgRef.current.setAttribute('src', require('../assets/images/color-rippler.gif'));
   }
   // change back to the original image upon mouseOut
   const restoreRippler = () => {
-    // document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.PNG'))
     ripplerImgRef.current.setAttribute('src', require('../assets/images/color-rippler.PNG'));
   }
 
   const paraGif = () => {
-    // document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
     paraImgRef.current.setAttribute('src', require('../assets/images/para-bubbles.gif'));
   }
   const restorePara = () => {
-    // document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.jpeg'))
     paraImgRef.current.setAttribute('src', require('../assets/images/para-bubbles.jpeg'));
   }
 
   const barGif = () => {
-    // document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.gif'));
     barImgRef.current.setAttribute('src', require('../assets/images/express-bartender.gif'));
   }
   const restoreBar = () => {
-    // document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.jpeg'))
     barImgRef.current.setAttribute('src', require('../assets/images/express-bartender.jpeg'));
   }
   // ==========================================================================================================================
@@ -58,8 +70,27 @@ function Portfolio() {
 
         <Background image='../assets/images/koi.jpg' />
 
-        <ProjectTableOfContents 
-          chessRef={chessRef}
+        <ProjectTableOfContents
+          ripplerRef = {ripplerRef}
+          bartenderRef = {bartenderRef}
+          informRef = {informRef}
+          parabubRef = {parabubRef}
+          readmeRef = {readmeRef}
+          mernTemplateRef = {mernTemplateRef}
+          hamRef = {hamRef}
+          journalRef = {journalRef}
+          chessRef = {chessRef}
+          empFinderRef = {empFinderRef}
+          managerRef = {managerRef}
+          trekRef={trekRef}
+          quizRef={quizRef}
+          weatherRef={weatherRef}
+          noteRef={noteRef}
+          passRef={passRef}
+          templateRef={templateRef}
+          workdayRef={workdayRef}
+          balanceRef={balanceRef}
+          connectRef={connectRef}
         />
 
         {/* Main project card container */}
@@ -70,7 +101,7 @@ function Portfolio() {
           </section>
 
           <section className='row'>
-            <div className='col-lg-12 card-gutters' id='color-rippler'>
+            <div className='col-lg-12 card-gutters' id='color-rippler' ref={ripplerRef}>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
@@ -114,7 +145,7 @@ function Portfolio() {
 
           <section className='row'>
 
-            <div className='col-lg-6 card-gutters' id='bartender'>
+            <div className='col-lg-6 card-gutters' id='bartender' ref={bartenderRef}>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
@@ -150,7 +181,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6 card-gutters' id='inform-react'>
+            <div className='col-lg-6 card-gutters' id='inform-react' ref={informRef}>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -177,7 +208,7 @@ function Portfolio() {
           </ section>
 
           <section className='row'>
-            <div className='col-lg-12 card-gutters' id='para-bub'>
+            <div className='col-lg-12 card-gutters' id='para-bub' ref={parabubRef}>
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
@@ -221,7 +252,7 @@ function Portfolio() {
 
 
           <section className='row'>
-            <div className='col-lg-6 card-gutters' id='readme-gen'>
+            <div className='col-lg-6 card-gutters' id='readme-gen' ref={readmeRef}>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn diffZoomedImage={true}>
@@ -248,7 +279,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className='col-lg-6 card-gutters' id='mern-template'>
+            <div className='col-lg-6 card-gutters' id='mern-template' ref={mernTemplateRef}>
               <div className='box-all box'>
                 <div className="card" >
                   <ZoomFadeIn>
@@ -278,7 +309,7 @@ function Portfolio() {
 
 
           <section className='row'>
-          <div className='col-lg-6 card-gutters' id='hamburger-handlebars'>
+          <div className='col-lg-6 card-gutters' id='hamburger-handlebars' ref={hamRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -304,7 +335,7 @@ function Portfolio() {
           </div>
 
 
-          <div className='col-lg-6 card-gutters' id='redux-journal'>
+          <div className='col-lg-6 card-gutters' id='redux-journal' ref={journalRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -363,7 +394,7 @@ function Portfolio() {
         </section>
 
         <section className='row' >
-          <div className='col-lg-6 card-gutters' id='emp-dir'>
+          <div className='col-lg-6 card-gutters' id='emp-dir' ref={empFinderRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -388,7 +419,7 @@ function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-6 card-gutters' id='database-manager'>
+          <div className='col-lg-6 card-gutters' id='database-manager' ref={managerRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -417,7 +448,7 @@ function Portfolio() {
 
         <section className='row card-gutters'>
 
-          <div className='col-lg-12' id='trek-app'>
+          <div className='col-lg-12' id='trek-app' ref={trekRef}>
             <div className='box-all box'>
               <div className="card">
                 <div className='row no-gutters'>
@@ -451,7 +482,7 @@ function Portfolio() {
 
         <section className='row'>
 
-          <div className='col-lg-6 card-gutters' id='quiz-template'>
+          <div className='col-lg-6 card-gutters' id='quiz-template' ref={quizRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -476,7 +507,7 @@ function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-6 card-gutters' id='weather-forecaster'>
+          <div className='col-lg-6 card-gutters' id='weather-forecaster' ref={weatherRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -506,7 +537,7 @@ function Portfolio() {
 
 
         <section className='row'>
-          <div className='col-lg-6 card-gutters' id='notetaker'>
+          <div className='col-lg-6 card-gutters' id='notetaker' ref={noteRef}>
             <div className='box-all box'>
               <div className="card">
                 <ZoomFadeIn>
@@ -532,7 +563,7 @@ function Portfolio() {
           </div>
 
 
-          <div className='col-lg-6 card-gutters' id='pass-gen'>
+          <div className='col-lg-6 card-gutters' id='pass-gen' ref={passRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -560,7 +591,7 @@ function Portfolio() {
 
         <section className='row'>
 
-          <div className='col-lg-6 card-gutters' id='template-engine'>
+          <div className='col-lg-6 card-gutters' id='template-engine' ref={templateRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -587,7 +618,7 @@ function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-6 card-gutters' id='workday-scheduler'>
+          <div className='col-lg-6 card-gutters' id='workday-scheduler' ref={workdayRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
@@ -615,7 +646,7 @@ function Portfolio() {
 
         </section>
 
-        <section className='row' id='balance-sheet'>
+        <section className='row' id='balance-sheet' ref={balanceRef}>
           <div className='col-lg-6 card-gutters'>
             <div className='box-all box'>
               <div className="card" >
@@ -637,7 +668,7 @@ function Portfolio() {
           </div>
 
 
-          <div className='col-lg-6 card-gutters' id='connect'>
+          <div className='col-lg-6 card-gutters' id='connect' ref={connectRef}>
             <div className='box-all box'>
               <div className="card" >
                 <ZoomFadeIn>
