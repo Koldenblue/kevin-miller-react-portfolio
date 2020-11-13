@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-export default function ProjectTableOfContents() {
+export default function ProjectTableOfContents(props) {
+
+  useEffect(() => {
+    console.log(props.chessRef.current)
+    props.chessRef.current.setAttribute('class', "col-lg-12 card-gutters in-view");
+    console.log(props.chessRef.current)
+  },[])
+
   return (<>
     <ul className='list-nav'>
       <h3 className='top-link'>Projects</h3>

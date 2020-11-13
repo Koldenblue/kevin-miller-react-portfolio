@@ -1,0 +1,53 @@
+
+
+#star-bars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  left: 10%;
+  font-weight: 800;
+  color: black;
+  /* transform: rotate(15deg); */
+}
+
+.script-bf-box {
+  width: 10px;
+  
+  height: 10px;
+  border-width: 0 1px 0px 1px;
+  border-width: 1px 0 0 0;
+  border-color: black;
+  border-style: dotted;
+  margin: -2px;
+  will-change: transform;
+  transform: rotate(45deg);
+  border-radius: 1000px;
+}
+
+.script-bf-box-2 {
+  width: 10px;
+  
+  height: 10px;
+  border-width: 0 1px 0px 1px;
+  border-width: 1px 0 0 0;
+  border-color: black;
+  margin-right: 5%;
+  border-style: dotted;
+  will-change: transform;
+  transform: rotate(45deg);
+  border-radius: 1000px;
+}
+.script-bf-none {
+  width: 3px;  height: 1000px;
+  border-width: 1px;
+  margin: 20px;
+  will-change: transform;
+  transform: rotate(45deg);
+}
+
+.script-bf-box:hover {
+  background: hotpink;
+}

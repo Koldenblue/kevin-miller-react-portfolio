@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "../components/Background";
 import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
@@ -13,29 +13,42 @@ function Portfolio() {
   // second alternative would be to store global state in a redux store
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
+  const chessRef = React.createRef();
 
+  
   // ==========================================================================================================================
+  // img refs for gifs
+  const ripplerImgRef = React.createRef();
+  const paraImgRef = React.createRef();
+  const barImgRef = React.createRef();
+  
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
-    document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.gif'));
+    // document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.gif'));
+    ripplerImgRef.current.setAttribute('src', require('../assets/images/color-rippler.gif'));
   }
   // change back to the original image upon mouseOut
   const restoreRippler = () => {
-    document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.PNG'))
+    // document.getElementById('rippler-img').setAttribute('src', require('../assets/images/color-rippler.PNG'))
+    ripplerImgRef.current.setAttribute('src', require('../assets/images/color-rippler.PNG'));
   }
 
   const paraGif = () => {
-    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
+    // document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.gif'))
+    paraImgRef.current.setAttribute('src', require('../assets/images/para-bubbles.gif'));
   }
   const restorePara = () => {
-    document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.jpeg'))
+    // document.getElementById('para-img').setAttribute('src', require('../assets/images/para-bubbles.jpeg'))
+    paraImgRef.current.setAttribute('src', require('../assets/images/para-bubbles.jpeg'));
   }
 
   const barGif = () => {
-    document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.gif'));
+    // document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.gif'));
+    barImgRef.current.setAttribute('src', require('../assets/images/express-bartender.gif'));
   }
   const restoreBar = () => {
-    document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.jpeg'))
+    // document.getElementById('bar-img').setAttribute('src', require('../assets/images/express-bartender.jpeg'))
+    barImgRef.current.setAttribute('src', require('../assets/images/express-bartender.jpeg'));
   }
   // ==========================================================================================================================
 
@@ -45,14 +58,16 @@ function Portfolio() {
 
         <Background image='../assets/images/koi.jpg' />
 
+        <ProjectTableOfContents 
+          chessRef={chessRef}
+        />
+
         {/* Main project card container */}
-        <ProjectTableOfContents />
         <main className='container-fluid bottom-space project-container'>
 
           <section className='cont-row row card-gutters'>
             <Contributions />
           </section>
-
 
           <section className='row'>
             <div className='col-lg-12 card-gutters' id='color-rippler'>
@@ -63,6 +78,7 @@ function Portfolio() {
                       <ZoomFadeIn diffZoomedImage={true}>
                         <img
                           id='rippler-img'
+                          ref={ripplerImgRef}
                           onMouseOver={ripplerGif}
                           onMouseOut={restoreRippler}
                           src={require("../assets/images/color-rippler.PNG")}
@@ -76,17 +92,17 @@ function Portfolio() {
                         <h5 className="card-title">Color Rippler</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Color Art Grid</h6>
                         <p className="card-text horizontal-description">Generates a grid of colors. Click color boxes cause colors ripples!
-                        This app takes advantage of the React framework to display and update a large number of components in a web browser.
-                        An algorithm updates an array of colors, and an options page allows a hefty degree of customization.
-                        Components are self-contained for easier portability.
-                    </p>
+                          This app takes advantage of the React framework to display and update a large number of components in a web browser.
+                          An algorithm updates an array of colors, and an options page allows a hefty degree of customization.
+                          Components are self-contained for easier portability.
+                        </p>
                         <ul className='project-list horizontal-list'>
                           <li>
                             Get the source code on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/color-rippler" className="card-link"> GitHub</a>
                           </li>
                           <li>
                             <a target='_blank' rel="noopener noreferrer" href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid.
-                      </li>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -104,6 +120,7 @@ function Portfolio() {
                   <ZoomFadeIn diffZoomedImage={true}>
                     <img
                       id='bar-img'
+                      ref={barImgRef}
                       onMouseOver={barGif}
                       onMouseOut={restoreBar}
                       src={require("../assets/images/express-bartender.jpeg")}
@@ -168,6 +185,7 @@ function Portfolio() {
                       <ZoomFadeIn diffZoomedImage={true}>
                         <img
                           id='para-img'
+                          ref={paraImgRef}
                           onMouseOver={paraGif}
                           onMouseOut={restorePara}
                           src={require("../assets/images/para-bubbles.jpeg")}
@@ -315,7 +333,7 @@ function Portfolio() {
           </section>
 
         <section className='row'>
-          <div className='col-lg-12 card-gutters' id='chess'>
+          <div className='col-lg-12 card-gutters' id='chess' ref={chessRef}>
             <div className='box-all box'>
               <div className="card">
                 <div className='row no-gutters'>
