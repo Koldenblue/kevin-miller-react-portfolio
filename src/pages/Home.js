@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Animated } from "react-animated-css";
 import Background from '../components/Background';
+import {useSpring, animated} from 'react-spring';
 import SummaryTabs from '../components/SummaryTabs';
 import Sun from '../components/Sun/Sun';
 
@@ -30,6 +31,12 @@ function Home() {
     setOpacity(1);
   }, [])
 
+  let hrAnim = useSpring({
+    width: '70%',
+    from: {width: '0%'},
+    config: {friction: 300}
+  })
+
   return (
     <>
       <Background image='../assets/images/beach.jpg' />
@@ -48,7 +55,7 @@ function Home() {
             <Animated animationIn="fadeInLeft" animationInDelay={1200} animationInDuration={1500} animationOut="fadeOut" isVisible={true}>
               <p className="lead">{contact.email + contact.domain}</p>
             </Animated>
-            <hr className="my-4" style={{ width: '70%' }} />
+            <animated.hr className="my-4" style={hrAnim} />
             <div>
               <Animated animationIn="fadeInLeft" animationInDelay={2500} animationInDuration={2000} animationOut="fadeOut" style={styles.inlineAnimated} isVisible={true}>
                 <pre>Chemist, </pre>

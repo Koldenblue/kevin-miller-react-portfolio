@@ -3,9 +3,9 @@ import React, { useEffect } from 'react';
 export default function ProjectTableOfContents(props) {
 
   useEffect(() => {
-    console.log(props.chessRef.current)
-    props.chessRef.current.setAttribute('class', "col-lg-12 card-gutters in-view");
-    console.log(props.chessRef.current)
+    // console.log(props.chessRef.current)
+    // props.chessRef.current.setAttribute('class', "col-lg-12 card-gutters in-view");
+    // console.log(props.chessRef.current)
   },[])
 
   const smoothScroll = (event, ref) => {
