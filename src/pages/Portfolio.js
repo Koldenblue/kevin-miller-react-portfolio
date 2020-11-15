@@ -39,6 +39,7 @@ function Portfolio() {
   const ripplerImgRef = React.createRef();
   const paraImgRef = React.createRef();
   const barImgRef = React.createRef();
+  const informImgRef = React.createRef();
 
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
@@ -61,6 +62,13 @@ function Portfolio() {
   }
   const restoreBar = () => {
     barImgRef.current.setAttribute('src', require('../assets/images/express-bartender.jpeg'));
+  }
+
+  const informGif = () => {
+    informImgRef.current.setAttribute('src', require('../assets/images/inform-react.gif'));
+  }
+  const restoreInform = () => {
+    informImgRef.current.setAttribute('src', require('../assets/images/inform.jpeg'));
   }
   // ==========================================================================================================================
 
@@ -184,8 +192,16 @@ function Portfolio() {
             <div className='col-lg-6 card-gutters' id='inform-react' ref={informRef}>
               <div className='box-all box'>
                 <div className="card" >
-                  <ZoomFadeIn>
-                    <img src={require("../assets/images/inform.png")} alt="Inform and React app" />
+                  <ZoomFadeIn diffZoomedImage={true}>
+                    <img 
+                      onMouseOver={informGif}
+                      onMouseOut={restoreInform}
+                      src={require("../assets/images/inform.jpeg")}
+                      alt="Inform and React app"
+                      ref={informImgRef}
+                      smimg='true'
+                    />
+                    <img src={require("../assets/images/inform.jpeg")} lgimg='true' alt="Inform and React app" />
                   </ZoomFadeIn>
                   <div className="card-body">
                     <h5 className="card-title">Inform and React</h5>
