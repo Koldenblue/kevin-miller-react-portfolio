@@ -22,12 +22,12 @@ export default function ProjectTableOfContents(props) {
       <li><a href='#para-bub' onClick={(event) => smoothScroll(event, props.parabubRef)}>Para Bubbles</a></li>
       <li><a href='#readme-gen' onClick={(event) => smoothScroll(event, props.readmeRef)}>Readme Generator</a></li>
       <li><a href='#mern-template' onClick={(event) => smoothScroll(event, props.mernTemplateRef)}>MERN-Redux Template</a></li>
+      <li><a href='#trek-app' onClick={(event) => smoothScroll(event, props.trekRef)}>Trek</a></li>
       <li><a href='#hamburger-handlebars' onClick={(event) => smoothScroll(event, props.hamRef)}>Hamburger Handlebars</a></li>
       <li><a href='#redux-journal' onClick={(event) => smoothScroll(event, props.journalRef)}>Redux Journal</a></li>
       <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess</a></li>
       <li><a href='#emp-dir' onClick={(event) => smoothScroll(event, props.empFinderRef)}>Mock Employee Directory</a></li>
       <li><a href='#database-manager' onClick={(event) => smoothScroll(event, props.managerRef)}>Database Manager</a></li>
-      <li><a href='#trek-app' onClick={(event) => smoothScroll(event, props.trekRef)}>Trek</a></li>
       <li><a href='#quiz-template' onClick={(event) => smoothScroll(event, props.quizRef)}>Quiz Template</a></li>
       <li><a href='#weather-forecaster' onClick={(event) => smoothScroll(event, props.weatherRef)}>Weather Forecaster</a></li>
       <li><a href='#notetaker' onClick={(event) => smoothScroll(event, props.noteRef)}>Note Taker</a></li>
