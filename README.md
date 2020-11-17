@@ -5,7 +5,7 @@ My portfolio of projects.
 
 <p>For a list of my various projects, go to the projects page in the portfolio, or check out <a href='https://github.com/Koldenblue'>my profile</a> here on GitHub.</p>
 
-<p>I update this portfolio regularly. As such, my portfolio webpage is likely more polished than any other project I have worked on, in terms of front-end presentation.</p>
+<p>I update this portfolio regularly. As such, I continually improve the front-end presentation of this website, moreso than any other site I have worked on.</p>
 
 ![image](https://user-images.githubusercontent.com/64618290/99360943-340d6380-2866-11eb-97aa-eb21e2641da2.png)
 
