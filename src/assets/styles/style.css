@@ -25,6 +25,7 @@ body{
 .dropdown-menu {
   background-color: honeydew;
 }
+
 .btn-info {
   background-color: #0bc6cc;
   border-color: #0bc6cc;
@@ -48,7 +49,15 @@ body{
 @media screen and (max-width: 991px) {
   .dropdown {
     margin-bottom: 0.5em;
+    padding: 0;
   }
+  .dropright {
+    display: inline;
+  }
+  .nav-link {
+    display: table;
+  }
+  
 }
 /*===================================================*/
 

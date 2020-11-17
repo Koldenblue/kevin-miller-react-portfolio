@@ -6,7 +6,8 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 function HubLink() {
   const [dropDir, setDropDir] = useState('left');
   const [width, setWidth] = useState(window.innerWidth)
-
+  const [dropLeft, setDropLeft] = useState();
+  const [dropRight, setDropRight] = useState();
 
   let allowResize = true;
   useEffect(() => {
@@ -24,9 +25,21 @@ function HubLink() {
 
   useEffect(() => {
     if (width < 991) {
-      setDropDir('right');
+      setDropRight(
+        <DropdownButton className='dropdown' title='Contact' drop='right' variant="info" id="dropdown-contact">
+          <Dropdown.Item disabled>Email: klmille@gmail.com</Dropdown.Item>
+          <Dropdown.Item disabled>Cell Phone: (310) 562-4572</Dropdown.Item>
+        </DropdownButton>
+      );
+      setDropLeft();
     } else {
-      setDropDir('left');
+      setDropLeft(
+        <DropdownButton className='dropdown' title='Contact' drop='left' variant="info" id="dropdown-contact">
+          <Dropdown.Item disabled>Email: klmille@gmail.com</Dropdown.Item>
+          <Dropdown.Item disabled>Cell Phone: (310) 562-4572</Dropdown.Item>
+        </DropdownButton>
+      );
+      setDropRight();
     }
   }, [width])
 
@@ -43,14 +56,14 @@ function HubLink() {
   }
   return (
     <>
-      <DropdownButton className='dropdown' title='Contact' drop={dropDir} variant="info" id="dropdown-contact">
-        <Dropdown.Item disabled>Email: klmille@gmail.com</Dropdown.Item>
-        <Dropdown.Item disabled>Cell Phone: (310) 562-4572</Dropdown.Item>
-      </DropdownButton>
+      {dropLeft}
+
 
       <a href="https://www.linkedin.com/in/kevin-miller-phd-1b197986/" ><Image src={require('../assets/images/LI-In-Bug.png')} fluid style={styles.linkedIn} /></a>
 
       <a href="https://github.com/Koldenblue"><Image src={require('../assets/images/gitMark32.png')} fluid style={styles.git} /></a>
+      {dropRight}
+
     </>
   )
 }
