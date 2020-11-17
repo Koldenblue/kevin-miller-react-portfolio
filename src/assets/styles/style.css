@@ -57,7 +57,11 @@ body{
   .nav-link {
     display: table;
   }
-  
+}
+@media screen and (max-width: 440px) {
+  .dropdown {
+    padding-top: 0.5rem;
+  }
 }
 /*===================================================*/
 

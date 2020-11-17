@@ -4,7 +4,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 function HubLink() {
-  const [dropDir, setDropDir] = useState('left');
   const [width, setWidth] = useState(window.innerWidth)
   const [dropLeft, setDropLeft] = useState();
   const [dropRight, setDropRight] = useState();
@@ -24,7 +23,8 @@ function HubLink() {
   }, [])
 
   useEffect(() => {
-    if (width < 991) {
+
+    if (width >= 440 && width < 991) {
       setDropRight(
         <DropdownButton className='dropdown' title='Contact' drop='right' variant="info" id="dropdown-contact">
           <Dropdown.Item disabled>Email: klmille@gmail.com</Dropdown.Item>
@@ -32,7 +32,17 @@ function HubLink() {
         </DropdownButton>
       );
       setDropLeft();
-    } else {
+    } 
+    else if (width < 440) {
+      setDropRight(
+        <DropdownButton className='dropdown' title='Contact' drop='down' variant="info" id="dropdown-contact">
+          <Dropdown.Item disabled>Email: klmille@gmail.com</Dropdown.Item>
+          <Dropdown.Item disabled>Cell Phone: (310) 562-4572</Dropdown.Item>
+        </DropdownButton>
+      );
+      setDropLeft();
+    }
+    else {
       setDropLeft(
         <DropdownButton className='dropdown' title='Contact' drop='left' variant="info" id="dropdown-contact">
           <Dropdown.Item disabled>Email: klmille@gmail.com</Dropdown.Item>
@@ -41,6 +51,7 @@ function HubLink() {
       );
       setDropRight();
     }
+
   }, [width])
 
   let styles = {
