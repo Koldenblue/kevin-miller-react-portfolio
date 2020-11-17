@@ -13,38 +13,38 @@ function Chemistry() {
 
           <p>
             <b>Reactions of group III biheterocyclic complexes.</b> Carver, C. T.; Benitez, D.; Miller, K. L.; Williams,
-          B. N.; Tkatchouk, E.; Goddard, W. A.; Diaconescu, P. L. J. Am. Chem. Soc. 2009, 131, 10269-10278.
+          B. N.; Tkatchouk, E.; Goddard, W. A.; Diaconescu, P. L. <i>J. Am. Chem. Soc.</i> 2009, 131, 10269-10278.
         </p>
 
           <p>
             <b>Dearomatization reactions of N-heterocycles mediated by group III complexes.</b> Miller, K. L.; Williams,
-          B. N.; Benitez, D.; Carver, C. T.; Ogilby, K. R.; Tkatchouk, E.; Goddard III, W. A.; Diaconescu, P. L. J. Am. Chem.
-          Soc. 2010, 132, 342-355.
+          B. N.; Benitez, D.; Carver, C. T.; Ogilby, K. R.; Tkatchouk, E.; Goddard III, W. A.; Diaconescu, P. L. <i>J. Am. Chem.
+          Soc.</i> 2010, 132, 342-355.
         </p>
 
           <p>
             <b>Reactions of aromatic N-heterocycles with a lutetium benzyl complex supported by a ferrocene-diamide
-            ligand.</b> Wong, A. W.; Miller, K. L.; Diaconescu, P. L. Dalton Trans. 2010, 39, 6726-6731.
+            ligand.</b> Wong, A. W.; Miller, K. L.; Diaconescu, P. L. <i>Dalton Trans.</i> 2010, 39, 6726-6731.
         </p>
 
           <p>
             <b>Reactions of imidazoles with electrophilic metal alkyl complexes.</b> Miller, K. L.; Williams, B. N.;
-          Carver, C. T.; Diaconescu, P. L. Organometallics 2010, 29, 2272-2281.
+          Carver, C. T.; Diaconescu, P. L. <i>Organometallics</i> 2010, 29, 2272-2281.
         </p>
 
           <p>
             <b>Group 3 metal complexes of radical-anionic 2,2’-bipyridyl ligands.</b> Williams, B. N.; Huang, W.; Miller,
-          K. L.; Diaconescu, P. L. Inorg. Chem. 2010, 49, 11493-11498.
+          K. L.; Diaconescu, P. L. <i>Inorg. Chem.</i> 2010, 49, 11493-11498.
         </p>
 
           <p>
             <b>An unusual hydrogen migration/C-H activation reaction with group 3 metals.</b> Williams, B. N.; Benitez,
-          D.; Miller, K. L.; Tkatchouk, E.; Goddard, W. A.; Diaconescu, P. L. J. Am. Chem. Soc. 2011, 133, 4680-4683.
+          D.; Miller, K. L.; Tkatchouk, E.; Goddard, W. A.; Diaconescu, P. L. <i>J. Am. Chem. Soc.</i> 2011, 133, 4680-4683.
         </p>
 
           <p>
             <b>Synthesis of symmetrically and unsymmetrically 3,5-dimethylbenzyl-substituted 1,1′-ferrocene diamines.</b> 
-          Lee, J. A.; Williams, B. N.; Ogilby, K. R.; Miller, K. L.; Diaconescu, P. L. J. Organomet. Chem. 2011, 696,
+          Lee, J. A.; Williams, B. N.; Ogilby, K. R.; Miller, K. L.; Diaconescu, P. L. <i>J. Organomet. Chem.</i> 2011, 696,
           4090-4094.
         </p>
         </div>
