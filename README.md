@@ -7,6 +7,11 @@ My portfolio of projects.
 
 <p>I update this portfolio regularly. As such, my portfolio webpage is likely more polished than any other project I have worked on, in terms of front-end presentation.</p>
 
+![image](https://user-images.githubusercontent.com/64618290/99360943-340d6380-2866-11eb-97aa-eb21e2641da2.png)
+
+![image](https://user-images.githubusercontent.com/64618290/99360818-032d2e80-2866-11eb-9d7e-427f3cc6efc6.png)
+
+
 ## Discussion of this Portfolio Webpage
 
 <p>This webpage is a portfolio designed to provide easy links to and an overview of all my various projects. My portfolio includes my resume, skills, and some additional information. See the deployed website to view the various projects.</p>
