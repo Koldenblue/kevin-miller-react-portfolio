@@ -25,7 +25,8 @@ export default function ProjectTableOfContents(props) {
       <li><a href='#trek-app' onClick={(event) => smoothScroll(event, props.trekRef)}>Trek</a></li>
       <li><a href='#hamburger-handlebars' onClick={(event) => smoothScroll(event, props.hamRef)}>Hamburger Handlebars</a></li>
       <li><a href='#redux-journal' onClick={(event) => smoothScroll(event, props.journalRef)}>Redux Journal</a></li>
-      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess</a></li>
+      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess-JavaScript</a></li>
+      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess-Python</a></li>
       <li><a href='#emp-dir' onClick={(event) => smoothScroll(event, props.empFinderRef)}>Mock Employee Directory</a></li>
       <li><a href='#database-manager' onClick={(event) => smoothScroll(event, props.managerRef)}>Database Manager</a></li>
       <li><a href='#quiz-template' onClick={(event) => smoothScroll(event, props.quizRef)}>Quiz Template</a></li>

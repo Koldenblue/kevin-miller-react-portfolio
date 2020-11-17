@@ -364,7 +364,7 @@ function Portfolio() {
                         <h5 className="card-title">TREK</h5>
                         <h6 className="card-subtitle mb-2 text-muted">An Outdoor Hiking and Adventure App</h6>
                         <p className="card-text horizontal-description">A collaborative project between several programmers. I performed lead script coding for this project, as well as organization on GitHub.
-                          I coded all Google Maps Platform functions, in addition to helping out with multiple smaller contributions.
+                        I coded all Google Maps Platform functions, in addition to helping out with multiple smaller contributions.
                           This app is designed to map out a days journey, from hiking to eating to home again.</p>
                         <ul className='project-list horizontal-list'>
                           <li>
@@ -444,34 +444,52 @@ function Portfolio() {
 
 
           </section>
-
-          <section className='row'>
-            <div className='col-lg-12 card-gutters' id='chess' ref={chessRef}>
+          <section className='row' >
+            {/* no ref for the table of contents, since this should always be in the same row as python chess */}
+            <div className='col-lg-6 card-gutters'>
               <div className='box-all box'>
                 <div className="card">
-                  <div className='row no-gutters'>
-                    <div className='col-lg-5'>
-                      <ZoomFadeIn>
-                        <img src={require("../assets/images/chess.PNG")} alt="Chess in a Python Terminal" />
-                      </ZoomFadeIn>
-                    </div>
-                    <div className='col-lg-7'>
-                      <div className="card-body horizontal-card-body">
-                        <h5 className="card-title">Chess</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
-                        <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python.
-                        Future plans for this program include exporting it to run in a browser.
+                  <ZoomFadeIn>
+                    <img src={require("../assets/images/chess-redux.png")} alt="Chess in a Browser" />
+                  </ZoomFadeIn>
+                <div className="card-body">
+                  <h5 className="card-title">Chess-JavaScript</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Programmed in JavaScript/HTML/CSS and React</h6>
+                  <p className="card-text">Chess in a browser! Based on game logic from a Python program I wrote previously. The front end is functional, but some game logic is not yet fully implemented.
+                  The challenge of this program was porting code from Python to React. The Redux framework is also used to provide global state.
                       </p>
-                        <ul className='project-list'>
-                          <li>
-                            <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/python-chess-game" className="card-link">Chess on GitHub! </a>Requires Python to function.
-                        </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <ul className='project-list'>
+                    <li>
+                      Chess on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/chess-redux" className="card-link">GitHub!</a>
+                    </li>
+                    <li>
+                      Test out the program at the <a target='_blank' rel="noopener noreferrer" href="https://chess-redux.herokuapp.com/" className="card-link">deployed website</a>.
+                    </li>
+                  </ul>
+                </div>
                 </div>
               </div>
+            </div>
+
+            <div className='col-lg-6 card-gutters' id='chess' ref={chessRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <ZoomFadeIn>
+                    <img src={require("../assets/images/chess.PNG")} alt="Chess in a Python Terminal" />
+                  </ZoomFadeIn>
+                <div className="card-body">
+                  <h5 className="card-title">Chess-Python</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
+                  <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python. The board and piece types are separated into classes, while a main script ties all logic together and runs the game loop.
+                      </p>
+                  <ul className='project-list'>
+                    <li>
+                      Chess on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/python-chess-game" className="card-link">GitHub! </a>Requires Python to function.
+                        </li>
+                  </ul>
+                </div>
+              </div>
+                </div>
             </div>
           </section>
 
