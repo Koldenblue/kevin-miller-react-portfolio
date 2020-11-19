@@ -456,8 +456,8 @@ function Portfolio() {
                 <div className="card-body">
                   <h5 className="card-title">Chess-JavaScript</h5>
                   <h6 className="card-subtitle mb-2 text-muted">Programmed in JavaScript/HTML/CSS and React</h6>
-                  <p className="card-text">Chess in a browser! Based on game logic from a Python program I wrote previously. The front end is functional, but some game logic is not yet fully implemented.
-                  The challenge of this program was porting code from Python to React. The Redux framework is also used to provide global state.
+                  <p className="card-text">Chess in a browser! Based on game logic from a Python program I wrote previously. The front end is functional and movement logic has been implemented. However, game loop, checkmate, and victory logic has not yet been implemented.
+                  The challenge of this program is about taking existing code I wrote in Python, and porting it to React. The Redux framework is also used to provide global state.
                       </p>
                   <ul className='project-list'>
                     <li>
