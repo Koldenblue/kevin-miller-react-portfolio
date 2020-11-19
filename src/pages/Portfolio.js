@@ -158,6 +158,7 @@ function Portfolio() {
                           <li>
                             <a target='_blank' rel="noopener noreferrer" href="https://color-rippler.herokuapp.com" className="card-link">Try it out!</a> Simply click on the grid.
                           </li>
+                          <li>Watch me give a quick <a target='_blank' rel="noopener noreferrer" href='https://youtu.be/8EgwGFP_FDQ'>YouTube demonstration</a> of the app</li>
                         </ul>
                       </div>
                     </div>
