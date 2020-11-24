@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 
 export default function Contributions() {
-  const numContributions = useSpring({ config: { precision: 1, friction: 75, tension: 100 }, number: 1750.0, from: { number: 0.0 } });
+  const numContributions = useSpring({ config: { precision: 1, friction: 75, tension: 100 }, number: 1800.0, from: { number: 0.0 } });
   const numProjects = useSpring({ config: { precision: 1, friction: 90, tension: 80 }, number: 27, from: { number: 0 } });
 
   return (<>
