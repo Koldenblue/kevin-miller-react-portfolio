@@ -14,6 +14,7 @@ function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
   const ripplerRef = React.createRef();
+  const lavaRef = React.createRef();
   const bartenderRef = React.createRef();
   const informRef = React.createRef();
   const parabubRef = React.createRef();
@@ -96,6 +97,7 @@ function Portfolio() {
 
         <ProjectTableOfContents
           ripplerRef={ripplerRef}
+          lavaRef={lavaRef}
           bartenderRef={bartenderRef}
           informRef={informRef}
           parabubRef={parabubRef}
@@ -139,7 +141,7 @@ function Portfolio() {
                           src={require("../assets/images/color-rippler.PNG")}
                           alt="Color Rippler app"
                           smimg='true' />
-                        <img src={require("../assets/images/color-rippler-2.PNG")} alt='readme generator app' lgimg='true' />
+                        <img src={require("../assets/images/color-rippler-2.PNG")} alt='color rippler app' lgimg='true' />
                       </ZoomFadeIn>
                     </div>
                     <div className='col-lg-6'>
@@ -167,6 +169,41 @@ function Portfolio() {
               </div>
             </div>
           </section>
+
+          <section className='row'>
+            <div className='col-lg-12 card-gutters' id='color-rippler' ref={lavaRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <div className='row no-gutters'>
+                    <div className='col-lg-3'>
+                      <ZoomFadeIn >
+                        <img src={require('../assets/images/lava-lamp.png')} alt='customizable sass lava lamps' />
+                      </ZoomFadeIn>
+                    </div>
+                    <div className='col-lg-9'>
+                      <div className="card-body horizontal-card-body">
+                        <h5 className="card-title">Customizable Sass Lava Lamps</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">Animated Lava Lamps created with CSS</h6>
+                        <p className="card-text horizontal-description">This project aims to demonstrate advantages of CSS pre-processing using Sass. Animated lava lamps are modeled using entirely CSS, with animation accomplished through CSS keyframes.
+                        Sass is used help in the creation of complex CSS files, and in this project provides for easy customization of the lava lamps by distilling important CSS properties down to several key variables. 
+                        With this method, the animated lava lamps and accompanying HTML are easily portable to other website projects.
+                        </p>
+                        <ul className='project-list horizontal-list'>
+                          <li>
+                            Get the SCSS files and detailed documentation on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/lava-lamp-customizable-sass" className="card-link"> GitHub</a>
+                          </li>
+                          <li>
+                            See a demonstration on the <a target='_blank' rel="noopener noreferrer" href="https://sass-lava-lamps.herokuapp.com" className="card-link">webpage</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
 
           <section className='row'>
 
