@@ -175,23 +175,25 @@ function Portfolio() {
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-3'>
                       <ZoomFadeIn >
-                        <img src='' alt='customizable sass lava lamps' />
+                        <img src={require('../assets/images/lava-lamp.png')} alt='customizable sass lava lamps' />
                       </ZoomFadeIn>
                     </div>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-9'>
                       <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Customizable Sass Lava Lamps</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Animated Lava Lamps created with CSS</h6>
-                        <p className="card-text horizontal-description">TODO
+                        <p className="card-text horizontal-description">This project aims to demonstrate advantages of CSS pre-processing using Sass. Animated lava lamps are modeled using entirely CSS, with animation accomplished through CSS keyframes.
+                        Sass is used help in the creation of complex CSS files, and in this project provides for easy customization of the lava lamps by distilling important CSS properties down to several key variables. 
+                        With this method, the animated lava lamps and accompanying HTML are easily portable to other website projects.
                         </p>
                         <ul className='project-list horizontal-list'>
                           <li>
-                            Get the source code on<a target='_blank' rel="noopener noreferrer" href="" className="card-link"> GitHub</a>
+                            Get the SCSS files and detailed documentation on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/lava-lamp-customizable-sass" className="card-link"> GitHub</a>
                           </li>
                           <li>
-                            <a target='_blank' rel="noopener noreferrer" href="" className="card-link">webpage</a>
+                            See a demonstration on the <a target='_blank' rel="noopener noreferrer" href="https://sass-lava-lamps.herokuapp.com" className="card-link">webpage</a>
                           </li>
                         </ul>
                       </div>
