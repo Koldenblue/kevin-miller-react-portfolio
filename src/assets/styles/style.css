@@ -75,6 +75,7 @@ body{
 
 .nav-tabs {
   border-bottom: 1px solid rgb(81, 0, 97);
+  justify-content: space-between;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -103,6 +104,8 @@ body{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+
 /*===================================================*/
 
 
@@ -645,7 +648,9 @@ when the screen is reduced in width */
 
 
 
-
+.accordion-card {
+  margin: 0;
+}
 
 
 
