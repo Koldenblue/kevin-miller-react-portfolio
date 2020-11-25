@@ -45,7 +45,7 @@ function SummaryTabs(props) {
           <Accordion defaultActiveKey="0">
             <Card className='accordion-card'>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                <Accordion.Toggle as={Button} className='psychic-link' variant="link" eventKey="0">
                 Wilson Lam, Frontend Developer at Omou
               </Accordion.Toggle>
               </Card.Header>
@@ -113,12 +113,12 @@ function SummaryTabs(props) {
           <h5>Full-stack Web Developer with emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
           <hr />
           <ul className='tab-para'>
-            <li>JavaScript/HTML/CSS used as main coding languages</li>
+            <li>JavaScript/HTML/CSS used as main coding languages, with Python as secondary language</li>
             <li>React framework for front-end design and routing</li>
             <li>Express framework for back-end route and database setup</li>
             <li>MongoDB for non-relational database management, as well as the Mongoose Object Document Mapper (ODM) or mongo.js package</li>
             <li>Structured Query Language (SQL) database work, through MySQL and the Sequelize Object-Relational Mapper (ORM)</li>
-            <li>jQuery, Bootstrap, Handlebars, and other established JavaScript libraries for streamlining web development</li>
+            <li>jQuery, Bootstrap, Handlebars, Sass, and other established JavaScript libraries for streamlining web development</li>
             <li>GitHub for version control</li>
             <li>Application Programming Interface (API) integration with apps</li>
             <li>Responsive web design, client-server communication, and code testing</li>
