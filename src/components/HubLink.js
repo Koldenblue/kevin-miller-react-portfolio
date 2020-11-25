@@ -70,9 +70,9 @@ function HubLink() {
       {dropLeft}
 
 
-      <a href="https://www.linkedin.com/in/kevin-miller-phd-1b197986/" ><Image src={require('../assets/images/LI-In-Bug.png')} fluid style={styles.linkedIn} /></a>
+      <a href="https://www.linkedin.com/in/kevin-miller-phd-1b197986/" target='_blank' rel="noopener noreferrer" ><Image src={require('../assets/images/LI-In-Bug.png')} fluid style={styles.linkedIn} /></a>
 
-      <a href="https://github.com/Koldenblue"><Image src={require('../assets/images/gitMark32.png')} fluid style={styles.git} /></a>
+      <a href="https://github.com/Koldenblue" target='_blank' rel="noopener noreferrer"><Image src={require('../assets/images/gitMark32.png')} fluid style={styles.git} /></a>
       {dropRight}
 
     </>
