@@ -117,8 +117,9 @@ function SummaryTabs(props) {
             <li>React framework for front-end design and routing</li>
             <li>Express framework for back-end route and database setup</li>
             <li>MongoDB for non-relational database management, as well as the Mongoose Object Document Mapper (ODM) or mongo.js package</li>
-            <li>Structured Query Language (SQL) database work, through MySQL and the Sequelize Object-Relational Mapper (ORM)</li>
+            <li>Structured Query Language (SQL) database work, through MySQL, SQLite, and the Sequelize and SQLAlchemy Object-Relational Mappers (ORM)</li>
             <li>jQuery, Bootstrap, Handlebars, Sass, and other established JavaScript libraries for streamlining web development</li>
+            <li>Experience routing with Python, Flask, and Jiran</li>
             <li>GitHub for version control</li>
             <li>Application Programming Interface (API) integration with apps</li>
             <li>Responsive web design, client-server communication, and code testing</li>
