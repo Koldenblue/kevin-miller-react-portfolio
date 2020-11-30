@@ -20,6 +20,7 @@ function Portfolio() {
   const parabubRef = React.createRef();
   const readmeRef = React.createRef();
   const mernTemplateRef = React.createRef();
+  const newsRef=React.createRef();
   const hamRef = React.createRef();
   const journalRef = React.createRef();
   const chessRef = React.createRef();
@@ -103,6 +104,7 @@ function Portfolio() {
           parabubRef={parabubRef}
           readmeRef={readmeRef}
           mernTemplateRef={mernTemplateRef}
+          newsRef={newsRef}
           hamRef={hamRef}
           journalRef={journalRef}
           chessRef={chessRef}
@@ -170,39 +172,6 @@ function Portfolio() {
             </div>
           </section>
 
-          <section className='row'>
-            <div className='col-lg-12 card-gutters' id='color-rippler' ref={lavaRef}>
-              <div className='box-all box'>
-                <div className="card">
-                  <div className='row no-gutters'>
-                    <div className='col-lg-3'>
-                      <ZoomFadeIn >
-                        <img src={require('../assets/images/lava-lamp.png')} alt='customizable sass lava lamps' />
-                      </ZoomFadeIn>
-                    </div>
-                    <div className='col-lg-9'>
-                      <div className="card-body horizontal-card-body">
-                        <h5 className="card-title">Customizable Sass Lava Lamps</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">Animated Lava Lamps created with CSS</h6>
-                        <p className="card-text horizontal-description">This project aims to demonstrate advantages of CSS pre-processing using Sass. Animated lava lamps are modeled using entirely CSS, with animation accomplished through CSS keyframes.
-                        Sass is used help in the creation of complex CSS files, and in this project provides for easy customization of the lava lamps by distilling important CSS properties down to several key variables. 
-                        With this method, the animated lava lamps and accompanying HTML are easily portable to other website projects.
-                        </p>
-                        <ul className='project-list horizontal-list'>
-                          <li>
-                            Get the SCSS files and detailed documentation on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/lava-lamp-customizable-sass" className="card-link"> GitHub</a>
-                          </li>
-                          <li>
-                            See a demonstration on the <a target='_blank' rel="noopener noreferrer" href="https://sass-lava-lamps.herokuapp.com" className="card-link">webpage</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
 
           <section className='row'>
@@ -320,6 +289,39 @@ function Portfolio() {
             </div>
           </section>
 
+          <section className='row'>
+            <div className='col-lg-12 card-gutters' id='lava' ref={lavaRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <div className='row no-gutters'>
+                    <div className='col-lg-3'>
+                      <ZoomFadeIn >
+                        <img src={require('../assets/images/lava-lamp.png')} alt='customizable sass lava lamps' />
+                      </ZoomFadeIn>
+                    </div>
+                    <div className='col-lg-9'>
+                      <div className="card-body horizontal-card-body">
+                        <h5 className="card-title">Customizable Sass Lava Lamps</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">Animated Lava Lamps created with CSS</h6>
+                        <p className="card-text horizontal-description">This project aims to demonstrate advantages of CSS pre-processing using Sass. Animated lava lamps are modeled using entirely CSS, with animation accomplished through CSS keyframes.
+                        Sass is used help in the creation of complex CSS files, and in this project provides for easy customization of the lava lamps by distilling important CSS properties down to several key variables. 
+                        With this method, the animated lava lamps and accompanying HTML are easily portable to other website projects.
+                        </p>
+                        <ul className='project-list horizontal-list'>
+                          <li>
+                            Get the SCSS files and detailed documentation on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/lava-lamp-customizable-sass" className="card-link"> GitHub</a>
+                          </li>
+                          <li>
+                            See a demonstration on the <a target='_blank' rel="noopener noreferrer" href="https://sass-lava-lamps.herokuapp.com" className="card-link">webpage</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section className='row'>
             <div className='col-lg-6 card-gutters' id='readme-gen' ref={readmeRef}>
@@ -420,6 +422,41 @@ function Portfolio() {
             </div>
           </section>
 
+          <section className='row'>
+            <div className='col-lg-12 card-gutters' id='news-react' ref={newsRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <div className='row no-gutters'>
+                    <div className='col-lg-4'>
+                      <ZoomFadeIn >
+                        <img src={require('../assets/images/news.PNG')} alt='news app' />
+                      </ZoomFadeIn>
+                    </div>
+                    <div className='col-lg-8'>
+                      <div className="card-body horizontal-card-body">
+                        <h5 className="card-title">News Search</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">Top Headlines and Searchable News</h6>
+                        <p className="card-text horizontal-description">This is a simple website that makes use of a <a className="card-link" href='https://newsapi.org/' target='_blank' rel="noopener noreferrer">News API</a> in order 
+                          to present users with up-to-date news. A simple search has been implemented as well. The app uses the React framework to present the front-end. Other techniques used include Express for back-end routing and 
+                          API calls, Redux, Sass, and Node.js.
+                        </p>
+                        <ul className='project-list horizontal-list'>
+                          <li>
+                            See the source code on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/news" className="card-link"> GitHub</a>
+                          </li>
+                          <li>
+                            See top headlines on the deployed <a target='_blank' rel="noopener noreferrer" href="https://news-react-search.herokuapp.com/" className="card-link">webpage</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    
           <section className='row'>
             <div className='col-lg-6 card-gutters' id='hamburger-handlebars' ref={hamRef}>
               <div className='box-all box'>
