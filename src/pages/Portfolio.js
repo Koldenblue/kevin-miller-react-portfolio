@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useRef } from "react";
 import Background from "../components/Background";
 import ProjectTableOfContents from "../components/ProjectTableOfContents";
 import ZoomFadeIn from '../components/ZoomFadeIn/ZoomFadeIn';
@@ -13,37 +13,37 @@ function Portfolio() {
   // second alternative would be to store global state in a redux store
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
-  const ripplerRef = React.createRef();
-  const lavaRef = React.createRef();
-  const bartenderRef = React.createRef();
-  const informRef = React.createRef();
-  const parabubRef = React.createRef();
-  const readmeRef = React.createRef();
-  const mernTemplateRef = React.createRef();
-  const newsRef=React.createRef();
-  const hamRef = React.createRef();
-  const journalRef = React.createRef();
-  const chessRef = React.createRef();
-  const empFinderRef = React.createRef();
-  const managerRef = React.createRef();
-  const trekRef = React.createRef();
-  const quizRef = React.createRef();
-  const weatherRef = React.createRef();
-  const noteRef = React.createRef();
-  const passRef = React.createRef();
-  const templateRef = React.createRef();
-  const workdayRef = React.createRef();
-  const balanceRef = React.createRef();
-  const connectRef = React.createRef();
+  const ripplerRef = useRef();
+  const lavaRef = useRef();
+  const bartenderRef = useRef();
+  const informRef = useRef();
+  const parabubRef = useRef();
+  const readmeRef = useRef();
+  const mernTemplateRef = useRef();
+  const newsRef=useRef();
+  const hamRef = useRef();
+  const journalRef = useRef();
+  const chessRef = useRef();
+  const empFinderRef = useRef();
+  const managerRef = useRef();
+  const trekRef = useRef();
+  const quizRef = useRef();
+  const weatherRef = useRef();
+  const noteRef = useRef();
+  const passRef = useRef();
+  const templateRef = useRef();
+  const workdayRef = useRef();
+  const balanceRef = useRef();
+  const connectRef = useRef();
 
   // ==========================================================================================================================
   // img refs for gifs
-  const ripplerImgRef = React.createRef();
-  const paraImgRef = React.createRef();
-  const barImgRef = React.createRef();
-  const informImgRef = React.createRef();
-  const journalImgRef = React.createRef();
-  const trekImgRef = React.createRef();
+  const ripplerImgRef = useRef();
+  const paraImgRef = useRef();
+  const barImgRef = useRef();
+  const informImgRef = useRef();
+  const journalImgRef = useRef();
+  const trekImgRef = useRef();
 
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
