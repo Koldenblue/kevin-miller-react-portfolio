@@ -10,7 +10,7 @@ export default function ProjectTableOfContents(props) {
 
   const smoothScroll = (event, ref) => {
     event.preventDefault();
-    ref.current.scrollIntoView({behavior: 'smooth'})
+    ref.current.scrollIntoView({behavior: 'smooth', block: 'center'})
   }
 
   return (<>
