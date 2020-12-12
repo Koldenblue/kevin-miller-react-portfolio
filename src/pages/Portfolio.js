@@ -20,7 +20,8 @@ function Portfolio() {
   const parabubRef = useRef();
   const readmeRef = useRef();
   const mernTemplateRef = useRef();
-  const newsRef=useRef();
+  const newsRef = useRef();
+  const financeRef = useRef();
   const hamRef = useRef();
   const journalRef = useRef();
   const chessRef = useRef();
@@ -35,6 +36,7 @@ function Portfolio() {
   const workdayRef = useRef();
   const balanceRef = useRef();
   const connectRef = useRef();
+
 
   // ==========================================================================================================================
   // img refs for gifs
@@ -105,6 +107,7 @@ function Portfolio() {
           readmeRef={readmeRef}
           mernTemplateRef={mernTemplateRef}
           newsRef={newsRef}
+          financeRef={financeRef}
           hamRef={hamRef}
           journalRef={journalRef}
           chessRef={chessRef}
@@ -304,7 +307,7 @@ function Portfolio() {
                         <h5 className="card-title">Customizable Sass Lava Lamps</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Animated Lava Lamps created with CSS</h6>
                         <p className="card-text horizontal-description">This project aims to demonstrate advantages of CSS pre-processing using Sass. Animated lava lamps are modeled using entirely CSS, with animation accomplished through CSS keyframes.
-                        Sass is used help in the creation of complex CSS files, and in this project provides for easy customization of the lava lamps by distilling important CSS properties down to several key variables. 
+                        Sass is used help in the creation of complex CSS files, and in this project provides for easy customization of the lava lamps by distilling important CSS properties down to several key variables.
                         With this method, the animated lava lamps and accompanying HTML are easily portable to other website projects.
                         </p>
                         <ul className='project-list horizontal-list'>
@@ -423,40 +426,58 @@ function Portfolio() {
           </section>
 
           <section className='row'>
-            <div className='col-lg-12 card-gutters' id='news-react' ref={newsRef}>
+            <div className='col-lg-6 card-gutters' id='flask-finance' ref={financeRef}>
               <div className='box-all box'>
                 <div className="card">
-                  <div className='row no-gutters'>
-                    <div className='col-lg-4'>
-                      <ZoomFadeIn >
-                        <img src={require('../assets/images/news.PNG')} alt='news app' />
-                      </ZoomFadeIn>
-                    </div>
-                    <div className='col-lg-8'>
-                      <div className="card-body horizontal-card-body">
-                        <h5 className="card-title">News Search</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">Top Headlines and Searchable News</h6>
-                        <p className="card-text horizontal-description">This is a simple website that makes use of a <a className="card-link" href='https://newsapi.org/' target='_blank' rel="noopener noreferrer">News API</a> in order 
-                          to present users with up-to-date news. A simple search has been implemented as well. The app uses the React framework to present the front-end. Other techniques used include Express for back-end routing and 
-                          API calls, Redux, Sass, and Node.js.
+                  <ZoomFadeIn >
+                    <img src={require('../assets/images/finance.PNG')} alt='finance app' />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">Mock Stock Finance</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Make mock stock trades with a Flask App</h6>
+                    <p className="card-text">This app makes use of a <a className="card-link" href='https://iexcloud.io/' target='_blank' rel="noopener noreferrer">stock quotes API</a> and lets users look up the latest stock prices.
+                       Users are given a fake amount of money to start with, and may make mock stock trades. An SQL database, with the SQLAlchemy ORM, is used to keep track of transaction history. 
+                       Routing is accomplished through Python and Flask. The Jinja templating engine is used to present the HTML/CSS front end.
                         </p>
-                        <ul className='project-list horizontal-list'>
-                          <li>
-                            See the source code on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/news" className="card-link"> GitHub</a>
-                          </li>
-                          <li>
-                            See top headlines on the deployed <a target='_blank' rel="noopener noreferrer" href="https://news-react-search.herokuapp.com/" className="card-link">webpage</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    <ul className='project-list'>
+                      <li>
+                        Get the app on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/finance" className="card-link"> GitHub</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div className='col-lg-6 card-gutters' id='news-react' ref={newsRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <ZoomFadeIn >
+                    <img src={require('../assets/images/news.PNG')} alt='news app' />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">News Search</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Top Headlines and Searchable News</h6>
+                    <p className="card-text">This is a simple website that makes use of a <a className="card-link" href='https://newsapi.org/' target='_blank' rel="noopener noreferrer">News API</a> in order
+                          to present users with up-to-date news. A simple search has been implemented as well. The app uses the React framework to present the front-end. Other techniques used include Express for back-end routing and
+                          API calls, Redux, Sass, and Node.js.
+                        </p>
+                    <ul className='project-list'>
+                      <li>
+                        See the source code on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/news" className="card-link"> GitHub</a>
+                      </li>
+                      <li>
+                        See top headlines on the deployed <a target='_blank' rel="noopener noreferrer" href="https://news-react-search.herokuapp.com/" className="card-link">webpage</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </section>
 
-    
+
           <section className='row'>
             <div className='col-lg-6 card-gutters' id='hamburger-handlebars' ref={hamRef}>
               <div className='box-all box'>
@@ -527,21 +548,21 @@ function Portfolio() {
                   <ZoomFadeIn>
                     <img src={require("../assets/images/chess-redux.png")} alt="Chess in a Browser" />
                   </ZoomFadeIn>
-                <div className="card-body">
-                  <h5 className="card-title">Chess-JavaScript</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Programmed in JavaScript/HTML/CSS and React</h6>
-                  <p className="card-text">Chess in a browser! Based on game logic from a Python program I wrote previously. The front end is functional and movement logic has been implemented. However, game loop, checkmate, and victory logic has not yet been implemented.
-                  The challenge of this program is about taking existing code I wrote in Python, and porting it to React. The Redux framework is also used to provide global state.
+                  <div className="card-body">
+                    <h5 className="card-title">Chess-JavaScript</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Programmed in JavaScript/HTML/CSS and React</h6>
+                    <p className="card-text">Chess in a browser! Based on game logic from a Python program I wrote previously. The front end is functional and movement logic has been implemented. However, game loop, checkmate, and victory logic has not yet been implemented.
+                    The challenge of this program is about taking existing code I wrote in Python, and porting it to React. The Redux framework is also used to provide global state.
                       </p>
-                  <ul className='project-list'>
-                    <li>
-                      Chess on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/chess-redux" className="card-link">GitHub!</a>
+                    <ul className='project-list'>
+                      <li>
+                        Chess on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/chess-redux" className="card-link">GitHub!</a>
+                      </li>
+                      <li>
+                        Test out the program at the <a target='_blank' rel="noopener noreferrer" href="https://chess-redux.herokuapp.com/" className="card-link">deployed website</a>.
                     </li>
-                    <li>
-                      Test out the program at the <a target='_blank' rel="noopener noreferrer" href="https://chess-redux.herokuapp.com/" className="card-link">deployed website</a>.
-                    </li>
-                  </ul>
-                </div>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -552,19 +573,19 @@ function Portfolio() {
                   <ZoomFadeIn>
                     <img src={require("../assets/images/chess.PNG")} alt="Chess in a Python Terminal" />
                   </ZoomFadeIn>
-                <div className="card-body">
-                  <h5 className="card-title">Chess-Python</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
-                  <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python. The board and piece types are separated into classes, while a main script ties all logic together and runs the game loop.
+                  <div className="card-body">
+                    <h5 className="card-title">Chess-Python</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Programmed in Python 3</h6>
+                    <p className="card-text">Chess in a terminal! Programmed using object-oriented programming techniques in Python. The board and piece types are separated into classes, while a main script ties all logic together and runs the game loop.
                       </p>
-                  <ul className='project-list'>
-                    <li>
-                      Chess on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/python-chess-game" className="card-link">GitHub! </a>Requires Python to function.
+                    <ul className='project-list'>
+                      <li>
+                        Chess on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/python-chess-game" className="card-link">GitHub! </a>Requires Python to function.
                         </li>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
-                </div>
             </div>
           </section>
 

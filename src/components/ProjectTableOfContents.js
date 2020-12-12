@@ -24,6 +24,7 @@ export default function ProjectTableOfContents(props) {
       <li><a href='#readme-gen' onClick={(event) => smoothScroll(event, props.readmeRef)}>Readme Generator</a></li>
       <li><a href='#mern-template' onClick={(event) => smoothScroll(event, props.mernTemplateRef)}>MERN-Redux Template</a></li>
       <li><a href='#trek-app' onClick={(event) => smoothScroll(event, props.trekRef)}>Trek</a></li>
+      <li><a href='#flask-finance' onClick={(event) => smoothScroll(event, props.financeRef)}>Mock Stock Finance</a></li>
       <li><a href='#news-react' onClick={(event) => smoothScroll(event, props.newsRef)}>News</a></li>
       <li><a href='#hamburger-handlebars' onClick={(event) => smoothScroll(event, props.hamRef)}>Hamburger Handlebars</a></li>
       <li><a href='#redux-journal' onClick={(event) => smoothScroll(event, props.journalRef)}>Redux Journal</a></li>

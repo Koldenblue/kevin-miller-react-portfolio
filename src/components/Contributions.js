@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 
 
 export default function Contributions() {
-  const numContributions = useSpring({ config: { precision: 1, friction: 75, tension: 100 }, number: 1800.0, from: { number: 0.0 } });
-  const numProjects = useSpring({ config: { precision: 1, friction: 90, tension: 80 }, number: 27, from: { number: 0 } });
+  const numContributions = useSpring({ config: { precision: 1, friction: 75, tension: 100 }, number: 2000.0, from: { number: 0.0 } });
+  const numProjects = useSpring({ config: { precision: 1, friction: 90, tension: 80 }, number: 30, from: { number: 0 } });
 
   return (<>
     <div className='col-lg-12 contributions'>
