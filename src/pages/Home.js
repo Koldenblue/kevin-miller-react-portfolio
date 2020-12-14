@@ -45,7 +45,7 @@ function Home() {
         <div className='row'>
           <div className='col-md-2'></div>
           <div className='col-md-8'>
-            <img src={require('../assets/images/prof-photo.png')} className='homepage-photo' alt='headshot' style={styles.homepagePhoto} />
+            <img src={require('../assets/images/prof-photo.jpeg')} className='homepage-photo' alt='headshot' style={styles.homepagePhoto} />
             <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
               <h1 className="display-4">Kevin Miller, PhD</h1>
             </Animated>
