@@ -14,6 +14,7 @@ function Portfolio() {
   const [currentlyZoomed, setCurrentlyZoomed] = useState(false);
 
   const ripplerRef = useRef();
+  const calendarRef = useRef();
   const lavaRef = useRef();
   const bartenderRef = useRef();
   const informRef = useRef();
@@ -36,6 +37,7 @@ function Portfolio() {
   const workdayRef = useRef();
   const balanceRef = useRef();
   const connectRef = useRef();
+  const flaskJournalRef = useRef();
 
 
   // ==========================================================================================================================
@@ -101,6 +103,7 @@ function Portfolio() {
         <ProjectTableOfContents
           ripplerRef={ripplerRef}
           lavaRef={lavaRef}
+          calendarRef={calendarRef}
           bartenderRef={bartenderRef}
           informRef={informRef}
           parabubRef={parabubRef}
@@ -122,6 +125,7 @@ function Portfolio() {
           workdayRef={workdayRef}
           balanceRef={balanceRef}
           connectRef={connectRef}
+          flaskJournalRef={flaskJournalRef}
         />
 
         {/* Main project card container */}
@@ -426,6 +430,32 @@ function Portfolio() {
           </section>
 
           <section className='row'>
+
+            <div className='col-lg-6 card-gutters' id='calendar' ref={calendarRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <ZoomFadeIn >
+                    <img src={require('../assets/images/calendar.PNG')} alt='calendar app' />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">Calendar Event Keeper</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Keep track of events with a navigable interactive calendar</h6>
+                    <p className="card-text">This calendar allows users to sign in and keep track of events on a calendar. Events, stored in a Mongo database, can be entered and saved on any calendar day.
+                    Weeks of the calendar are rendered dynamically, using React and Redux. Sass is used to help easily make the app mobile-responsive. And of course, users may edit or delete calendar events as they wish.
+                        </p>
+                    <ul className='project-list'>
+                      <li>
+                        See the source code and detailed discussion on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/calendar" className="card-link"> GitHub</a>
+                      </li>
+                      <li>
+                        See the calendar at the <a target='_blank' rel="noopener noreferrer" href="https://weekly-event-calendar.herokuapp.com/" className="card-link">deployed website</a>!
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className='col-lg-6 card-gutters' id='flask-finance' ref={financeRef}>
               <div className='box-all box'>
                 <div className="card">
@@ -436,7 +466,7 @@ function Portfolio() {
                     <h5 className="card-title">Mock Stock Finance</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Make mock stock trades with a Flask App</h6>
                     <p className="card-text">This app makes use of a <a className="card-link" href='https://iexcloud.io/' target='_blank' rel="noopener noreferrer">stock quotes API</a> and lets users look up the latest stock prices.
-                       Users are given a fake amount of money to start with, and may make mock stock trades. An SQL database, with the SQLAlchemy ORM, is used to keep track of transaction history. 
+                       Users are given a fake amount of money to start with, and may make mock stock trades. An SQL database, with the SQLAlchemy ORM, is used to keep track of transaction history.
                        Routing is accomplished through Python and Flask. The Jinja templating engine is used to present the HTML/CSS front end.
                         </p>
                     <ul className='project-list'>
@@ -448,62 +478,9 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-
-            <div className='col-lg-6 card-gutters' id='news-react' ref={newsRef}>
-              <div className='box-all box'>
-                <div className="card">
-                  <ZoomFadeIn >
-                    <img src={require('../assets/images/news.PNG')} alt='news app' />
-                  </ZoomFadeIn>
-                  <div className="card-body">
-                    <h5 className="card-title">News Search</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Top Headlines and Searchable News</h6>
-                    <p className="card-text">This is a simple website that makes use of a <a className="card-link" href='https://newsapi.org/' target='_blank' rel="noopener noreferrer">News API</a> in order
-                          to present users with up-to-date news. A simple search has been implemented as well. The app uses the React framework to present the front-end. Other techniques used include Express for back-end routing and
-                          API calls, Redux, Sass, and Node.js.
-                        </p>
-                    <ul className='project-list'>
-                      <li>
-                        See the source code on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/news" className="card-link"> GitHub</a>
-                      </li>
-                      <li>
-                        See top headlines on the deployed <a target='_blank' rel="noopener noreferrer" href="https://news-react-search.herokuapp.com/" className="card-link">webpage</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </section>
 
-
           <section className='row'>
-            <div className='col-lg-6 card-gutters' id='hamburger-handlebars' ref={hamRef}>
-              <div className='box-all box'>
-                <div className="card" >
-                  <ZoomFadeIn>
-                    <img src={require("../assets/images/hamburger.PNG")} alt="Hamburger Website" />
-                  </ZoomFadeIn>
-                  <div className="card-body">
-                    <h5 className="card-title">Hamburger Handling</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
-                    <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
-                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
-                  </p>
-                    <ul className='project-list'>
-                      <li>
-                        Ham it up on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
-                      </li>
-                      <li>
-                        Serve up some hamburgers on the <a target='_blank' rel="noopener noreferrer" href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website</a>!
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
 
             <div className='col-lg-6 card-gutters' id='redux-journal' ref={journalRef}>
               <div className='box-all box'>
@@ -538,8 +515,84 @@ function Portfolio() {
               </div>
             </div>
 
-
+            <div className='col-lg-6 card-gutters' id='flask-journal' ref={flaskJournalRef}>
+              <div className='box-all box'>
+                <div className="card" >
+                  <ZoomFadeIn>
+                    <img src={require("../assets/images/flask-journal.png")} alt='flask journal' />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">Flask Journal</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Python and SQL journal - using Flask and SQLAlchemy libraries</h6>
+                    <p className="card-text">An app that tracks user journal entries and moods. Programmed with similar features to the React app. However, this app
+                    uses Flask for routing rather than React and Express. This app also uses a SQL relational database, rather than the non-relational MongoDB, to track journal entries.
+                    Comparisons between the React app (which uses a virtual DOM) and this Flask app (using more traditional DOM loading) show that the React App has significantly improved performance and loading times.
+                  </p>
+                    <ul className='project-list'>
+                      <li>
+                        Read a detailed code discussion or download the program on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/flask-journal" className="card-link">GitHub</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
+
+          <section className='row'>
+            <div className='col-lg-6 card-gutters' id='hamburger-handlebars' ref={hamRef}>
+              <div className='box-all box'>
+                <div className="card" >
+                  <ZoomFadeIn>
+                    <img src={require("../assets/images/hamburger.PNG")} alt="Hamburger Website" />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">Hamburger Handling</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Templated with Handlebars and demonstrates SQL database deployment on a server</h6>
+                    <p className="card-text">A quick and simple website that stores burgers in an SQL (structured query library) database. "Devour" the burger to update the database.
+                    The Express Handlebars view engine is used for quick webpage templating, and the Sequelize ORM (object-relational mapper) is used to query and manage the database.
+                  </p>
+                    <ul className='project-list'>
+                      <li>
+                        Ham it up on <a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/games-websites" className="card-link">GitHub</a>
+                      </li>
+                      <li>
+                        Serve up some hamburgers on the <a target='_blank' rel="noopener noreferrer" href="https://hamburger-handlebars.herokuapp.com/" className="card-link">website</a>!
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-lg-6 card-gutters' id='news-react' ref={newsRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <ZoomFadeIn >
+                    <img src={require('../assets/images/news.PNG')} alt='news app' />
+                  </ZoomFadeIn>
+                  <div className="card-body">
+                    <h5 className="card-title">News Search</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Top Headlines and Searchable News</h6>
+                    <p className="card-text">This is a simple website that makes use of a <a className="card-link" href='https://newsapi.org/' target='_blank' rel="noopener noreferrer">News API</a> in order
+                          to present users with up-to-date news. A simple search has been implemented as well. The app uses the React framework to present the front-end. Other techniques used include Express for back-end routing and
+                          API calls, Redux, Sass, and Node.js.
+                        </p>
+                    <ul className='project-list'>
+                      <li>
+                        See the source code on<a target='_blank' rel="noopener noreferrer" href="https://github.com/Koldenblue/news" className="card-link"> GitHub</a>
+                      </li>
+                      <li>
+                        See top headlines on the deployed <a target='_blank' rel="noopener noreferrer" href="https://news-react-search.herokuapp.com/" className="card-link">webpage</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
           <section className='row' >
             {/* no ref for the table of contents, since this should always be in the same row as python chess */}
             <div className='col-lg-6 card-gutters'>

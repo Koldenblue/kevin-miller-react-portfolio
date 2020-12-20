@@ -24,12 +24,14 @@ export default function ProjectTableOfContents(props) {
       <li><a href='#readme-gen' onClick={(event) => smoothScroll(event, props.readmeRef)}>Readme Generator</a></li>
       <li><a href='#mern-template' onClick={(event) => smoothScroll(event, props.mernTemplateRef)}>MERN-Redux Template</a></li>
       <li><a href='#trek-app' onClick={(event) => smoothScroll(event, props.trekRef)}>Trek</a></li>
+      <li><a href='#calendar' onClick={(event) => smoothScroll(event, props.calendarRef)}>Calendar</a></li>
       <li><a href='#flask-finance' onClick={(event) => smoothScroll(event, props.financeRef)}>Mock Stock Finance</a></li>
-      <li><a href='#news-react' onClick={(event) => smoothScroll(event, props.newsRef)}>News</a></li>
-      <li><a href='#hamburger-handlebars' onClick={(event) => smoothScroll(event, props.hamRef)}>Hamburger Handlebars</a></li>
       <li><a href='#redux-journal' onClick={(event) => smoothScroll(event, props.journalRef)}>Redux Journal</a></li>
-      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess-JavaScript</a></li>
-      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess-Python</a></li>
+      <li><a href='#flask-journal' onClick={(event) => smoothScroll(event, props.flaskJournalRef)}>Flask Journal</a></li>
+      <li><a href='#hamburger-handlebars' onClick={(event) => smoothScroll(event, props.hamRef)}>Hamburger Handlebars</a></li>
+      <li><a href='#news-react' onClick={(event) => smoothScroll(event, props.newsRef)}>News</a></li>
+      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess - JavaScript</a></li>
+      <li><a href='#chess' onClick={(event) => smoothScroll(event, props.chessRef)}>Chess - Python</a></li>
       <li><a href='#emp-dir' onClick={(event) => smoothScroll(event, props.empFinderRef)}>Mock Employee Directory</a></li>
       <li><a href='#database-manager' onClick={(event) => smoothScroll(event, props.managerRef)}>Database Manager</a></li>
       <li><a href='#quiz-template' onClick={(event) => smoothScroll(event, props.quizRef)}>Quiz Template</a></li>
