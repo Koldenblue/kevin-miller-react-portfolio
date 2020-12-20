@@ -56,6 +56,10 @@ export default function ParaPics() {
       <ParallaxLayer offset={1.95} speed={1.6} >
         <Image id='namm-pic' className='parapics' src={require("../assets/images/namm.JPG")} />
       </ParallaxLayer>
+
+      <ParallaxLayer offset={1.9} speed={.7} >
+        <Image id='para-prof-pic' className='parapics' src={require("../assets/images/prof-photo-2.png")} />
+      </ParallaxLayer>
     </ParallaxLayer>
 
 

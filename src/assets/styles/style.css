@@ -623,6 +623,13 @@ when the screen is reduced in width */
   width: 100%;
 }
 
+#para-prof-pic {
+  box-shadow: 4px 4px 4px black;
+  width: 20%;
+  left: 35%;
+  rotate: 1deg;
+}
+
 #diploma {
   width: 45%;
   left: 50%;
@@ -644,6 +651,8 @@ when the screen is reduced in width */
    width: 20%;
   }
 }
+
+
 /* ==========================================*/ 
 
 
