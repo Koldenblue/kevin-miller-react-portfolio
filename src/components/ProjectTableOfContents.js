@@ -17,6 +17,7 @@ export default function ProjectTableOfContents(props) {
     <ul className='list-nav'>
       <h3 className='top-link'>Projects</h3>
       <li><a href='#color-rippler' onClick={(event) => smoothScroll(event, props.ripplerRef)}>Color Rippler</a></li>
+      <li><a href='#aimhi' onClick={(event) => smoothScroll(event, props.aimhiRef)}>Aim-Hi Global, LLC</a></li>
       <li><a href='#bartender' onClick={(event) => smoothScroll(event, props.bartenderRef)}>Express Bartender</a></li>
       <li><a href='#inform-react' onClick={(event) => smoothScroll(event, props.informRef)}>Inform and React</a></li>
       <li><a href='#para-bub' onClick={(event) => smoothScroll(event, props.parabubRef)}>Para Bubbles</a></li>

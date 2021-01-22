@@ -38,7 +38,7 @@ function Portfolio() {
   const balanceRef = useRef();
   const connectRef = useRef();
   const flaskJournalRef = useRef();
-
+  const aimhiRef = useRef();
 
   // ==========================================================================================================================
   // img refs for gifs
@@ -126,6 +126,7 @@ function Portfolio() {
           balanceRef={balanceRef}
           connectRef={connectRef}
           flaskJournalRef={flaskJournalRef}
+          aimhiRef={aimhiRef}
         />
 
         {/* Main project card container */}
@@ -179,6 +180,37 @@ function Portfolio() {
             </div>
           </section>
 
+          <section className='row'>
+            <div className='col-lg-12 card-gutters' id='aimhi' ref={aimhiRef}>
+              <div className='box-all box'>
+                <div className="card">
+                  <div className='row no-gutters'>
+                    <div className='col-lg-6'>
+                      <ZoomFadeIn >
+                        <img src={require('../assets/images/aimhi.PNG')} alt='Aim Hi Global Website' />
+                      </ZoomFadeIn>
+                    </div>
+                    <div className='col-lg-6'>
+                      <div className="card-body horizontal-card-body">
+                        <h5 className="card-title">Aim-Hi Global</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">Social Media Marketing Tool</h6>
+                        <p className="card-text horizontal-description">This is a collaborative project with developers at Aim Hi Global, LLC.
+                          The Aim Hi app seeks to help small businesses by allowing easy uploading of media for posting to multiple social media accounts,
+                          including Facebook, Instagram, LinkedIn, and Twitter. The app allows the use of PayPal for subscription services,
+                          and scheduling of social media posts using cloud scheduler functions.
+                        </p>
+                        <ul className='project-list horizontal-list'>
+                          <li>
+                            Visit the Aim-Hi Global <a target='_blank' rel="noopener noreferrer" href="https://aimhiglobal.com/posts" className="card-link">company website</a>!
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
 
           <section className='row'>
@@ -258,7 +290,7 @@ function Portfolio() {
               <div className='box-all box'>
                 <div className="card">
                   <div className='row no-gutters'>
-                    <div className='col-lg-5'>
+                    <div className='col-lg-6'>
                       <ZoomFadeIn diffZoomedImage={true}>
                         <img
                           id='para-img'
@@ -272,7 +304,7 @@ function Portfolio() {
                         <img src={require("../assets/images/para-bubbles.jpeg")} lgimg='true' alt='Parallaxed Bubbles app' />
                       </ZoomFadeIn>
                     </div>
-                    <div className='col-lg-7'>
+                    <div className='col-lg-6'>
                       <div className="card-body horizontal-card-body">
                         <h5 className="card-title">Para-bubbles</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Parallaxed Background Bubbles</h6>
