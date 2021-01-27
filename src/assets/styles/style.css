@@ -425,7 +425,13 @@ when the screen is reduced in width */
 }
 /* ==========================================*/ 
 
-
+/*===================CHEMISTRY SECTION========== */
+#astronaut {
+  border-style: outset;
+  border-width: 5px;
+  border-color: rgb(5, 5, 117);
+}
+/* ==========================================*/ 
 
 /* ================= RESUME=================  */
 #resume-pdf {
@@ -439,7 +445,11 @@ when the screen is reduced in width */
 }
 /* ==========================================*/ 
 
-
+.about-me-img {
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(5, 5, 117);
+}
 
 
 /* PICTURES SECTION =========================*/

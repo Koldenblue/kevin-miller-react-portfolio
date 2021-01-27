@@ -54,36 +54,12 @@ function Chemistry() {
           <figcaption>Me at graduation, with astronaut Anna Lee Fisher and colleague Dr. Selma Duhović</figcaption>
         </figure>
       </div>
-
+<hr />
       <div className='row'>
         <div className='col-md-12'>
           <br />
 
           <h4>PRESENTATIONS</h4>
-          <p>
-            <b>Electrophilic metal centers for the functionalization of inert bonds and molecules.</b> Presented at the
-          Southern California Organometallics Conference Fall 2008.
-        </p>
-
-          <p>
-            <b>Dearomatization reactions of N-heterocycles mediated by 
-              highly electrophilic group III complexes.</b> Presented at the Southern California Organometallics Conference Fall 2009.
-        </p>
-
-          <p>
-            <b>Use of highly reactive metal centers to effect the dearomatization 
-              and ring-opening of N-heterocycles.</b> Presented at the 239th American Chemical Society Conference at San Francisco, 2010.
-        </p>
-
-          <p>
-            <b>Interaction of highly reactive metal centers with a redox-active ferrocene-based ligand.</b> Presented at
-          the 241st American Chemical Society Conference at Anaheim, 2011.
-        </p>
-
-          <p>
-            <b>Electronic communication between bridged ferrocene centers, 
-              mediated by group III and group IV metals.</b> Presented at the Southern California Organometallics Conference Winter 2012.
-        </p>
 
           <p>
             <b>Unique properties of electrophilic metal centers supported by ferrocene diamide ligands.</b> Presented at
@@ -91,9 +67,30 @@ function Chemistry() {
           chemistry department.
         </p>
 
-          <br />
+        <p>
+            <b>Electronic communication between bridged ferrocene centers, 
+              mediated by group III and group IV metals.</b> Presented at the Southern California Organometallics Conference Winter 2012.
+        </p>
+        <p>
+            <b>Interaction of highly reactive metal centers with a redox-active ferrocene-based ligand.</b> Presented at
+          the 241st American Chemical Society Conference at Anaheim, 2011.
+        </p>
 
-          <h5>POSTERS</h5>
+        <p>
+            <b>Use of highly reactive metal centers to effect the dearomatization 
+              and ring-opening of N-heterocycles.</b> Presented at the 239th American Chemical Society Conference at San Francisco, 2010.
+        </p>
+        <p>
+            <b>Dearomatization reactions of N-heterocycles mediated by 
+              highly electrophilic group III complexes.</b> Presented at the Southern California Organometallics Conference Fall 2009.
+        </p>
+
+
+          <p>
+            <b>Electrophilic metal centers for the functionalization of inert bonds and molecules.</b> Presented at the
+          Southern California Organometallics Conference Fall 2008.
+        </p>
+
           <p>
             <b>Exploring the Reductive Reactivity of Lanthanum Dinitrogen Complexes. </b>Presented at the Undergraduate
           Research Opportunities Program conference at UC Irvine, 2007.
