@@ -8,17 +8,7 @@ import Button from "react-bootstrap/Button";
 function SummaryTabs(props) {
 
   return (
-    <Tabs defaultActiveKey="contact">
-      <Tab eventKey="contact" title="Contact">
-        <div className='tab-para'>
-          <p>
-            My preferred method of contact is through email, at <strong>{props.contact.email + props.contact.domain}</strong>. My cell phone may be reached at <strong>{props.contact.areaCode + props.contact.phone}</strong>.
-        I can also be reached through my <a href='https://www.linkedin.com/in/kevin-miller-phd-1b197986/' target='_blank' rel="noopener noreferrer" className='psychic-link'>LinkedIn profile page</a>.
-        </p>
-          <p>Be sure to check out my <a href='/portfolio' className='psychic-link'>portfolio</a> of projects or to visit my <a href='https://github.com/Koldenblue' className='psychic-link'>GitHub profile</a>!</p>
-        </div>
-      </Tab>
-
+    <Tabs defaultActiveKey="summary">
 
       <Tab eventKey="summary" title="Summary">
         <div className='tab-para'>
@@ -37,6 +27,15 @@ function SummaryTabs(props) {
         </div>
       </Tab>
 
+      <Tab eventKey="contact" title="Contact">
+        <div className='tab-para'>
+          <p>
+            My preferred method of contact is through email, at <strong>{props.contact.email + props.contact.domain}</strong>. My cell phone may be reached at <strong>{props.contact.areaCode + props.contact.phone}</strong>.
+        I can also be reached through my <a href='https://www.linkedin.com/in/kevin-miller-phd-1b197986/' target='_blank' rel="noopener noreferrer" className='psychic-link'>LinkedIn profile page</a>.
+        </p>
+          <p>Be sure to check out my <a href='/portfolio' className='psychic-link'>portfolio</a> of projects or to visit my <a href='https://github.com/Koldenblue' className='psychic-link'>GitHub profile</a>!</p>
+        </div>
+      </Tab>
 
       <Tab eventKey="recommendations" title="Recommendations">
         <div className='tab-para'>
