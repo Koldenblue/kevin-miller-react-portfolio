@@ -12,6 +12,7 @@ function HubLink() {
   useEffect(() => {
     function handleResize() {
       if (allowResize) {
+        // eslint-disable-next-line
         allowResize = false;
         setTimeout(() => {
           setWidth(window.innerWidth)

@@ -8,6 +8,7 @@ function Ball(props) {
       // backgroundColor: 'black',
       // opacity: 'transparent',
       background: 'rgb(255,255,255)',
+      // eslint-disable-next-line
       background: 'radial-gradient(circle, rgba(255,255,255,.5) 60%, rgba(46,139,87,.5) 100%)',
       borderColor: props.color,
       borderWidth: '1px',
