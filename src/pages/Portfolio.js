@@ -48,6 +48,7 @@ function Portfolio() {
   const informImgRef = useRef();
   const journalImgRef = useRef();
   const trekImgRef = useRef();
+  const lavaImgRef = useRef();
 
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
@@ -91,6 +92,13 @@ function Portfolio() {
   }
   const restoreTrek = () => {
     trekImgRef.current.setAttribute('src', require('../assets/images/trek.png'));
+  }
+
+  const lavaGif = () => {
+    lavaImgRef.current.setAttribute('src', require('../assets/images/lava-lamp.gif'));
+  }
+  const restoreLava = () => {
+    lavaImgRef.current.setAttribute('src', require('../assets/images/lava-lamp.png'));
   }
   // ==========================================================================================================================
 
@@ -334,8 +342,17 @@ function Portfolio() {
                 <div className="card">
                   <div className='row no-gutters'>
                     <div className='col-lg-3'>
-                      <ZoomFadeIn >
-                        <img src={require('../assets/images/lava-lamp.png')} alt='customizable sass lava lamps' />
+                      <ZoomFadeIn diffZoomedImage={true}>
+                        <img
+                          id='lava-img'
+                          ref={lavaImgRef}
+                          onMouseOver={lavaGif}
+                          onMouseOut={restoreLava}
+                          src={require('../assets/images/lava-lamp.png')}
+                          alt='animated lava lamp'
+                          smimg='true'
+                        />
+                        <img src={require('../assets/images/lava-lamp.png')} lgimg='true' alt='customizable sass lava lamps' />
                       </ZoomFadeIn>
                     </div>
                     <div className='col-lg-9'>

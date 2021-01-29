@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import './ZoomFade.css'
 import ZoomFadeContext from './ZoomFadeContext';
 import ZoomImage from "./ZoomImage";
@@ -46,7 +46,6 @@ function ZoomFadeIn(props) {
     setCurrentlyZoomed(false);
     window.removeEventListener("click", imgFade);
   }
-
 
   // if large image is different from small image, return appropriate images
   if (props.diffZoomedImage) {

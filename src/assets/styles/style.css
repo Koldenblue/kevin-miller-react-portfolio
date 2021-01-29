@@ -138,6 +138,7 @@ body{
   height: 300px;
   margin-left: 5px;
   position: relative;
+  border: 1px solid black;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -308,6 +309,10 @@ when the screen is reduced in width */
 
 .card-gutters {
   margin-top: 5em;
+}
+
+.card img, .col-lg-6 img {
+  border: 1px solid black;
 }
 
 .box1 {
