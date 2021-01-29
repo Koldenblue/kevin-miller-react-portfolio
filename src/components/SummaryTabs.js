@@ -143,12 +143,12 @@ function SummaryTabs(props) {
             <li>Emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js</li>
             <li>Python as secondary language, with ability and skill to learn further languages</li>
             <li>Use of established libraries such as Redux, jQuery, Flask, Sass, Bootstrap, Handlebars, Material UI, TypeScript, Jinja</li>
-            <li>Structured Query Language (SQL) database work, through MySQL, SQLite, and the Sequelize and SQLAlchemy Object-Relational Mappers (ORM)</li>
-            <li>Non-relational database management through MongoDB and mongoose, as well as Firebase</li>
-            <li>GitHub for version control</li>
+            <li>SQL database work, through MySQL, SQLite, and the Sequelize and SQLAlchemy Object-Relational Mappers (ORM)</li>
+            <li>MongoDB and mongoose, or alternatively Firebase, for non-relational database management</li>
+            <li>Git for version control</li>
             <li>Coding techniques include object-oriented programming, asynchronous function handling, mobile-responsive web design, and familiarity with code testing using tools such as Postman and Jest</li>
             <li>AJAX calls for integrating APIs – for example, Facebook, Twitter, and Google Cloud APIs</li>
-            <li>Researching and implementing new technologies or libraries as needed - for example, implementation of various small packages found with Node Package Manager or Pip, such as Moment.js or Inquirer</li>
+            <li>Implementation of various small packages found with Node Package Manager or Pip, such as Moment.js or Inquirer</li>
             <li>Skill in researching programming languages and techniques - for example, Python, basic PHP, and basic C/C++ programming accomplished through self-study and professional certification</li>
           </ul>
         </div>
