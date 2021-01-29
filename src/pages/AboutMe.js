@@ -27,14 +27,18 @@ function AboutMe() {
           </p>
           </section>
           <figure className='col-md-5'>
-            <img src={require('../assets/images/dance.jpg')} id='dance' alt='Leading a dance class' className="img-fluid about-me-img" />
+            <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1500} isVisible={true}>
+              <img src={require('../assets/images/dance.jpg')} id='dance' alt='Leading a dance class' className="img-fluid about-me-img" />
+            </Animated>
             <figcaption>Leading an OULA fitness dance class</figcaption>
           </figure>
         </div>
 
         <div className='row'>
           <figure className='col-md-5'>
-            <img src={require('../assets/images/psychic.jpg')} id='psychic' alt='The Psychic Ferns Band' className="img-fluid about-me-img" />
+            <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1500} isVisible={true}>
+              <img src={require('../assets/images/psychic.jpg')} id='psychic' alt='The Psychic Ferns Band' className="img-fluid about-me-img" />
+            </Animated>
             <figcaption>The Psychic Ferns - Nathaniel Adkins, Kevin Miller, Kine Fall, and Rob Thompson</figcaption>
           </figure>
           <section className='col-md-7'>

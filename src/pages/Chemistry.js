@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "../components/Background";
+import { Animated } from "react-animated-css";
 
 function Chemistry() {
   return (
@@ -50,7 +51,9 @@ function Chemistry() {
         </div>
 
         <figure className='col-md-4'>
-          <img src={require('../assets/images/astronaut.jpg')} alt='Graduation' id='astronaut' className="img-fluid" />
+          <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1500} isVisible={true}>
+            <img src={require('../assets/images/astronaut.jpg')} alt='Graduation' id='astronaut' className="img-fluid" />
+          </Animated>
           <figcaption>Me at graduation, with astronaut Anna Lee Fisher and colleague Dr. Selma Duhović</figcaption>
         </figure>
       </div>

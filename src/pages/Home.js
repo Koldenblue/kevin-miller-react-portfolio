@@ -6,7 +6,6 @@ import SummaryTabs from '../components/SummaryTabs';
 import Sun from '../components/Sun/Sun';
 
 function Home() {
-  const [opacity, setOpacity] = useState(0)
 
   let contact = {
     areaCode: '(310) ',
@@ -21,15 +20,8 @@ function Home() {
     },
     inlineAnimated: {
       'display': 'inline-block'
-    },
-    homepagePhoto: {
-      opacity: opacity
     }
   }
-
-  useEffect(() => {
-    setOpacity(1);
-  }, [])
 
   let hrAnim = useSpring({
     width: '70%',
@@ -45,7 +37,10 @@ function Home() {
         <div className='row'>
           <div className='col-md-2'></div>
           <div className='col-md-8'>
-            <img src={require('../assets/images/prof-photo.jpeg')} className='homepage-photo' alt='headshot' style={styles.homepagePhoto} />
+          <Animated animationIn="fadeIn" animationOut="fadeOut"  animationInDuration={1500} isVisible={true}>
+            <img src={require('../assets/images/prof-photo.jpeg')} className='homepage-photo' alt='headshot' />
+          </Animated>
+
             <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
               <h1 className="display-4">Kevin Miller, PhD</h1>
             </Animated>
