@@ -25,7 +25,7 @@ function SummaryTabs(props) {
 
           <p>
             Values include ethics, integrity, and good business sense, having spent years as a business manager and scientist.
-            Extensive teaching experience, public speaking skills, and teamwork skills stem from being both a classroom teacher and a group fitness leader.
+            Leadership, teamwork, and public speaking skills stem from years spent as a classroom teacher and a group fitness leader.
             I am an experienced problem-solver and researcher with seven major <a href='/chemistry' className='psychic-link'>scientific publications</a>.
           </p>
 
