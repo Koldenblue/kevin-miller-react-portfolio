@@ -140,7 +140,7 @@ function SummaryTabs(props) {
           <hr />
           <ul className='tab-para'>
             <li>JavaScript/HTML/CSS used as main coding languages</li>
-            <li>Emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js</li>
+            <li>Emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js)</li>
             <li>Python as secondary language, with ability and skill to learn further languages</li>
             <li>Use of established libraries such as Redux, jQuery, Flask, Sass, Bootstrap, Handlebars, Material UI, TypeScript, Jinja</li>
             <li>SQL database work, through MySQL, SQLite, and the Sequelize and SQLAlchemy Object-Relational Mappers (ORM)</li>
