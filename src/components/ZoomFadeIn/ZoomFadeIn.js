@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import './ZoomFade.css'
 import ZoomFadeContext from './ZoomFadeContext';
 import ZoomImage from "./ZoomImage";

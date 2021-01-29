@@ -49,6 +49,7 @@ function Portfolio() {
   const journalImgRef = useRef();
   const trekImgRef = useRef();
   const lavaImgRef = useRef();
+  const calendarImgRef = useRef();
 
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
@@ -99,6 +100,13 @@ function Portfolio() {
   }
   const restoreLava = () => {
     lavaImgRef.current.setAttribute('src', require('../assets/images/lava-lamp.png'));
+  }
+
+  const calendarGif = () => {
+    calendarImgRef.current.setAttribute('src', require('../assets/images/calendar.gif'));
+  }
+  const restoreCalendar = () => {
+    calendarImgRef.current.setAttribute('src', require('../assets/images/calendar.PNG'));
   }
   // ==========================================================================================================================
 
@@ -483,8 +491,16 @@ function Portfolio() {
             <div className='col-lg-6 card-gutters' id='calendar' ref={calendarRef}>
               <div className='box-all box'>
                 <div className="card">
-                  <ZoomFadeIn >
-                    <img src={require('../assets/images/calendar.PNG')} alt='calendar app' />
+                  <ZoomFadeIn diffZoomedImage={true}>
+                    <img 
+                      src={require('../assets/images/calendar.PNG')} 
+                      alt='calendar app' 
+                      ref={calendarImgRef}
+                      onMouseOver={calendarGif}
+                      onMouseOut={restoreCalendar}
+                      smimg='true'
+                    />
+                    <img src={require('../assets/images/calendar.PNG')} lgimg='true' alt='calendar app' />
                   </ZoomFadeIn>
                   <div className="card-body">
                     <h5 className="card-title">Calendar Event Keeper</h5>
