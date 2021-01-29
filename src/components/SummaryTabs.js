@@ -139,20 +139,17 @@ function SummaryTabs(props) {
           <h5>Full-stack Web Developer with emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js)</h5>
           <hr />
           <ul className='tab-para'>
-            <li>JavaScript/HTML/CSS used as main coding languages, with Python as secondary language</li>
-            <li>React framework for front-end design and routing</li>
-            <li>Express framework for back-end route and database setup</li>
-            <li>MongoDB for non-relational database management, as well as the Mongoose Object Document Mapper (ODM) or mongo.js package</li>
+            <li>JavaScript/HTML/CSS used as main coding languages</li>
+            <li>Emphasis on MERN stack technologies (MongoDB, Express, React, and Node.js</li>
+            <li>Python as secondary language, with ability and skill to learn further languages</li>
+            <li>Use of established libraries such as Redux, jQuery, Flask, Sass, Bootstrap, Handlebars, Material UI, TypeScript, Jinja</li>
             <li>Structured Query Language (SQL) database work, through MySQL, SQLite, and the Sequelize and SQLAlchemy Object-Relational Mappers (ORM)</li>
-            <li>jQuery, Bootstrap, Handlebars, Sass, and other established JavaScript libraries for streamlining web development</li>
-            <li>Experience routing with Python, Flask, and Jiran</li>
+            <li>Non-relational database management through MongoDB and mongoose, as well as Firebase</li>
             <li>GitHub for version control</li>
-            <li>Application Programming Interface (API) integration with apps</li>
-            <li>Responsive web design, client-server communication, and code testing</li>
-            <li>AJAX calls for retrieving data from and interacting with APIs</li>
-            <li>Object-oriented programming and asynchronous function handling</li>
-            <li>Researching and implementing new technologies or libraries as needed - for example, implementation of the Moment.js library or various small packages found with Node Package Manager, such as Inquirer</li>
-            <li>Ability to quickly learn additional programming languages and techniques - for example, Python and C/C++ programming accomplished through self-study and professional certification</li>
+            <li>Coding techniques include object-oriented programming, asynchronous function handling, mobile-responsive web design, and familiarity with code testing using tools such as Postman and Jest</li>
+            <li>AJAX calls for integrating APIs – for example, Facebook, Twitter, and Google Cloud APIs</li>
+            <li>Researching and implementing new technologies or libraries as needed - for example, implementation of various small packages found with Node Package Manager or Pip, such as Moment.js or Inquirer</li>
+            <li>Skill in researching programming languages and techniques - for example, Python, basic PHP, and basic C/C++ programming accomplished through self-study and professional certification</li>
           </ul>
         </div>
       </Tab>
