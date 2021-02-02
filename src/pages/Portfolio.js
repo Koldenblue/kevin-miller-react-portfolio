@@ -48,6 +48,8 @@ function Portfolio() {
   const informImgRef = useRef();
   const journalImgRef = useRef();
   const trekImgRef = useRef();
+  const lavaImgRef = useRef();
+  const calendarImgRef = useRef();
 
   // these functions change images to a gif when moused over. The zoomed-in lgimg is still the original image
   const ripplerGif = () => {
@@ -91,6 +93,20 @@ function Portfolio() {
   }
   const restoreTrek = () => {
     trekImgRef.current.setAttribute('src', require('../assets/images/trek.png'));
+  }
+
+  const lavaGif = () => {
+    lavaImgRef.current.setAttribute('src', require('../assets/images/lava-lamp.gif'));
+  }
+  const restoreLava = () => {
+    lavaImgRef.current.setAttribute('src', require('../assets/images/lava-lamp.png'));
+  }
+
+  const calendarGif = () => {
+    calendarImgRef.current.setAttribute('src', require('../assets/images/calendar.gif'));
+  }
+  const restoreCalendar = () => {
+    calendarImgRef.current.setAttribute('src', require('../assets/images/calendar.PNG'));
   }
   // ==========================================================================================================================
 
@@ -334,8 +350,17 @@ function Portfolio() {
                 <div className="card">
                   <div className='row no-gutters'>
                     <div className='col-lg-3'>
-                      <ZoomFadeIn >
-                        <img src={require('../assets/images/lava-lamp.png')} alt='customizable sass lava lamps' />
+                      <ZoomFadeIn diffZoomedImage={true}>
+                        <img
+                          id='lava-img'
+                          ref={lavaImgRef}
+                          onMouseOver={lavaGif}
+                          onMouseOut={restoreLava}
+                          src={require('../assets/images/lava-lamp.png')}
+                          alt='animated lava lamp'
+                          smimg='true'
+                        />
+                        <img src={require('../assets/images/lava-lamp.png')} lgimg='true' alt='customizable sass lava lamps' />
                       </ZoomFadeIn>
                     </div>
                     <div className='col-lg-9'>
@@ -466,8 +491,16 @@ function Portfolio() {
             <div className='col-lg-6 card-gutters' id='calendar' ref={calendarRef}>
               <div className='box-all box'>
                 <div className="card">
-                  <ZoomFadeIn >
-                    <img src={require('../assets/images/calendar.PNG')} alt='calendar app' />
+                  <ZoomFadeIn diffZoomedImage={true}>
+                    <img 
+                      src={require('../assets/images/calendar.PNG')} 
+                      alt='calendar app' 
+                      ref={calendarImgRef}
+                      onMouseOver={calendarGif}
+                      onMouseOut={restoreCalendar}
+                      smimg='true'
+                    />
+                    <img src={require('../assets/images/calendar.PNG')} lgimg='true' alt='calendar app' />
                   </ZoomFadeIn>
                   <div className="card-body">
                     <h5 className="card-title">Calendar Event Keeper</h5>

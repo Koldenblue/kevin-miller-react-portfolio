@@ -47,7 +47,6 @@ function ZoomFadeIn(props) {
     window.removeEventListener("click", imgFade);
   }
 
-
   // if large image is different from small image, return appropriate images
   if (props.diffZoomedImage) {
     return (
